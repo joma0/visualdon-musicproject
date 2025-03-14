@@ -101,3 +101,11 @@ Voici quelques références qui exploitent des données sur la même thématique
 
 [Every Noise at Once](https://everynoise.com/everynoise1d.html)
 => Outre la représentation graphique qui n'est pas très pertinente, le site propose une playlist sur Spotify pour chaque genre ou sous-genre listé, et intègre un widget Spotify qui permet de lancer la playlist directement depuis le site.
+
+### Wireframes
+
+Lien vers le figma des wireframes :
+
+https://www.figma.com/design/CrhqDq11NhtIeY0ujIa7Bm/VisualDon_Wireframes?node-id=0-1&t=uexNOGThkeToNuTn-1
+
+Remarque : Des explications sont présentes dans les bulles de commentaires.
