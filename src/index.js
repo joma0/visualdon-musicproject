@@ -18,8 +18,38 @@ function update() {
         .call(chart);
 }
 
-d3.select('#update')
-    .on('click', update);
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.getElementById("slider");
+    const autoPlayButton = document.getElementById("auto-play");
+    let autoPlayInterval = null;
+
+    autoPlayButton.addEventListener("click", function () {
+        if (autoPlayInterval) {
+            clearInterval(autoPlayInterval); // Stop if already running
+            autoPlayInterval = null;
+            autoPlayButton.textContent = "Auto Play";
+            return;
+        }
+
+        slider.value = 10; // Reset slider to 10
+        autoPlayButton.textContent = "Stop";
+
+        autoPlayInterval = setInterval(() => {
+            if (slider.value > 1) {
+                slider.value = parseInt(slider.value) - 1;
+                slider.dispatchEvent(new Event("input")); // Simule le changement pour mettre à jour le graphique
+            } else {
+                clearInterval(autoPlayInterval);
+                autoPlayInterval = null;
+                autoPlayButton.textContent = "Auto Play";
+            }
+        }, 3000); // 5 secondes entre chaque descente
+    });
+});
+
+//d3.select('#update').on('click', update);
+
+d3.select('#slider').on('input', update);
 
 var chart = radialBarChart()
     .barHeight(250)

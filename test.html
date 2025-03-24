@@ -5,71 +5,187 @@
     <title>VisualDon</title>
     <style>
         #chart {
-        font-family: "Helvetica Neue", Helvetica, sans-serif;
-        font-size: 14px;
+          font-family: "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 14px;
         }
+
         #chart path {
-        fill: none;
+          fill: none;
         }
 
         /* layers */
         #chart .layer-0 path {
-        fill: steelblue;
+          fill: steelblue;
         }
+
         #chart .layer-1 path {
-        fill: white !important;
-        opacity: 0.3;
-        stroke-width: 2px;
-        stroke: #999;
+          fill: white !important;
+          opacity: 0.3;
+          stroke-width: 2px;
+          stroke: #999;
         }
 
         /* Outer circle, tick-circles and spokes */
         #chart circle.outer {
-        stroke: #aaa;
-        stroke-dasharray: 4, 4;  
+          stroke: #aaa;
+          stroke-dasharray: 4, 4;  
         }
+
         #chart .tick-circles circle {
-        stroke: #ddd;
-        stroke-dasharray: 2, 2;  
+          stroke: #ddd;
+          stroke-dasharray: 2, 2;  
         }
+
         #chart .spokes line {
-        stroke: #666;
-        stroke-width: 0.2;
+          stroke: #666;
+          stroke-width: 0.2;
         }
 
         /* Axis */
         #chart .axis text {
-        font-size: 11px;
+          font-size: 11px;
         }
+
         #chart .axis path {
-        stroke: #999;
-        shape-rendering: crispEdges;
+          stroke: #999;
+          shape-rendering: crispEdges;
         }
+
         #chart .axis line {
-        stroke: #999;
-        shape-rendering: crispEdges;
+          stroke: #999;
+          shape-rendering: crispEdges;
         }
 
         /* Labels */
         #chart .labels text {
-        fill: #333;
-        font-size: 10px;
-        font-weight: 500;
+          fill: #333;
+          font-size: 10px;
+          font-weight: 500;
         }
 
         /* update button */
         #update {
-        width: 100px;
-        height: 30px;
-        cursor: pointer;
+          width: 100px;
+          height: 30px;
+          cursor: pointer;
+        }
+
+        #container {
+          display: flex;
+          align-items: center;
+        }
+
+        #slider-container {
+          position: relative;
+          width: 80px; /* largeur totale souhaitée (peut être ajustée) */
+          height: 300px; /* correspond à la longueur désirée du slider */
+          margin-left: 20px;
+        }
+        /* Slider positionné absolument dans le conteneur */
+        #slider {
+          position: absolute;
+          top: 0;
+          left: 35px; /* centrer horizontalement le slider dans un conteneur de 80px de large */
+          width: 300px;   /* longueur du slider avant rotation */
+          height: 10px;   /* épaisseur de la barre */
+          -webkit-appearance: none;
+          background: #ddd;
+          border-radius: 5px;
+          outline: none;
+          /* On applique une translation pour le repositionner, puis on le tourne */
+          transform: translate(0, 300px) rotate(-90deg);
+          transform-origin: top left;
+        }
+
+        /* Track pour Chrome, Safari, Opera */
+        #slider::-webkit-slider-runnable-track {
+          width: 100%;
+          height: 10px;
+          background: #ccc;
+          border-radius: 5px;
+        }
+        /* Thumb pour Chrome, Safari, Opera */
+        #slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 20px;
+          height: 20px;
+          background: #4CAF50;
+          border-radius: 50%;
+          margin-top: -5px;
+          cursor: pointer;
+        }
+        /* Track pour Firefox */
+        #slider::-moz-range-track {
+          width: 100%;
+          height: 10px;
+          background: #ccc;
+          border-radius: 5px;
+        }
+        /* Thumb pour Firefox */
+        #slider::-moz-range-thumb {
+          width: 20px;
+          height: 20px;
+          background: #4CAF50;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        /* Positionnement absolu des labels sur la droite du slider */
+        #tickmarks {
+          position: absolute;
+          top: 0;
+          left: 80px;
+          height: 300px; /* Doit correspondre à la hauteur du conteneur */
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 12px;
+          /* Pas de marge pour que les labels soient collés au bord */
+          margin: 0;
+          padding: 0;
+        }
+        #tickmarks option {
+          text-align: right;
+        }
+        #auto-play {
+          display: block;
+          width: auto; /* Ajuste la largeur au contenu */
+          padding: 8px 15px;
+          font-size: 14px;
+          cursor: pointer;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          margin: 15px auto 0; /* Marge au-dessus pour le placer sous le slider */
+          text-align: center;
+        }
+
+        #auto-play:hover {
+          background-color: #45a049;
         }
     </style>
   </head>
   <body>
-    <button type="button" id="update">Update</button>
-    <div id="chart"></div>
-
-    <!--<script src="js/d3.v3.min.js"></script>-->
+    <div id="container">
+      <div id="chart"></div>
+      <!-- Conteneur du slider vertical et de ses labels -->
+      <div id="slider-container">
+        <input type="range" id="slider" min="1" max="10" step="1" value="10" list="tickmarks">
+        <datalist id="tickmarks">
+          <option value="10" label="1920-1930"></option>
+          <option value="9" label="1930-1940"></option>
+          <option value="8" label="1940-1950"></option>
+          <option value="7" label="1950-1960"></option>
+          <option value="6" label="1960-1970"></option>
+          <option value="5" label="1970-1980"></option>
+          <option value="4" label="1980-1990"></option>
+          <option value="3" label="1990-2000"></option>
+          <option value="2" label="2000-2010"></option>
+          <option value="1" label="2010-2020"></option>
+        </datalist>
+      </div>
+      <button id="auto-play">Auto Play</button>
+    </div>
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>
