@@ -1,0 +1,153 @@
+{
+  "genre-name": "Rock",
+  "description": "Le rock est un genre musical né dans les années 1950, dérivé du rock and roll, du blues et du rhythm and blues. Il se caractérise par l'utilisation prédominante de la guitare électrique, une section rythmique dynamique et des mélodies entraînantes. Le rock a évolué en une multitude de sous-genres allant du soft rock au hard rock, en passant par le punk et le rock progressif.",
+  "subgenres": [
+    {
+      "subgenre-name": "Classic Rock",
+      "description": "Le Classic Rock regroupe les grands groupes et artistes rock des années 1960 et 1970. Il est marqué par des compositions puissantes, des solos de guitare emblématiques et une grande variété de styles.",
+      "origin": {
+        "start-decade": 1960,
+        "region": "États-Unis, Royaume-Uni"
+      },
+      "artists": [
+        {
+          "artist-name": "The Beatles",
+          "songs": ["Hey Jude", "Let It Be", "Come Together"],
+          "popularity": 98
+        },
+        {
+          "artist-name": "Led Zeppelin",
+          "songs": ["Stairway to Heaven", "Whole Lotta Love", "Kashmir"],
+          "popularity": 95
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Hard Rock",
+          "percent": 80
+        }
+      ],
+      "secondary-genre": "Blues"
+    },
+    {
+      "subgenre-name": "Hard Rock",
+      "description": "Un rock plus puissant et énergique, qui met l'accent sur des riffs de guitare lourds et des performances vocales intenses.",
+      "origin": {
+        "start-decade": 1970,
+        "region": "Royaume-Uni, États-Unis"
+      },
+      "artists": [
+        {
+          "artist-name": "AC/DC",
+          "songs": ["Back in Black", "Highway to Hell", "Thunderstruck"],
+          "popularity": 96
+        },
+        {
+          "artist-name": "Guns N' Roses",
+          "songs": [
+            "Sweet Child o' Mine",
+            "November Rain",
+            "Welcome to the Jungle"
+          ],
+          "popularity": 94
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Heavy Metal",
+          "percent": 75
+        }
+      ],
+      "secondary-genre": "Metal"
+    },
+    {
+      "subgenre-name": "Punk Rock",
+      "description": "Un sous-genre rapide et agressif, souvent associé à des paroles contestataires et un style brut et minimaliste.",
+      "origin": {
+        "start-decade": 1970,
+        "region": "États-Unis, Royaume-Uni"
+      },
+      "artists": [
+        {
+          "artist-name": "The Ramones",
+          "songs": ["Blitzkrieg Bop", "I Wanna Be Sedated", "Rockaway Beach"],
+          "popularity": 90
+        },
+        {
+          "artist-name": "Sex Pistols",
+          "songs": [
+            "Anarchy in the U.K.",
+            "God Save the Queen",
+            "Holidays in the Sun"
+          ],
+          "popularity": 88
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Garage Rock",
+          "percent": 70
+        }
+      ],
+      "secondary-genre": "Punk"
+    },
+    {
+      "subgenre-name": "Alternative Rock",
+      "description": "Un genre qui s'est développé dans les années 1980 et 1990, caractérisé par une grande diversité de sons et d'influences.",
+      "origin": {
+        "start-decade": 1980,
+        "region": "États-Unis"
+      },
+      "artists": [
+        {
+          "artist-name": "Nirvana",
+          "songs": ["Smells Like Teen Spirit", "Come as You Are", "Lithium"],
+          "popularity": 97
+        },
+        {
+          "artist-name": "Radiohead",
+          "songs": ["Creep", "Paranoid Android", "Karma Police"],
+          "popularity": 93
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Indie Rock",
+          "percent": 75
+        }
+      ],
+      "secondary-genre": "Pop"
+    },
+    {
+      "subgenre-name": "Progressive Rock",
+      "description": "Un style expérimental incorporant des structures complexes, des influences classiques et des morceaux longs.",
+      "origin": {
+        "start-decade": 1970,
+        "region": "Royaume-Uni"
+      },
+      "artists": [
+        {
+          "artist-name": "Pink Floyd",
+          "songs": [
+            "Comfortably Numb",
+            "Wish You Were Here",
+            "Another Brick in the Wall"
+          ],
+          "popularity": 98
+        },
+        {
+          "artist-name": "Genesis",
+          "songs": ["Firth of Fifth", "Supper's Ready", "The Carpet Crawlers"],
+          "popularity": 90
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Psychedelic Rock",
+          "percent": 65
+        }
+      ],
+      "secondary-genre": "Jazz"
+    }
+  ]
+}
