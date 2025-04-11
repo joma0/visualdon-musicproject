@@ -1,0 +1,145 @@
+{
+  "genre-name": "Metal",
+  "description": "Le metal est un genre musical né à la fin des années 1960 et au début des années 1970, influencé par le hard rock, le blues rock et la musique classique. Il se caractérise par des guitares saturées, une batterie percutante et des voix puissantes, parfois gutturales. Il englobe de nombreux sous-genres qui varient en intensité, vitesse et complexité musicale.",
+  "subgenres": [
+    {
+      "subgenre-name": "Heavy Metal",
+      "description": "Le Heavy Metal est le sous-genre originel du metal, popularisé dans les années 1970. Il se distingue par des riffs puissants, des solos élaborés et un chant souvent aigu.",
+      "origin": {
+        "start-decade": 1970,
+        "region": "Royaume-Uni"
+      },
+      "artists": [
+        {
+          "artist-name": "Black Sabbath",
+          "songs": ["Paranoid", "Iron Man", "War Pigs"],
+          "popularity": 95
+        },
+        {
+          "artist-name": "Judas Priest",
+          "songs": ["Breaking the Law", "Painkiller", "Electric Eye"],
+          "popularity": 90
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Hard Rock",
+          "percent": 80
+        }
+      ],
+      "secondary-genre": "Rock"
+    },
+    {
+      "subgenre-name": "Thrash Metal",
+      "description": "Un style rapide et agressif de metal apparu dans les années 1980, marqué par des riffs complexes et une intensité élevée.",
+      "origin": {
+        "start-decade": 1980,
+        "region": "États-Unis"
+      },
+      "artists": [
+        {
+          "artist-name": "Metallica",
+          "songs": ["Master of Puppets", "One", "Enter Sandman"],
+          "popularity": 98
+        },
+        {
+          "artist-name": "Slayer",
+          "songs": ["Raining Blood", "Angel of Death", "South of Heaven"],
+          "popularity": 92
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Speed Metal",
+          "percent": 85
+        }
+      ],
+      "secondary-genre": "Punk"
+    },
+    {
+      "subgenre-name": "Death Metal",
+      "description": "Un genre extrême caractérisé par des voix gutturales, des tempos rapides et des structures complexes.",
+      "origin": {
+        "start-decade": 1980,
+        "region": "États-Unis"
+      },
+      "artists": [
+        {
+          "artist-name": "Death",
+          "songs": ["Symbolic", "Pull the Plug", "The Philosopher"],
+          "popularity": 90
+        },
+        {
+          "artist-name": "Cannibal Corpse",
+          "songs": [
+            "Hammer Smashed Face",
+            "Make Them Suffer",
+            "Evisceration Plague"
+          ],
+          "popularity": 85
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Black Metal",
+          "percent": 70
+        }
+      ],
+      "secondary-genre": "Rock"
+    },
+    {
+      "subgenre-name": "Black Metal",
+      "description": "Un style sombre et atmosphérique caractérisé par des tempos rapides, des guitares dissonantes et des thèmes occultes.",
+      "origin": {
+        "start-decade": 1980,
+        "region": "Norvège"
+      },
+      "artists": [
+        {
+          "artist-name": "Mayhem",
+          "songs": ["Freezing Moon", "De Mysteriis Dom Sathanas", "Deathcrush"],
+          "popularity": 85
+        },
+        {
+          "artist-name": "Burzum",
+          "songs": ["Dunkelheit", "Jesu død", "Key to the Gate"],
+          "popularity": 80
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Death Metal",
+          "percent": 65
+        }
+      ],
+      "secondary-genre": "Punk"
+    },
+    {
+      "subgenre-name": "Power Metal",
+      "description": "Un style mélodique et rapide avec des thèmes épiques et fantastiques, souvent porté par des chanteurs à la voix puissante.",
+      "origin": {
+        "start-decade": 1980,
+        "region": "Europe"
+      },
+      "artists": [
+        {
+          "artist-name": "Helloween",
+          "songs": ["Eagle Fly Free", "I Want Out", "Keeper of the Seven Keys"],
+          "popularity": 88
+        },
+        {
+          "artist-name": "Blind Guardian",
+          "songs": ["Nightfall", "Valhalla", "Mirror Mirror"],
+          "popularity": 86
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Symphonic Metal",
+          "percent": 75
+        }
+      ],
+      "secondary-genre": "Pop"
+    }
+  ]
+}

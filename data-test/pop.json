@@ -1,0 +1,90 @@
+{
+  "genre-name": "Pop",
+  "description": "Le pop est un genre musical grand public caractérisé par des mélodies accrocheuses, des refrains entraînants et une production soignée. Évoluant constamment, il incorpore des éléments d'autres genres comme le rock, l'électronique et le R&B, restant ainsi au sommet des tendances musicales.",
+  "subgenres": [
+    {
+      "subgenre-name": "Teen Pop",
+      "description": "Un style de pop destiné aux adolescents, avec des paroles légères et des productions entraînantes.",
+      "origin": {
+        "start-decade": 1990,
+        "region": "États-Unis"
+      },
+      "artists": [
+        {
+          "artist-name": "Britney Spears",
+          "songs": ["...Baby One More Time", "Oops!... I Did It Again"],
+          "popularity": 95
+        },
+        {
+          "artist-name": "Justin Bieber",
+          "songs": ["Baby", "Love Yourself"],
+          "popularity": 98
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Dance Pop",
+          "percent": 80
+        }
+      ],
+      "secondary-genre": "R&B"
+    },
+    {
+      "subgenre-name": "Dance Pop",
+      "description": "Un sous-genre de pop rythmé et énergique, conçu pour les pistes de danse.",
+      "origin": {
+        "start-decade": 1980,
+        "region": "États-Unis"
+      },
+      "artists": [
+        {
+          "artist-name": "Madonna",
+          "songs": ["Like a Prayer", "Hung Up"],
+          "popularity": 97
+        },
+        {
+          "artist-name": "Lady Gaga",
+          "songs": ["Poker Face", "Bad Romance"],
+          "popularity": 96
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Electropop",
+          "percent": 85
+        }
+      ],
+      "secondary-genre": "Electronic"
+    },
+    {
+      "subgenre-name": "Indie Pop",
+      "description": "Un sous-genre alternatif du pop, souvent plus expérimental et influencé par le rock indépendant.",
+      "origin": {
+        "start-decade": 1990,
+        "region": "Royaume-Uni"
+      },
+      "artists": [
+        {
+          "artist-name": "Lana Del Rey",
+          "songs": ["Born to Die", "Summertime Sadness"],
+          "popularity": 92
+        },
+        {
+          "artist-name": "Tame Impala",
+          "songs": [
+            "The Less I Know the Better",
+            "Feels Like We Only Go Backwards"
+          ],
+          "popularity": 90
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Dream Pop",
+          "percent": 75
+        }
+      ],
+      "secondary-genre": "Rock"
+    }
+  ]
+}

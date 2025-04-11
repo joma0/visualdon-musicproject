@@ -1,0 +1,149 @@
+{
+  "genre-name": "Reggae",
+  "description": "Le reggae est un genre musical né en Jamaïque à la fin des années 1960. Caractérisé par un tempo modéré, une basse proéminente et des rythmes accentués sur les temps faibles, le reggae véhicule souvent des messages sociaux, politiques ou spirituels, notamment inspirés du mouvement rastafari. Il a profondément influencé la musique mondiale, donnant naissance à de nombreux sous-genres et fusionnant avec d'autres styles. Le reggae a permis à des artistes jamaïcains d'acquérir une renommée internationale, et sa culture reste étroitement liée à l'identité jamaïcaine.",
+  "subgenres": [
+    {
+      "subgenre-name": "Roots Reggae",
+      "description": "Forme la plus spirituelle et socialement engagée du reggae, centrée sur les idéaux rastafari, la paix et la justice sociale.",
+      "origin": {
+        "start-decade": 1970,
+        "region": "Jamaïque"
+      },
+      "artists": [
+        {
+          "artist-name": "Bob Marley & The Wailers",
+          "songs": ["No Woman, No Cry", "Redemption Song", "One Love"],
+          "popularity": 98
+        },
+        {
+          "artist-name": "Burning Spear",
+          "songs": ["Marcus Garvey", "Columbus", "Jah Nuh Dead"],
+          "popularity": 87
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Dub",
+          "percent": 60
+        }
+      ],
+      "secondary-genre": "R&B"
+    },
+    {
+      "subgenre-name": "Dub",
+      "description": "Genre expérimental basé sur le reggae, utilisant des effets studio comme l’écho, la réverbération et des lignes de basse amplifiées.",
+      "origin": {
+        "start-decade": 1970,
+        "region": "Jamaïque"
+      },
+      "artists": [
+        {
+          "artist-name": "King Tubby",
+          "songs": [
+            "Dub from the Roots",
+            "A Rougher Version",
+            "King Tubby Meets Rockers Uptown"
+          ],
+          "popularity": 84
+        },
+        {
+          "artist-name": "Lee Scratch Perry",
+          "songs": ["Disco Devil", "Zion's Blood", "Roast Fish & Cornbread"],
+          "popularity": 89
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Roots Reggae",
+          "percent": 65
+        }
+      ],
+      "secondary-genre": "Electronic"
+    },
+    {
+      "subgenre-name": "Dancehall",
+      "description": "Forme plus rythmée et électronique du reggae, souvent axée sur le chant rapide (toasting) et des productions modernes.",
+      "origin": {
+        "start-decade": 1980,
+        "region": "Jamaïque"
+      },
+      "artists": [
+        {
+          "artist-name": "Shabba Ranks",
+          "songs": ["Mr. Loverman", "Ting-A-Ling", "Housecall"],
+          "popularity": 86
+        },
+        {
+          "artist-name": "Sean Paul",
+          "songs": ["Get Busy", "Temperature", "Gimme the Light"],
+          "popularity": 94
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Reggaeton",
+          "percent": 55
+        }
+      ],
+      "secondary-genre": "Hip-hop"
+    },
+    {
+      "subgenre-name": "Lovers Rock",
+      "description": "Sous-genre romantique du reggae, très populaire au Royaume-Uni, axé sur les thèmes d’amour et de tendresse.",
+      "origin": {
+        "start-decade": 1970,
+        "region": "Royaume-Uni"
+      },
+      "artists": [
+        {
+          "artist-name": "Janet Kay",
+          "songs": ["Silly Games", "Lovin' You", "Feel No Way"],
+          "popularity": 78
+        },
+        {
+          "artist-name": "Maxi Priest",
+          "songs": ["Close to You", "Wild World", "Just a Little Bit Longer"],
+          "popularity": 82
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Roots Reggae",
+          "percent": 50
+        }
+      ],
+      "secondary-genre": "Pop"
+    },
+    {
+      "subgenre-name": "Rocksteady",
+      "description": "Genre de transition entre le ska et le reggae, au tempo ralenti, avec des harmonies vocales très marquées.",
+      "origin": {
+        "start-decade": 1960,
+        "region": "Jamaïque"
+      },
+      "artists": [
+        {
+          "artist-name": "The Paragons",
+          "songs": ["The Tide Is High", "Only a Smile", "On the Beach"],
+          "popularity": 76
+        },
+        {
+          "artist-name": "Alton Ellis",
+          "songs": [
+            "I'm Still in Love",
+            "Rock Steady",
+            "Breaking Up Is Hard to Do"
+          ],
+          "popularity": 80
+        }
+      ],
+      "co-existance": [
+        {
+          "subgenre-name": "Ska",
+          "percent": 70
+        }
+      ],
+      "secondary-genre": "Soul"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "genre-name": "R&B/Soul",
+  "description": "Le R&B (Rhythm and Blues), initialement développé dans les années 1940 aux États-Unis, a évolué au fil des décennies pour inclure des éléments de soul, funk, pop et hip-hop. Caractérisé par des mélodies riches, des rythmes syncopés et des performances vocales expressives, le R&B moderne couvre un large spectre d'émotions et de thèmes, de l'amour à la lutte sociale. La soul, qui en est une composante majeure, a émergé dans les années 1950-60, mettant l'accent sur la profondeur émotionnelle et l'interprétation vocale. Ce genre a grandement influencé la musique populaire mondiale, inspirant des générations d'artistes.",
+  "subgenres": [
+    {
+      "subgenre-name": "Contemporary R&B",
+      "description": "Fusionnant des éléments de soul, pop, hip-hop et funk, le Contemporary R&B est apparu dans les années 1980 et a dominé les classements musicaux depuis les années 1990. Ce style est marqué par des productions soignées, des synthés doux et des voix mélismatiques.",
+      "origin": {
+        "start-decade": 1980,
+        "region": "États-Unis"
+      },
+      "artists": [
+        {
+          "artist-name": "Beyoncé",
+          "songs": ["Halo", "Irreplaceable", "Drunk in Love"],
+          "popularity": 99
+        },
+        {
+          "artist-name": "Usher",
+          "songs": ["Yeah!", "Nice & Slow", "Confessions Part II"],
+          "popularity": 94
+        }
+      ],
+      "co-existance": [{ "subgenre-name": "Hip-Hop Soul", "percent": 80 }],
+      "secondary-genre": "Pop"
+    },
+    {
+      "subgenre-name": "Neo Soul",
+      "description": "Le Neo Soul est apparu dans les années 1990 comme une alternative plus organique et introspective au R&B contemporain, mêlant jazz, soul classique et poésie.",
+      "origin": {
+        "start-decade": 1990,
+        "region": "États-Unis"
+      },
+      "artists": [
+        {
+          "artist-name": "Erykah Badu",
+          "songs": ["On & On", "Tyrone", "Bag Lady"],
+          "popularity": 88
+        },
+        {
+          "artist-name": "D'Angelo",
+          "songs": ["Untitled", "Brown Sugar", "Lady"],
+          "popularity": 85
+        }
+      ],
+      "co-existance": [{ "subgenre-name": "Soul", "percent": 75 }],
+      "secondary-genre": "Jazz"
+    },
+    {
+      "subgenre-name": "Soul",
+      "description": "Originaire des années 1950-60, la Soul combine gospel, rhythm and blues et jazz. Elle se caractérise par des performances vocales intenses et émotionnelles.",
+      "origin": {
+        "start-decade": 1950,
+        "region": "États-Unis"
+      },
+      "artists": [
+        {
+          "artist-name": "Aretha Franklin",
+          "songs": ["Respect", "Think", "Natural Woman"],
+          "popularity": 97
+        },
+        {
+          "artist-name": "Marvin Gaye",
+          "songs": ["What's Going On", "Sexual Healing", "Let's Get It On"],
+          "popularity": 96
+        }
+      ],
+      "co-existance": [{ "subgenre-name": "Motown", "percent": 70 }],
+      "secondary-genre": "Blues"
+    },
+    {
+      "subgenre-name": "Hip-Hop Soul",
+      "description": "Un sous-genre qui a émergé dans les années 1990, mélangeant les beats et flows du hip-hop avec le chant soul et R&B.",
+      "origin": {
+        "start-decade": 1990,
+        "region": "États-Unis"
+      },
+      "artists": [
+        {
+          "artist-name": "Mary J. Blige",
+          "songs": ["Family Affair", "Real Love", "Be Without You"],
+          "popularity": 91
+        },
+        {
+          "artist-name": "Alicia Keys",
+          "songs": ["Fallin'", "If I Ain't Got You", "No One"],
+          "popularity": 92
+        }
+      ],
+      "co-existance": [{ "subgenre-name": "Contemporary R&B", "percent": 85 }],
+      "secondary-genre": "Hip-hop"
+    },
+    {
+      "subgenre-name": "Quiet Storm",
+      "description": "Un style romantique et doux de R&B, souvent joué en soirée, avec des paroles sentimentales et une instrumentation feutrée.",
+      "origin": {
+        "start-decade": 1970,
+        "region": "États-Unis"
+      },
+      "artists": [
+        {
+          "artist-name": "Luther Vandross",
+          "songs": ["Never Too Much", "Here and Now", "So Amazing"],
+          "popularity": 84
+        },
+        {
+          "artist-name": "Anita Baker",
+          "songs": [
+            "Sweet Love",
+            "Caught Up in the Rapture",
+            "Giving You the Best That I Got"
+          ],
+          "popularity": 82
+        }
+      ],
+      "co-existance": [{ "subgenre-name": "Soul", "percent": 60 }],
+      "secondary-genre": "Jazz"
+    }
+  ]
+}
