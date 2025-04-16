@@ -34,6 +34,7 @@ npm-cache/
 dist/
 out/
 coverage/
+package-lock.json
 
 # Systèmes d'exploitation
 .DS_Store
