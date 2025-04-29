@@ -1,0 +1,124 @@
+[
+  {
+    "start-year": 1900,
+    "genres-rating": ["blues", "country", "jazz"]
+  },
+  {
+    "start-year": 1910,
+    "genres-rating": ["blues", "jazz", "country"]
+  },
+  {
+    "start-year": 1920,
+    "genres-rating": ["jazz", "blues", "country"]
+  },
+  {
+    "start-year": 1930,
+    "genres-rating": ["jazz", "blues", "country", "rnb"]
+  },
+  {
+    "start-year": 1940,
+    "genres-rating": ["jazz", "rnb", "country", "blues", "pop"]
+  },
+  {
+    "start-year": 1950,
+    "genres-rating": ["rock", "rnb", "pop", "country", "jazz", "blues"]
+  },
+  {
+    "start-year": 1960,
+    "genres-rating": [
+      "rock",
+      "pop",
+      "rnb",
+      "country",
+      "jazz",
+      "blues",
+      "runk",
+      "reggae"
+    ]
+  },
+  {
+    "start-year": 1970,
+    "genres-rating": [
+      "rock",
+      "funk",
+      "pop",
+      "reggae",
+      "rnb",
+      "blues",
+      "metal",
+      "punk",
+      "country",
+      "electronic",
+      "jazz",
+      "hip-hop"
+    ]
+  },
+  {
+    "start-year": 1980,
+    "genres-rating": [
+      "pop",
+      "rock",
+      "hip-hop",
+      "electronic",
+      "metal",
+      "rnb",
+      "country",
+      "funk",
+      "reggae",
+      "punk",
+      "jazz",
+      "blues"
+    ]
+  },
+  {
+    "start-year": 1990,
+    "genres-rating": [
+      "rock",
+      "hip-hop",
+      "pop",
+      "electronic",
+      "rbn",
+      "metal",
+      "country",
+      "reggae",
+      "punk",
+      "funk",
+      "jazz",
+      "blues"
+    ]
+  },
+  {
+    "start-year": 2000,
+    "genres-rating": [
+      "pop",
+      "hip-hop",
+      "rock",
+      "electronic",
+      "rbn",
+      "country",
+      "metal",
+      "reggae",
+      "punk",
+      "funk",
+      "jazz",
+      "blues"
+    ]
+  },
+  {
+    "start-year": 2010,
+    "genres-rating": [
+      "hip-hop",
+      "pop",
+      "electronic",
+      "rbn",
+      "rock",
+      "country",
+      "metal",
+      "reggae",
+      "punk",
+      "funk",
+      "jazz",
+      "blues"
+    ]
+  }
+]
