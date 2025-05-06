@@ -1,11 +1,7 @@
 [
   {
-    "start-year": 1900,
-    "genres-rating": ["blues", "country", "jazz"]
-  },
-  {
     "start-year": 1910,
-    "genres-rating": ["blues", "jazz", "country"]
+    "genres-rating": ["blues", "jazz"]
   },
   {
     "start-year": 1920,
@@ -13,11 +9,11 @@
   },
   {
     "start-year": 1930,
-    "genres-rating": ["jazz", "blues", "country", "rnb"]
+    "genres-rating": ["jazz", "blues", "country"]
   },
   {
     "start-year": 1940,
-    "genres-rating": ["jazz", "rnb", "country", "blues", "pop"]
+    "genres-rating": ["jazz", "rnb", "country", "blues"]
   },
   {
     "start-year": 1950,
