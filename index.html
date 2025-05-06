@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -46,4 +46,91 @@
 
     <script type="module" src="/src/index.js"></script>
   </body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evolution des Genres Musicaux</title>
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gradient-to-r from-purple-700 to-blue-700 text-white py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold">Evolution des Genres Musicaux</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Section Visualisation principale -->
+        <section id="main-graph" class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">Cartographie des Genres</h2>
+            <div id="visualization" class="h-[600px]">
+                <!-- D3.js visualization will be inserted here -->
+            </div>
+        </section>
+
+        <!-- Section Timeline -->
+        <section id="timeline" class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">Évolution Temporelle</h2>
+            <div id="timeline-viz" class="h-[200px]">
+                <!-- Timeline visualization will be inserted here -->
+            </div>
+        </section>
+
+        <!-- Section Détails du Genre -->
+        <section id="genre-details" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold mb-4">Détails du Genre</h2>
+                <div id="genre-info" class="space-y-4">
+                    <div class="genre-name text-xl font-semibold"></div>
+                    <div class="genre-description"></div>
+                    <div class="genre-origin">
+                        <h3 class="text-lg font-semibold">Origine</h3>
+                        <div class="flex space-x-4">
+                            <span class="decade"></span>
+                            <span class="region"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Influences -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold mb-4">Influences</h2>
+                <div id="influences-viz" class="h-[300px]">
+                    <!-- Influences visualization will be inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Artistes -->
+        <section id="artists" class="bg-white rounded-lg shadow-lg p-6 mt-8">
+            <h2 class="text-2xl font-bold mb-4">Artistes Représentatifs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="artists-list">
+                <!-- Artists will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Section Spotify -->
+        <section id="spotify-player" class="bg-white rounded-lg shadow-lg p-6 mt-8">
+            <h2 class="text-2xl font-bold mb-4">Découvrir</h2>
+            <div class="spotify-embed">
+                <!-- Spotify embed will be inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>Projet VisualDon - 2024</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/index.js"></script>
+</body>
 </html>

@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 import radialBarChart from './modules/radialBarChart.js';
+import './css/index.css';
 
 var data = null;
 var keys = ['Rock', 'Electronic', 'Pop', 'Blues', 'Funk', 'Jazz', 'Metal', 'Hip-Hop', 'Reggae', 'Country', 'Punk', 'R&B/soul'];

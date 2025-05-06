@@ -2,7 +2,7 @@ import * as d3 from "d3";
 
 function radialBarChart() {
   // Variables configurables
-  const margin = { top: 20, right: 20, bottom: 20, left: 20 };
+  let margin = { top: 20, right: 20, bottom: 20, left: 20 };
   var barHeight = 100;
   var reverseLayerOrder = false;
   var barColors = undefined;
