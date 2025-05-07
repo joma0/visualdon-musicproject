@@ -1,54 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VisualDon - Music</title>
-    <link rel="stylesheet" href="/src/css/index.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Nom ou logo</h1>
-    </header>
-    <section id="main-graph"></section>
-    <section id="context">
-      <h2>Aux origines de la musique moderne</h2>
-      <p>
-        Dans les années 1910, les fondations de la musique populaire moderne
-        prennent forme aux États-Unis. Le ragtime, avec ses rythmes syncopés
-        popularisés par Scott Joplin, connaît un grand succès, tandis que le
-        blues rural (notamment le Delta Blues) émerge dans le Sud
-        afro-américain, exprimant les difficultés de la vie quotidienne. C’est
-        aussi l’époque des premiers balbutiements du jazz, notamment à la
-        Nouvelle-Orléans, où se croisent blues, fanfares et influences
-        caribéennes. Le contexte social est marqué par la ségrégation, mais
-        aussi par une urbanisation rapide et les débuts de l’industrie musicale
-        (partitions, premiers disques), qui amorcent la diffusion plus large de
-        ces styles.
-      </p>
-    </section>
-    <section id="details">
-      <h2>Garage Rock</h2>
-      <p>1930</p>
-      <p>Description</p>
-      <h3>Artistes</h3>
-      <h3>Découvrir</h3>
-      <iframe
-        src="https://open.spotify.com/embed/playlist/7bu7BZEusLNJSaAuUUZBKn?utm_source=generator&theme=0"
-        width="600"
-        height="500"
-        frameborder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-    </section>
-
-    <script type="module" src="/src/index.js"></script>
-  </body>
-</html>
- -->
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -58,78 +7,61 @@
     <link rel="stylesheet" href="/src/css/index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-gradient-to-r from-purple-700 to-blue-700 text-white py-6">
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl font-bold">Evolution des Genres Musicaux</h1>
-        </div>
-    </header>
-
-    <main class="container mx-auto px-4 py-8">
-        <!-- Section Visualisation principale -->
-        <section id="main-graph" class="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <h2 class="text-2xl font-bold mb-4">Cartographie des Genres</h2>
-            <div id="visualization" class="h-[600px]">
-                <!-- D3.js visualization will be inserted here -->
-            </div>
-        </section>
-
-        <!-- Section Timeline -->
-        <section id="timeline" class="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <h2 class="text-2xl font-bold mb-4">Évolution Temporelle</h2>
-            <div id="timeline-viz" class="h-[200px]">
-                <!-- Timeline visualization will be inserted here -->
-            </div>
-        </section>
-
-        <!-- Section Détails du Genre -->
-        <section id="genre-details" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <h2 class="text-2xl font-bold mb-4">Détails du Genre</h2>
-                <div id="genre-info" class="space-y-4">
-                    <div class="genre-name text-xl font-semibold"></div>
-                    <div class="genre-description"></div>
-                    <div class="genre-origin">
-                        <h3 class="text-lg font-semibold">Origine</h3>
-                        <div class="flex space-x-4">
-                            <span class="decade"></span>
-                            <span class="region"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section Influences -->
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <h2 class="text-2xl font-bold mb-4">Influences</h2>
-                <div id="influences-viz" class="h-[300px]">
-                    <!-- Influences visualization will be inserted here -->
+<body class="bg-gray-900 text-white">
+    <div id="app" class="flex relative">
+        <!-- Section de visualisation -->
+        <section id="visualization-container" class="w-full transition-all duration-500 ease-in-out">
+            <div id="visualization" class="relative">
+                <div id="chart" class="flex items-center justify-center"></div>
+                <!-- Contrôles repositionnés et redimensionnés -->
+                <div class="controls fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800/80 backdrop-blur p-4 rounded-lg max-w-md w-full mx-auto">
+                    <input type="range" id="slider" min="1" max="10" value="10" class="w-full mb-2">
+                    <button id="auto-play" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded w-full">
+                        Auto Play
+                    </button>
                 </div>
             </div>
         </section>
 
-        <!-- Section Artistes -->
-        <section id="artists" class="bg-white rounded-lg shadow-lg p-6 mt-8">
-            <h2 class="text-2xl font-bold mb-4">Artistes Représentatifs</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="artists-list">
-                <!-- Artists will be dynamically inserted here -->
+        <!-- Panneau de détails -->
+        <section id="details-panel" class="fixed right-0 w-1/2 h-screen bg-gray-800/95 backdrop-blur transform translate-x-full transition-transform duration-500 ease-in-out overflow-y-auto">
+            <button id="close-panel" class="absolute top-4 right-4 text-white hover:text-gray-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="p-8">
+                <!-- En-tête du genre -->
+                <div class="mb-8">
+                    <h2 id="genre-title" class="text-4xl font-bold mb-2"></h2>
+                    <div id="genre-decade" class="text-xl text-purple-400"></div>
+                </div>
+
+                <!-- Description du genre -->
+                <div class="mb-8">
+                    <p id="genre-description" class="text-gray-300 text-lg leading-relaxed"></p>
+                </div>
+
+                <!-- Influences -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-4">Influences</h3>
+                    <div id="influences-chart" class="h-[200px]"></div>
+                </div>
+
+                <!-- Artistes représentatifs -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-4">Artistes Représentatifs</h3>
+                    <div id="artists-grid" class="grid grid-cols-2 gap-4"></div>
+                </div>
+
+                <!-- Spotify -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-4">Découvrir</h3>
+                    <div id="spotify-player" class="w-full bg-black rounded-lg overflow-hidden"></div>
+                </div>
             </div>
         </section>
-
-        <!-- Section Spotify -->
-        <section id="spotify-player" class="bg-white rounded-lg shadow-lg p-6 mt-8">
-            <h2 class="text-2xl font-bold mb-4">Découvrir</h2>
-            <div class="spotify-embed">
-                <!-- Spotify embed will be inserted here -->
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-800 text-white py-4 mt-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>Projet VisualDon - 2024</p>
-        </div>
-    </footer>
+    </div>
 
     <script type="module" src="/src/index.js"></script>
 </body>
