@@ -5,35 +5,42 @@ import { json } from "d3-fetch";
 function createBubbleChart() {
   console.log("bonjour");
 
+  //Data de test
   const artists = [
     {
       name: "Artiste A",
       popularity: 123,
-      image: "../asset/images/artisteA",
+      image: "./asset/images/artisteA.jpeg",
     },
     {
       name: "Artiste B",
       popularity: 47,
-      image: "./src/asset/images/artisteA",
+      image: "./asset/images/artisteA.jpeg",
     },
     {
       name: "Artiste C",
       popularity: 85,
-      image: "./src/asset/images/artisteA",
+      image: "./src/asset/images/artisteA,jpeg",
     },
   ];
 
+  //Dimensions du SVG
   const width = 1000;
   const height = 200;
 
-  const rScale = scaleLinear().domain([0, 500]).range([10, 200]);
+  //Echelle pour la taille des cercles
+  const rScale = scaleLinear().domain([0, 500]).range([30, 300]);
 
+  //Sélectionner et nettoyer le container
+  const container = d3.select("#artists-chart");
+  container.html("");
+
+  //SVG prévu pour encapsuler le graphique
   const svg = createSVG();
 
   function createSVG() {
     console.log("créer le svg");
-    const svg = d3
-      .select("#artists-list")
+    const svg = container
       .append("svg")
       .attr("width", width)
       .attr("height", height);
@@ -52,8 +59,10 @@ function createBubbleChart() {
         .attr("height", 1)
         .append("image")
         .attr("href", artist.image)
-        .attr("width", 100)
-        .attr("height", 100)
+        .attr("width", rScale(artist.popularity) * 2)
+        .attr("height", rScale(artist.popularity) * 2)
+        .attr("x", 0)
+        .attr("y", 0)
         .attr("preserveAspectRatio", "xMidYMid slice");
     });
   }
@@ -66,7 +75,7 @@ function createBubbleChart() {
       .enter()
       .append("circle")
       .attr("r", (d) => rScale(d.popularity))
-      .attr("cx", (d, i) => 100 + i * 100) // espacés horizontalement
+      .attr("cx", (d, i) => 100 + i * 200) // espacés horizontalement
       .attr("cy", height / 2)
       .attr("fill", (d, i) => `url(#image-${i})`);
   }
@@ -78,11 +87,13 @@ function createBubbleChart() {
       .data(artists)
       .enter()
       .append("text")
-      .attr("x", (d, i) => 100 + i * 150)
+      .attr("x", (d, i) => 100 + i * 200)
       .attr("y", height / 2)
       .attr("dominant-baseline", "middle")
       .attr("text-anchor", "middle")
       .attr("font-size", "12px")
+      .attr("font-weight", "bold")
+      .attr("fill", "white")
       .attr("pointer-events", "none") //pour que le texte ne bloque pas les interactions
       .text((d) => d.name);
   }
