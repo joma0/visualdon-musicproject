@@ -21,12 +21,18 @@ class MusicVisualizer {
       .reverseLayerOrder(true)
       .capitalizeLabels(true)
       .barColors([
-        "#B66199",
-        "#9392CB",
-        "#76D9FA",
-        "#BCE3AD",
-        "#FFD28C",
-        "#F2918B",
+        "#F40342",
+        "#FD4102",
+        "#FD7B03",
+        "#FDBE00",
+        "#E8FF0A",
+        "#02FF64",
+        "#00FFF7",
+        "#00C3FF",
+        "#008CFF",
+        "#7A00FF",
+        "#C900FF",
+        "#FF00DC",
       ])
       .domain([0, 12])
       .tickValues([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])

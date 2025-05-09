@@ -1,68 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evolution des Genres Musicaux</title>
     <link rel="stylesheet" href="/src/css/index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 text-white">
+  </head>
+  <body class="bg-gray-900 text-white">
     <div id="app" class="flex relative">
-        <!-- Section de visualisation -->
-        <section id="visualization-container" class="w-full transition-all duration-500 ease-in-out">
-            <div id="visualization" class="relative">
-                <div id="chart" class="flex items-center justify-center"></div>
-                <!-- Contrôles repositionnés et redimensionnés -->
-                <div class="controls fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800/80 backdrop-blur p-4 rounded-lg max-w-md w-full mx-auto">
-                    <input type="range" id="slider" min="1" max="10" value="10" class="w-full mb-2">
-                    <button id="auto-play" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded w-full">
-                        Auto Play
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Panneau de détails -->
-        <section id="details-panel" class="fixed right-0 w-1/2 h-screen bg-gray-800/95 backdrop-blur transform translate-x-full transition-transform duration-500 ease-in-out overflow-y-auto">
-            <button id="close-panel" class="absolute top-4 right-4 text-white hover:text-gray-300">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+      <!-- Section de visualisation -->
+      <section
+        id="visualization-container"
+        class="w-full transition-all duration-500 ease-in-out"
+      >
+        <div id="visualization" class="relative">
+          <div id="chart" class="flex items-center justify-center"></div>
+          <!-- Contrôles repositionnés et redimensionnés -->
+          <div
+            class="controls fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800/80 backdrop-blur p-4 rounded-lg max-w-md w-full mx-auto"
+          >
+            <input
+              type="range"
+              id="slider"
+              min="1"
+              max="10"
+              value="10"
+              class="w-full mb-2"
+            />
+            <button
+              id="auto-play"
+              class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded w-full"
+            >
+              Auto Play
             </button>
-            <div class="p-8">
-                <!-- En-tête du genre -->
-                <div class="mb-8">
-                    <h2 id="genre-title" class="text-4xl font-bold mb-2"></h2>
-                    <div id="genre-decade" class="text-xl text-purple-400"></div>
-                </div>
+          </div>
+        </div>
+      </section>
 
-                <!-- Description du genre -->
-                <div class="mb-8">
-                    <p id="genre-description" class="text-gray-300 text-lg leading-relaxed"></p>
-                </div>
+      <!-- Panneau de détails -->
+      <section
+        id="details-panel"
+        class="fixed right-0 w-1/2 h-screen bg-gray-800/95 backdrop-blur transform translate-x-full transition-transform duration-500 ease-in-out overflow-y-auto"
+      >
+        <button
+          id="close-panel"
+          class="absolute top-4 right-4 text-white hover:text-gray-300"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <div class="p-8">
+          <!-- En-tête du genre -->
+          <div class="mb-8">
+            <h2 id="genre-title" class="text-4xl font-bold mb-2"></h2>
+            <div id="genre-decade" class="text-xl text-purple-400"></div>
+          </div>
 
-                <!-- Influences -->
-                <div class="mb-8">
-                    <h3 class="text-2xl font-bold mb-4">Influences</h3>
-                    <div id="influences-chart" class="h-[200px]"></div>
-                </div>
+          <!-- Description du genre -->
+          <div class="mb-8">
+            <p
+              id="genre-description"
+              class="text-gray-300 text-lg leading-relaxed"
+            ></p>
+          </div>
 
-                <!-- Artistes représentatifs -->
-                <div class="mb-8">
-                    <h3 class="text-2xl font-bold mb-4">Artistes Représentatifs</h3>
-                    <div id="artists-grid" class="grid grid-cols-2 gap-4"></div>
-                </div>
+          <!-- Influences -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold mb-4">Influences</h3>
+            <div id="influences-chart" class="h-[200px]"></div>
+          </div>
 
-                <!-- Spotify -->
-                <div class="mb-8">
-                    <h3 class="text-2xl font-bold mb-4">Découvrir</h3>
-                    <div id="spotify-player" class="w-full bg-black rounded-lg overflow-hidden"></div>
-                </div>
-            </div>
-        </section>
+          <!-- Artistes représentatifs -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold mb-4">Artistes Représentatifs</h3>
+            <div id="artists-chart"></div>
+            <div id="artists-grid" class="grid grid-cols-2 gap-4"></div>
+          </div>
+
+          <!-- Spotify -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold mb-4">Découvrir</h3>
+            <div
+              id="spotify-player"
+              class="w-full bg-black rounded-lg overflow-hidden"
+            ></div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script type="module" src="/src/index.js"></script>
-</body>
+  </body>
 </html>
