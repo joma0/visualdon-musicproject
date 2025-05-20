@@ -1,179 +1,150 @@
 import * as d3 from 'd3';
 
 export default function radialBarChart() {
-    let barHeight = 250;
-    let reverseLayerOrder = true;
-    let capitalizeLabels = true;
-    let barColors = ['#B66199', '#9392CB', '#76D9FA', '#BCE3AD', '#FFD28C', '#F2918B'];
-    let domain = [0, 12];
-    let tickValues = [1,2,3,4,5,6,7,8,9,10,11,12];
-    let tickCircleValues = [1,2,3,4,5,6,7,8,9,10,11];
-    let clickCallback = null;
+  // Configurables
+  let capitalizeLabels = true;
+  let barColors = ['#B66199','#9392CB','#76D9FA','#BCE3AD','#FFD28C','#F2918B'];
+  let domain = [0,12];
+  let tickCircleValues = [1,2,3,4,5,6,7,8,9,10,11];
+  let colorLabels = false;
+  let transitionDuration = 800;
+  let clickCallback = null;
 
-    function chart(selection) {
-        selection.each(function(data) {
-            // Configuration de base avec hauteur dynamique
-            const containerHeight = window.innerHeight;
-            const width = Math.min(window.innerWidth * 0.8, containerHeight * 0.8, 1000);
-            const height = width; // Garde le ratio carré
-            const innerRadius = Math.min(width, height) * 0.1;
-            const outerRadius = Math.min(width, height) * 0.45; // Réduit légèrement pour éviter tout débordement
-            
-            // Nettoyer le SVG existant
-            d3.select(this).select('svg').remove();
+  function chart(selection) {
+    selection.each(function(dataArr) {
+      const data = Object.entries(dataArr[0].data).map(([name,value])=>({name,value}));
+      const numBars = data.length;
+      const barHeight = Math.min(window.innerWidth, window.innerHeight) * 0.3;
+      const size = barHeight * 2;
+      const margin = {top: 20, right: 20, bottom: 20, left: 20};
+      const radius = barHeight;
+      const labelRadius = radius * 1.025;
 
-            // Créer le nouveau SVG avec dimensions adaptatives
-            const svg = d3.select(this)
-                .append('svg')
-                .attr('width', width)
-                .attr('height', height)
-                .style('margin', 'auto') // Centre le SVG horizontalement
-                .append('g')
-                .attr('transform', `translate(${width/2},${height/2})`);
+      // Select or create SVG
+      let svg = d3.select(this).select('svg');
+      let isNew = svg.empty();
 
-            // Ajuster la taille lors du redimensionnement de la fenêtre
-            const resizeChart = () => {
-                const newContainerHeight = window.innerHeight;
-                const newWidth = Math.min(window.innerWidth * 0.8, newContainerHeight * 0.8, 1000);
-                svg.attr('width', newWidth)
-                   .attr('height', newWidth);
-            };
+      if (isNew) {
+        svg = d3.select(this)
+          .append('svg')
+          .attr('width', size + margin.left + margin.right)
+          .attr('height', size + margin.top + margin.bottom)
+          .append('g')
+          .attr('transform', `translate(${margin.left + radius},${margin.top + radius})`)
+          .classed('radial-barchart', true);
+      } else {
+        svg = svg.select('g.radial-barchart');
+      }
 
-            window.addEventListener('resize', resizeChart);
+      // Scales
+      const barScale = d3.scaleLinear().domain(domain).range([0, barHeight]);
 
-            // Échelles
-            const x = d3.scaleBand()
-                .range([0, 2 * Math.PI])
-                .align(0)
-                .domain(Object.keys(data[0].data));
-
-            const y = d3.scaleLinear()
-                .range([innerRadius, outerRadius])
-                .domain(domain);
-
-            // Grille circulaire
-            const yAxis = svg.append('g')
-                .attr('class', 'grid-lines');
-
-            tickCircleValues.forEach(r => {
-                yAxis.append('circle')
-                    .attr('r', y(r))
-                    .attr('class', 'grid-circle')
-                    .style('fill', 'none')
-                    .style('stroke', 'rgba(255,255,255,0.1)')
-                    .style('stroke-width', 0.5);
-            });
-
-            // Création des barres
-            const bars = svg.append('g')
-                .selectAll('path')
-                .data(Object.entries(data[0].data))
-                .enter()
-                .append('path')
-                .attr('class', 'bar')
-                .style('fill', (d, i) => barColors[i % barColors.length])
-                .style('cursor', 'pointer')
-                .attr('d', d3.arc()
-                    .innerRadius(innerRadius)
-                    .outerRadius(d => y(d[1]))
-                    .startAngle(d => x(d[0]))
-                    .endAngle(d => x(d[0]) + x.bandwidth())
-                    .padAngle(0.01)
-                    .padRadius(innerRadius))
-                .on('mouseover', function() {
-                    d3.select(this)
-                        .transition()
-                        .duration(200)
-                        .style('filter', 'brightness(1.2)');
-                })
-                .on('mouseout', function() {
-                    d3.select(this)
-                        .transition()
-                        .duration(200)
-                        .style('filter', 'none');
-                })
-                .on('click', function(event, d) {
-                    if (clickCallback) {
-                        clickCallback({
-                            name: d[0],
-                            value: d[1]
-                        });
-                    }
-                });
-
-            // Étiquettes
-            const labels = svg.append('g')
-                .selectAll('g')
-                .data(Object.entries(data[0].data))
-                .enter()
-                .append('g')
-                .attr('transform', d => {
-                    const angle = x(d[0]) + x.bandwidth() / 2;
-                    return `rotate(${(angle * 180 / Math.PI - 90)})`;
-                });
-
-            labels.append('text')
-                .attr('x', outerRadius + 10)
-                .attr('dy', '.35em')
-                .style('text-anchor', 'start')
-                .style('font-size', '12px')
-                .style('fill', 'white')
-                .text(d => capitalizeLabels ? d[0].toUpperCase() : d[0])
-                .attr('transform', function(d) {
-                    const angle = x(d[0]) + x.bandwidth() / 2;
-                    return angle > Math.PI ? 'rotate(180) translate(-16)' : null;
-                });
+      // Tick Circles (only on first render)
+      if (isNew) {
+        const tickCircles = svg.append('g').classed('tick-circles', true);
+        tickCircleValues.forEach(d => {
+          tickCircles.append('circle')
+            .attr('r', barScale(d))
+            .style('fill', 'none');
         });
-    }
+      }
 
-    // Setters
-    chart.barHeight = function(value) {
-        if (!arguments.length) return barHeight;
-        barHeight = value;
-        return chart;
-    };
+      // Layers
+      let layers = svg.selectAll('g.layer')
+        .data([data]);
 
-    chart.reverseLayerOrder = function(value) {
-        if (!arguments.length) return reverseLayerOrder;
-        reverseLayerOrder = value;
-        return chart;
-    };
+      layers = layers.enter()
+        .append('g')
+        .classed('layer', true)
+        .merge(layers);
 
-    chart.capitalizeLabels = function(value) {
-        if (!arguments.length) return capitalizeLabels;
-        capitalizeLabels = value;
-        return chart;
-    };
+      // Arcs
+      const arcGen = d3.arc();
 
-    chart.barColors = function(value) {
-        if (!arguments.length) return barColors;
-        barColors = value;
-        return chart;
-    };
+      const arcs = layers.selectAll('path')
+        .data(d => d, d => d.name); // use 'name' as key
 
-    chart.domain = function(value) {
-        if (!arguments.length) return domain;
-        domain = value;
-        return chart;
-    };
+      arcs.enter()
+        .append('path')
+        .style('fill', (d,i) => barColors[i % barColors.length])
+        .style('cursor', 'pointer')
+        .on('click',(event,d) => clickCallback && clickCallback(d))
+        .merge(arcs)
+        .transition()
+        .duration(transitionDuration)
+        .attrTween('d', function(d, i) {
+            const start = (i * 2 * Math.PI) / numBars;
+            const end = ((i + 1) * 2 * Math.PI) / numBars;
 
-    chart.tickValues = function(value) {
-        if (!arguments.length) return tickValues;
-        tickValues = value;
-        return chart;
-    };
+            // 🔧 Smooth transition from previous value
+            const previous = this.__prevValue__ ?? 0;
+            const interp = d3.interpolate(previous, d.value);
+            this.__prevValue__ = d.value;
 
-    chart.tickCircleValues = function(value) {
-        if (!arguments.length) return tickCircleValues;
-        tickCircleValues = value;
-        return chart;
-    };
+            return t => {
+                const r = barScale(interp(t));
+                return d3.arc()({ innerRadius: 0, outerRadius: r, startAngle: start, endAngle: end });
+            };
+        });
 
-    chart.onClick = function(callback) {
-        if (!arguments.length) return clickCallback;
-        clickCallback = callback;
-        return chart;
-    };
+      arcs.exit().remove();
 
-    return chart;
+      // Overlays (only on first render)
+      if (isNew) {
+        const overlays = svg.append('g').classed('overlays', true);
+        // spokes
+        overlays.append('g').classed('spokes', true)
+          .selectAll('line')
+          .data(data)
+          .enter().append('line')
+          .attr('y2', -barHeight)
+          .attr('transform', (_,i) => `rotate(${(360/numBars)*i})`)
+          .style('stroke', 'rgba(255,255,255,0.2)');
+        // axis
+        const axisScale = d3.scaleLinear().domain(domain).range([0, -barHeight]);
+        overlays.append('g').classed('axis', true)
+          .call(d3.axisRight(axisScale).ticks(5));
+        // outer circle
+        overlays.append('circle')
+          .attr('r', barHeight)
+          .classed('outer', true)
+          .style('fill', 'none');
+      }
+
+      // Labels (only on first render)
+      if (isNew) {
+        const labelsG = svg.append('g').classed('labels', true);
+        const defs = labelsG.append('defs');
+        defs.append('path')
+          .attr('id', 'label-path')
+          .attr('d', `M0,${-labelRadius} A${labelRadius},${labelRadius} 0 1,1 -0.01,${-labelRadius}`);
+
+        labelsG.selectAll('text')
+          .data(data)
+          .enter().append('text')
+          .style('text-anchor', 'middle')
+          .style('fill', (_,i) => colorLabels ? barColors[i % barColors.length] : '#fff')
+          .append('textPath')
+          .attr('xlink:href', '#label-path')
+          .attr('startOffset', (_,i) => `${i * 100 / numBars + 50/numBars}%`)
+          .text(d => capitalizeLabels ? d.name.toUpperCase() : d.name);
+      }
+    });
+  }
+
+  // Getters/setters
+  chart.capitalizeLabels = function(v) { if(!arguments.length) return capitalizeLabels; capitalizeLabels=v; return chart; };
+  chart.barColors = function(v) { if(!arguments.length) return barColors; barColors=v; return chart; };
+  chart.domain = function(v) { if(!arguments.length) return domain; domain=v; return chart; };
+  chart.tickCircleValues = function(v) { if(!arguments.length) return tickCircleValues; tickCircleValues=v; return chart; };
+  chart.colorLabels = function(v) { if(!arguments.length) return colorLabels; colorLabels=v; return chart; };
+  chart.transitionDuration = function(v) { if(!arguments.length) return transitionDuration; transitionDuration=v; return chart; };
+  chart.onClick = function(cb) { if(!arguments.length) return clickCallback; clickCallback=cb; return chart; };
+
+  // Compatibility stubs
+  chart.barHeight = function(v) { return chart; };
+  chart.reverseLayerOrder = function(v) { return chart; };
+  chart.tickValues = function(v) { return chart; };
+
+  return chart;
 }

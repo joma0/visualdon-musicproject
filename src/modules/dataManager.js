@@ -1,37 +1,15 @@
-// Cache pour les données des genres
-let genreDataCache = new Map();
-
-export async function fetchGenreData(genreName) {
-    // Vérifier le cache d'abord
-    if (genreDataCache.has(genreName)) {
-        return genreDataCache.get(genreName);
-    }
-
-    try {
-        // Charger les données depuis le fichier JSON correspondant
-        const response = await fetch(`/data-test/${genreName.toLowerCase()}.json`);
-        if (!response.ok) throw new Error(`Erreur lors du chargement des données pour ${genreName}`);
-        
-        const data = await response.json();
-        
-        // Mettre en cache les données
-        genreDataCache.set(genreName, data);
-        
-        return data;
-    } catch (error) {
-        console.error('Erreur lors du chargement des données:', error);
-        // Retourner des données factices en cas d'erreur
-        return {
-            'genre-name': genreName,
-            'description': 'Description non disponible',
-            'origin': {
-                'start-decade': '1950',
-                'region': 'Non spécifié'
-            },
-            'influences': [],
-            'artists': []
-        };
-    }
+let genreDataCache=new Map();
+export async function fetchGenreData(genreName){
+  if(genreDataCache.has(genreName)) return genreDataCache.get(genreName);
+  try{
+    const res=await fetch(`/data-test/${genreName.toLowerCase()}.json`);
+    if(!res.ok) throw new Error();
+    const data=await res.json();
+    genreDataCache.set(genreName,data);
+    return data;
+  }catch{
+    return {"genre-name":genreName,description:"N/A",origin:{"start-decade":"1950","region":"N/A"},influences:[],artists:[]};
+  }
 }
 
 export async function fetchDecadeData(decade) {
