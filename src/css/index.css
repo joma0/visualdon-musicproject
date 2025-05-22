@@ -111,7 +111,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    position: relative;
 }
 
 #visualization {
@@ -119,7 +120,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
+    transform: translateX(-50%);
+    left: 75%;
+}
+
+#fusion-chart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
 }
 
 #chart {
@@ -350,8 +362,12 @@ body {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    #visualization-container.w-1/2 {
+    #visualization-container.w-1/\2 {
         width: 100% !important;
+    }
+
+    #visualization {
+        left: 50%;
     }
 
     #details-panel {

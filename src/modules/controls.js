@@ -30,7 +30,7 @@ export function setupControls(onDecadeChange) {
   }
   // Variables pour le contrôle de la sensibilité du scroll
   let scrollAccumulator = 0;
-  const scrollThreshold = 200; // Plus cette valeur est grande, moins le scroll est sensible
+  const scrollThreshold = 300; // Plus cette valeur est grande, moins le scroll est sensible
   let isScrolling = false;
   let scrollTimeout;
   
