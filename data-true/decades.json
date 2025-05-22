@@ -4,19 +4,24 @@
     "genres-rating": ["blues", "jazz"],
     "history": [
       {
-        "Hollywood": "En 1910, In Old California devient le premier film tourné entièremetn à Hollywood. Au cours de la décennie, le quartier deviendra le centre de l'industrie du cinéma."
+        "title": "Hollywood",
+        "body": "En 1910, In Old California devient le premier film tourné entièremetn à Hollywood. Au cours de la décennie, le quartier deviendra le centre de l'industrie du cinéma."
       },
       {
-        "Titanic": "Dans la nuit du 14 au 15 avril 1912, le naufrage du Titanic secoue le monde."
+        "title": "Titanic",
+        "body": "Dans la nuit du 14 au 15 avril 1912, le naufrage du Titanic secoue le monde."
       },
       {
-        "Les débuts du Jazz": "En 1912, Harlem accueille le premier orchestre de Jazz."
+        "title": "Les débuts du Jazz",
+        "body": "En 1912, Harlem accueille le premier orchestre de Jazz."
       },
       {
-        "La Grande Guerre": "La Première Guerre mondiale éclate sur le continent européen."
+        "title": "La Grande Guerre",
+        "body": "La Première Guerre mondiale éclate sur le continent européen."
       },
       {
-        "Avènement des Etats-Unis": "En 1917, les Etats-Unis entrent dans la guerre, et assoient ainsi leur place parmi les premières puissances mondiales."
+        "title": "Avènement des Etats-Unis",
+        "body": "En 1917, les Etats-Unis entrent dans la guerre, et assoient ainsi leur place parmi les premières puissances mondiales."
       }
     ]
   },
@@ -25,16 +30,20 @@
     "genres-rating": ["jazz", "blues", "country"],
     "history": [
       {
-        "Les Années folles": "La guerre terminée, place à la prospérité et la liberté. Les Etats-Unis connaissent un boom économique, qui se répercute sur l'Europe également."
+        "title": "Les Années folles",
+        "body": "La guerre terminée, place à la prospérité et la liberté. Les Etats-Unis connaissent un boom économique, qui se répercute sur l'Europe également."
       },
       {
-        "Renaissance Harlem": "Le mouvement de la Renaissance de Harlem se bat pour revaloriser la culture afro-américaine. Le Jazz occupe une place importante dans ce mouvement."
+        "title": "Renaissance Harlem",
+        "body": "Le mouvement de la Renaissance de Harlem se bat pour revaloriser la culture afro-américaine. Le Jazz occupe une place importante dans ce mouvement."
       },
       {
-        "Droits des femmes": "Aux Etats-Unis, les femmes obtiennent le droit de vote grâce au 19e amendement de la Constitution."
+        "title": "Droits des femmes",
+        "body": "Aux Etats-Unis, les femmes obtiennent le droit de vote grâce au 19e amendement de la Constitution."
       },
       {
-        "Chute de Wall Street": "Surnommé le Jeudi noir, le crash boursier de Wall Street marque le début d'une période de crise économique mondiale."
+        "title": "Chute de Wall Street",
+        "body": "Surnommé le Jeudi noir, le crash boursier de Wall Street marque le début d'une période de crise économique mondiale."
       }
     ]
   },
@@ -43,22 +52,28 @@
     "genres-rating": ["jazz", "blues", "country"],
     "history": [
       {
-        "Crise économique": "La crise de 1929 s'étend à l'échelle mondiale."
+        "title": "Crise économique",
+        "body": "La crise de 1929 s'étend à l'échelle mondiale."
       },
       {
-        "Radio": "Dès 1930, la radio prend sa place dans tous les foyers occidentaux."
+        "title": "Radio",
+        "body": "Dès 1930, la radio prend sa place dans tous les foyers occidentaux."
       },
       {
-        "Swing": "La naissance du Swing marque le début de l'Age d'Or du Jazz."
+        "title": "Swing",
+        "body": "La naissance du Swing marque le début de l'Age d'Or du Jazz."
       },
       {
-        "Régimes totalitaires": "En 1932, aidé par les difficultés économiques auxquelles le pays fait face, le parti nazi devient la première force politique en Allemagne. L'année suivante, Hitler devient chancelier. En Russie, c'est le début des purges staliniennes."
+        "title": "Régimes totalitaires",
+        "body": "En 1932, aidé par les difficultés économiques auxquelles le pays fait face, le parti nazi devient la première force politique en Allemagne. L'année suivante, Hitler devient chancelier. En Russie, c'est le début des purges staliniennes."
       },
       {
-        "Disney": "En 1937, Disney produit Blanche-Neige et les Sept Nains, le premier long-métrage d'animation."
+        "title": "Disney",
+        "body": "En 1937, Disney produit Blanche-Neige et les Sept Nains, le premier long-métrage d'animation."
       },
       {
-        "Seconde Guerre mondiale": "Le 1er septembre 1939, l'Allemagne envahit la Pologne, déclenchant une nouvelle guerre mondiale."
+        "title": "Seconde Guerre mondiale",
+        "body": "Le 1er septembre 1939, l'Allemagne envahit la Pologne, déclenchant une nouvelle guerre mondiale."
       }
     ]
   },
@@ -67,13 +82,16 @@
     "genres-rating": ["jazz", "rnb", "country", "blues"],
     "history": [
       {
-        "Armes atomiques": "En 1941, l'attaque de Pearl Harbor motive les Etats-Unis à entrer en guerre. En 1945, ils lancent les premières bombes atomiques sur Hiroshima et Nagasaki. La même année, le Japon capitule et la guerre est finie."
+        "title": "Armes atomiques",
+        "body": "En 1941, l'attaque de Pearl Harbor motive les Etats-Unis à entrer en guerre. En 1945, ils lancent les premières bombes atomiques sur Hiroshima et Nagasaki. La même année, le Japon capitule et la guerre est finie."
       },
       {
-        "Rideau de fer": "L'Europe est désormais partagé entre le camps des Etats-Unis et celui de l'URSS."
+        "title": "Rideau de fer",
+        "body": "L'Europe est désormais partagé entre le camps des Etats-Unis et celui de l'URSS."
       },
       {
-        "Droits de l'homme": "L'ONU problame la Déclaration des droits de l'homme en 1948."
+        "title": "Droits de l'homme",
+        "body": "L'ONU problame la Déclaration des droits de l'homme en 1948."
       }
     ]
   },
@@ -82,16 +100,20 @@
     "genres-rating": ["rock", "rnb", "pop", "country", "jazz", "blues"],
     "history": [
       {
-        "USA contre URSS": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "USA contre URSS",
+        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
       },
       {
-        "Trente Glorieuses": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Trente Glorieuses",
+        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
       },
       {
-        "Rock'n'roll": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
+        "title": "Rock'n'roll",
+        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
       },
       {
-        "Culture américian": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Culture américian",
+        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
       }
     ]
   },
@@ -109,16 +131,20 @@
     ],
     "history": [
       {
-        "USA contre URSS": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "USA contre URSS",
+        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
       },
       {
-        "Trente Glorieuses": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Trente Glorieuses",
+        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
       },
       {
-        "Rock'n'roll": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
+        "title": "Rock'n'roll",
+        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
       },
       {
-        "Culture américian": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Culture américian",
+        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
       }
     ]
   },
@@ -140,16 +166,20 @@
     ],
     "history": [
       {
-        "USA contre URSS": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "USA contre URSS",
+        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
       },
       {
-        "Trente Glorieuses": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Trente Glorieuses",
+        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
       },
       {
-        "Rock'n'roll": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
+        "title": "Rock'n'roll",
+        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
       },
       {
-        "Culture américian": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Culture américian",
+        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
       }
     ]
   },
@@ -171,16 +201,20 @@
     ],
     "history": [
       {
-        "USA contre URSS": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "USA contre URSS",
+        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
       },
       {
-        "Trente Glorieuses": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Trente Glorieuses",
+        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
       },
       {
-        "Rock'n'roll": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
+        "title": "Rock'n'roll",
+        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
       },
       {
-        "Culture américian": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Culture américian",
+        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
       }
     ]
   },
@@ -202,16 +236,20 @@
     ],
     "history": [
       {
-        "USA contre URSS": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "USA contre URSS",
+        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
       },
       {
-        "Trente Glorieuses": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Trente Glorieuses",
+        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
       },
       {
-        "Rock'n'roll": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
+        "title": "Rock'n'roll",
+        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
       },
       {
-        "Culture américian": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Culture américian",
+        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
       }
     ]
   },
@@ -233,16 +271,20 @@
     ],
     "history": [
       {
-        "USA contre URSS": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "USA contre URSS",
+        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
       },
       {
-        "Trente Glorieuses": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Trente Glorieuses",
+        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
       },
       {
-        "Rock'n'roll": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
+        "title": "Rock'n'roll",
+        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
       },
       {
-        "Culture américian": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Culture américian",
+        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
       }
     ]
   },
@@ -264,16 +306,20 @@
     ],
     "history": [
       {
-        "USA contre URSS": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "USA contre URSS",
+        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
       },
       {
-        "Trente Glorieuses": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Trente Glorieuses",
+        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
       },
       {
-        "Rock'n'roll": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
+        "title": "Rock'n'roll",
+        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
       },
       {
-        "Culture américian": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Culture américian",
+        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
       }
     ]
   }
