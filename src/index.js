@@ -92,96 +92,75 @@ class MusicVisualizer {
     if (!this.data) return;
     d3.select("#chart").datum(this.data).call(this.chart);
   }
-  handleGenreClick(genre) {
+  async handleGenreClick(genre) {
     // Afficher le panneau latéral
     document.getElementById("visualization-container").classList.add("w-1/2");
     document.getElementById("details-panel").classList.add("slide-in");
     document.getElementById("app").classList.add("details-open");
 
-    const genreData = {
-      "genre-name": "Metal",
-      description: [
-        {
-          "start-date": "Fin des années 1960",
-          "start-place": "Etats-Unis, Royaume-Uni",
-          influences: "Hard Rock, Blues, Musique classique",
-        },
-      ],
-      "top-cooccurrences": [
-        { genre: "Rock", score: 0.15228632 },
-        { genre: "Heavy metal", score: 0.041959934 },
-        { genre: "Hard Rock", score: 0.030640494 },
-        { genre: "Death Metal", score: 0.01812337 },
-        { genre: "Alternative", score: 0.017985925 },
-      ],
-      subgenres: [
-        {
-          "subgenre-name": "Classic Metal",
-          description: "",
-          playlist:
-            "https://open.spotify.com/embed/playlist/6hwN2nguilymRKbsbFMEef?utm_source=generator",
-          fusion: null,
-        },
-        {
-          "subgenre-name": "Power Metal",
-          description: "",
-          playlist: "",
-          fusion: null,
-        },
-        {
-          "subgenre-name": "Glam Metal",
-          description: "",
-          playlist: "",
-          fusion: null,
-        },
-        {
-          "subgenre-name": "NWOBHM",
-          description: "",
-          playlist: "",
-          fusion: null,
-        },
-        {
-          "subgenre-name": "Crossover Thrash",
-          description: "",
-          playlist: "",
-          fusion: "Punk",
-        },
-        {
-          "subgenre-name": "Doom Metal",
-          description: "",
-          playlist: "",
-          fusion: null,
-        },
-        {
-          "subgenre-name": "Death Metal",
-          description: "",
-          playlist: "",
-          fusion: null,
-        },
-        {
-          "subgenre-name": "Grindcore",
-          description: "",
-          playlist: "",
-          fusion: "Punk",
-        },
-        {
-          "subgenre-name": "Symphonic Metal",
-          description: "",
-          playlist: "",
-          fusion: "Electronic",
-        },
-        {
-          "subgenre-name": "Nu Metal",
-          description: "",
-          playlist: "",
-          fusion: null,
-        },
-      ],
-    };
+    try {
+      // Mapping des noms de genres du graphique vers les noms dans le JSON
+      const genreMapping = {
+        'hiphop': 'Hip-hop',
+        'r&b': 'Rhythm and Blues',
+        'electronic': 'Electro',
+        // les autres genres sont déjà corrects avec une simple capitalisation
+      };
+      
+      // Obtenir le nom du genre correct pour le JSON
+      const genreName = genreMapping[genre.name] || 
+                       (genre.name.charAt(0).toUpperCase() + genre.name.slice(1));
+      
+      // Charger les données du genre depuis le fichier genres.json
+      const response = await fetch('/data-true/genres.json');
+      if (!response.ok) throw new Error('Erreur lors du chargement des données des genres');
+      
+      const data = await response.json();
+      
+      // Nettoyer les noms pour la comparaison
+      const cleanName = str => str.toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]/g, '');
+      
+      // Rechercher le genre dans les données
+      const genreData = data.find(g => cleanName(g["genre-name"]) === cleanName(genreName));
+      
+      if (!genreData) {
+        throw new Error(`Genre ${genreName} non trouvé dans les données`);
+      }
 
-    // Mettre à jour le contenu
-    if (this.detailsPanel) {
-      this.detailsPanel.update(genreData);
+      console.log("Chargement des données pour le genre:", genreName);
+      
+      // Mettre à jour le contenu
+      if (this.detailsPanel) {
+        this.detailsPanel.update(genreData);
+      }
+    } catch (error) {
+      console.error("Erreur lors du chargement des données du genre:", error);
+      // Afficher un message d'erreur ou utiliser des données par défaut
+      if (this.detailsPanel) {
+        const formattedGenreName = genre.name.charAt(0).toUpperCase() + genre.name.slice(1);
+        this.detailsPanel.update({
+          "genre-name": formattedGenreName,
+          description: [
+            {
+              "start-date": "Information non disponible",
+              "start-place": "Information non disponible",
+              influences: "Information non disponible",
+            },
+          ],
+          "top-cooccurrences": [],
+          subgenres: [],
+          artists: [
+            {
+              name: `Artiste ${formattedGenreName}`,
+              popularity: 80,
+              image: "src/asset/images/artisteA.jpeg",
+              genres: [formattedGenreName]
+            }
+          ]
+        });
+      }
     }
   }
 }

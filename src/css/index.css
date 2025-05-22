@@ -350,7 +350,7 @@ body {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    #visualization-container.w-1\/2 {
+    #visualization-container.w-1/2 {
         width: 100% !important;
     }
 
