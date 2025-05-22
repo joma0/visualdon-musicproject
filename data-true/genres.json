@@ -8,13 +8,65 @@
         "influences": "Hard Rock, Blues, Musique classique"
       }
     ],
-	"top-cooccurrences": [
-		{ "genre": "Rock", "score": 0.15228632 },
-		{ "genre": "Heavy metal", "score": 0.041959934 },
-		{ "genre": "Hard Rock", "score": 0.030640494 },
-		{ "genre": "Death Metal", "score": 0.01812337 },
-		{ "genre": "Alternative", "score": 0.017985925 }
-	]
+    "top-cooccurrences": [
+      { "genre": "Rock", "score": 0.15228632 },
+      { "genre": "Heavy metal", "score": 0.041959934 },
+      { "genre": "Hard Rock", "score": 0.030640494 },
+      { "genre": "Death Metal", "score": 0.01812337 },
+      { "genre": "Alternative", "score": 0.017985925 }
+    ],
+    "subgenres": [
+      {
+        "subgenre-name": "Classic Metal",
+        "description": "",
+        "playlist": "https://open.spotify.com/embed/playlist/6hwN2nguilymRKbsbFMEef?utm_source=generator"
+      },
+      {
+        "subgenre-name": "Power Metal",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Glam Metal",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "NWOBHM",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Crossover Thrash",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Doom Metal",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Death Metal",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Grindcore",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Symphonic Metal",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Nu Metal",
+        "description": "",
+        "playlist": ""
+      }
+    ]
   },
   {
     "genre-name": "Punk",
@@ -25,13 +77,65 @@
         "influences": "Garage Rock, Glam Rock, Rockabilly, Rock'n'roll"
       }
     ],
-	"top-cooccurrences": [
-		{ "genre": "Rock", "score": 0.14506397 },
-		{ "genre": "Alternative/Punk", "score": 0.05591893 },
-		{ "genre": "Punk Rock", "score": 0.054914497 },
-		{ "genre": "Alternative", "score": 0.050446503 },
-		{ "genre": "Pop", "score": 0.015294913 }
-	]
+    "top-cooccurrences": [
+      { "genre": "Rock", "score": 0.14506397 },
+      { "genre": "Alternative/Punk", "score": 0.05591893 },
+      { "genre": "Punk Rock", "score": 0.054914497 },
+      { "genre": "Alternative", "score": 0.050446503 },
+      { "genre": "Pop", "score": 0.015294913 }
+    ],
+    "subgenres": [
+      {
+        "subgenre-name": "Pub Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Anarcho-Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Ska Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Psychobilly",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthpop",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Skate Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Original Hardcore",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Emo(core)",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Mathcore/Math Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthcore",
+        "description": "",
+        "playlist": ""
+      }
+    ]
   },
   {
     "genre-name": "Rock",
@@ -42,13 +146,65 @@
         "influences": "RnB, Jazz, Country, Folk"
       }
     ],
-	"top-cooccurrences": [
-		{ "genre": "Pop", "score": 0.057277564 },
-		{ "genre": "Alternative", "score": 0.025733192 },
-		{ "genre": "Rock/Pop", "score": 0.016226359 },
-		{ "genre": "Alternative/Punk", "score": 0.012095583 },
-		{ "genre": "Metal", "score": 0.01004292 }
-	]
+    "top-cooccurrences": [
+      { "genre": "Pop", "score": 0.057277564 },
+      { "genre": "Alternative", "score": 0.025733192 },
+      { "genre": "Rock/Pop", "score": 0.016226359 },
+      { "genre": "Alternative/Punk", "score": 0.012095583 },
+      { "genre": "Metal", "score": 0.01004292 }
+    ],
+    "subgenres": [
+      {
+        "subgenre-name": "Pub Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Anarcho-Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Ska Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Psychobilly",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthpop",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Skate Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Original Hardcore",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Emo(core)",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Mathcore/Math Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthcore",
+        "description": "",
+        "playlist": ""
+      }
+    ]
   },
   {
     "genre-name": "Pop",
@@ -59,13 +215,65 @@
         "influences": "Rock"
       }
     ],
-	"top-cooccurrences": [
-		{ "genre": "Rock", "score": 0.076909296 },
-		{ "genre": "Rock/Pop", "score": 0.013944757 },
-		{ "genre": "Rhythm and Blues", "score": 0.0130105475 },
-		{ "genre": "Alternative", "score": 0.012609627 },
-		{ "genre": "Dance", "score": 0.012076677 }
-	]
+    "top-cooccurrences": [
+      { "genre": "Rock", "score": 0.076909296 },
+      { "genre": "Rock/Pop", "score": 0.013944757 },
+      { "genre": "Rhythm and Blues", "score": 0.0130105475 },
+      { "genre": "Alternative", "score": 0.012609627 },
+      { "genre": "Dance", "score": 0.012076677 }
+    ],
+    "subgenres": [
+      {
+        "subgenre-name": "Pub Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Anarcho-Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Ska Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Psychobilly",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthpop",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Skate Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Original Hardcore",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Emo(core)",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Mathcore/Math Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthcore",
+        "description": "",
+        "playlist": ""
+      }
+    ]
   },
   {
     "genre-name": "Country",
@@ -76,13 +284,13 @@
         "influences": "Folk, Blues, Gospel, Musique celtique"
       }
     ],
-	"top-cooccurrences": [
-		{ "genre": "Folk", "score": 0.045 },
-		{ "genre": "Bluegrass", "score": 0.032 },
-		{ "genre": "Americana", "score": 0.028 },
-		{ "genre": "Country Rock", "score": 0.021 },
-		{ "genre": "Blues", "score": 0.015 }
-	]
+    "top-cooccurrences": [
+      { "genre": "Folk", "score": 0.045 },
+      { "genre": "Bluegrass", "score": 0.032 },
+      { "genre": "Americana", "score": 0.028 },
+      { "genre": "Country Rock", "score": 0.021 },
+      { "genre": "Blues", "score": 0.015 }
+    ]
   },
   {
     "genre-name": "Rhythm and Blues",
@@ -93,13 +301,65 @@
         "influences": "Jazz, Blues, Swing"
       }
     ],
-	"top-cooccurrences": [
-		{ "genre": "Soul", "score": 0.054 },
-		{ "genre": "Hip-Hop", "score": 0.048 },
-		{ "genre": "Funk", "score": 0.039 },
-		{ "genre": "Pop", "score": 0.025 },
-		{ "genre": "Jazz", "score": 0.019 }
-	]
+    "top-cooccurrences": [
+      { "genre": "Soul", "score": 0.054 },
+      { "genre": "Hip-Hop", "score": 0.048 },
+      { "genre": "Funk", "score": 0.039 },
+      { "genre": "Pop", "score": 0.025 },
+      { "genre": "Jazz", "score": 0.019 }
+    ],
+    "subgenres": [
+      {
+        "subgenre-name": "Pub Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Anarcho-Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Ska Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Psychobilly",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthpop",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Skate Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Original Hardcore",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Emo(core)",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Mathcore/Math Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthcore",
+        "description": "",
+        "playlist": ""
+      }
+    ]
   },
   {
     "genre-name": "Blues",
@@ -110,13 +370,13 @@
         "influences": "Chant de travail, Negro spiritual, Gospel"
       }
     ],
-	"top-cooccurrences": [
-		{ "genre": "Rock", "score": 0.08851876 },
-		{ "genre": "Pop", "score": 0.041256793 },
-		{ "genre": "Jazz", "score": 0.025304846 },
-		{ "genre": "Rhythm and Blues", "score": 0.01985355 },
-		{ "genre": "Alternative", "score": 0.010586768 }
-	]
+    "top-cooccurrences": [
+      { "genre": "Rock", "score": 0.08851876 },
+      { "genre": "Pop", "score": 0.041256793 },
+      { "genre": "Jazz", "score": 0.025304846 },
+      { "genre": "Rhythm and Blues", "score": 0.01985355 },
+      { "genre": "Alternative", "score": 0.010586768 }
+    ]
   },
   {
     "genre-name": "Jazz",
@@ -127,13 +387,65 @@
         "influences": "Blues, Negro Spiritual, Musique classique, Ragtime"
       }
     ],
-	"top-cooccurrences": [
-		{ "genre": "Pop", "score": 0.015930373 },
-		{ "genre": "Rock", "score": 0.012678415 },
-		{ "genre": "Easy Listening", "score": 0.0115580885 },
-		{ "genre": "Blues", "score": 0.009370609 },
-		{ "genre": "Rhythm and Blues", "score": 0.0073033236 }
-	]
+    "top-cooccurrences": [
+      { "genre": "Pop", "score": 0.015930373 },
+      { "genre": "Rock", "score": 0.012678415 },
+      { "genre": "Easy Listening", "score": 0.0115580885 },
+      { "genre": "Blues", "score": 0.009370609 },
+      { "genre": "Rhythm and Blues", "score": 0.0073033236 }
+    ],
+    "subgenres": [
+      {
+        "subgenre-name": "Pub Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Anarcho-Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Ska Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Psychobilly",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthpop",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Skate Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Original Hardcore",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Emo(core)",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Mathcore/Math Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthcore",
+        "description": "",
+        "playlist": ""
+      }
+    ]
   },
   {
     "genre-name": "Reggae",
@@ -144,13 +456,65 @@
         "influences": "Soul, Gospel, Jazz, Rhythm and Blues, Rocksteady"
       }
     ],
-	"top-cooccurrences": [
-		{ "genre": "Dancehall", "score": 0.068 },
-		{ "genre": "Dub", "score": 0.034 },
-		{ "genre": "Roots Reggae", "score": 0.023 },
-		{ "genre": "Rasta", "score": 0.011 },
-		{ "genre": "World", "score": 0.008 }
-	]
+    "top-cooccurrences": [
+      { "genre": "Dancehall", "score": 0.068 },
+      { "genre": "Dub", "score": 0.034 },
+      { "genre": "Roots Reggae", "score": 0.023 },
+      { "genre": "Rasta", "score": 0.011 },
+      { "genre": "World", "score": 0.008 }
+    ],
+    "subgenres": [
+      {
+        "subgenre-name": "Pub Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Anarcho-Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Ska Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Psychobilly",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthpop",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Skate Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Original Hardcore",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Emo(core)",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Mathcore/Math Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthcore",
+        "description": "",
+        "playlist": ""
+      }
+    ]
   },
   {
     "genre-name": "Hip-hop",
@@ -161,13 +525,65 @@
         "influences": "Funk, Soul, Rhythm and Blues, Reggae, Jazz, Spoken word"
       }
     ],
-	"top-cooccurrences": [
-		{ "genre": "Hip-Hop/Rap", "score": 0.115694396 },
-		{ "genre": "Rap", "score": 0.07590821 },
-		{ "genre": "Rhythm and Blues", "score": 0.019898875 },
-		{ "genre": "Pop", "score": 0.015125295 },
-		{ "genre": "Rock", "score": 0.008284092 }
-	]
+    "top-cooccurrences": [
+      { "genre": "Hip-Hop/Rap", "score": 0.115694396 },
+      { "genre": "Rap", "score": 0.07590821 },
+      { "genre": "Rhythm and Blues", "score": 0.019898875 },
+      { "genre": "Pop", "score": 0.015125295 },
+      { "genre": "Rock", "score": 0.008284092 }
+    ],
+    "subgenres": [
+      {
+        "subgenre-name": "Pub Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Anarcho-Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Ska Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Psychobilly",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthpop",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Skate Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Original Hardcore",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Emo(core)",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Mathcore/Math Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthcore",
+        "description": "",
+        "playlist": ""
+      }
+    ]
   },
   {
     "genre-name": "Electro",
@@ -178,12 +594,64 @@
         "influences": "Funk, Soul, Rhythm and Blues, Reggae, Jazz, Spoken word"
       }
     ],
-	"top-cooccurrences": [
-		{ "genre": "Electronica", "score": 0.04794131 },
-		{ "genre": "Electronica/Dance", "score": 0.0453066 },
-		{ "genre": "Dance", "score": 0.030712876 },
-		{ "genre": "House", "score": 0.0271957 },
-		{ "genre": "Pop", "score": 0.027024249 }
-	]
+    "top-cooccurrences": [
+      { "genre": "Electronica", "score": 0.04794131 },
+      { "genre": "Electronica/Dance", "score": 0.0453066 },
+      { "genre": "Dance", "score": 0.030712876 },
+      { "genre": "House", "score": 0.0271957 },
+      { "genre": "Pop", "score": 0.027024249 }
+    ],
+    "subgenres": [
+      {
+        "subgenre-name": "Pub Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Anarcho-Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Ska Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Psychobilly",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthpop",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Skate Punk",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Original Hardcore",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Emo(core)",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Mathcore/Math Rock",
+        "description": "",
+        "playlist": ""
+      },
+      {
+        "subgenre-name": "Synthcore",
+        "description": "",
+        "playlist": ""
+      }
+    ]
   }
 ]
