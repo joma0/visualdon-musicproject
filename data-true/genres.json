@@ -7,7 +7,14 @@
         "start-place": "Etats-Unis, Royaume-Uni",
         "influences": "Hard Rock, Blues, Musique classique"
       }
-    ]
+    ],
+	"top-cooccurrences": [
+		{ "genre": "Rock", "score": 0.15228632 },
+		{ "genre": "Heavy metal", "score": 0.041959934 },
+		{ "genre": "Hard Rock", "score": 0.030640494 },
+		{ "genre": "Death Metal", "score": 0.01812337 },
+		{ "genre": "Alternative", "score": 0.017985925 }
+	]
   },
   {
     "genre-name": "Punk",
@@ -17,7 +24,14 @@
         "start-place": "New York",
         "influences": "Garage Rock, Glam Rock, Rockabilly, Rock'n'roll"
       }
-    ]
+    ],
+	"top-cooccurrences": [
+		{ "genre": "Rock", "score": 0.14506397 },
+		{ "genre": "Alternative & Punk", "score": 0.05591893 },
+		{ "genre": "Punk Rock", "score": 0.054914497 },
+		{ "genre": "Alternative", "score": 0.050446503 },
+		{ "genre": "Pop", "score": 0.015294913 }
+	]
   },
   {
     "genre-name": "Rock",
@@ -27,7 +41,14 @@
         "start-place": "Etats-Unis, Royaume-Uni",
         "influences": "RnB, Jazz, Country, Folk"
       }
-    ]
+    ],
+	"top-cooccurrences": [
+		{ "genre": "Pop", "score": 0.057277564 },
+		{ "genre": "Alternative", "score": 0.025733192 },
+		{ "genre": "Rock/Pop", "score": 0.016226359 },
+		{ "genre": "Alternative & Punk", "score": 0.012095583 },
+		{ "genre": "Metal", "score": 0.01004292 }
+	]
   },
   {
     "genre-name": "Pop",
@@ -37,7 +58,14 @@
         "start-place": "Etats-Unis, Royaume-Uni",
         "influences": "Rock"
       }
-    ]
+    ],
+	"top-cooccurrences": [
+		{ "genre": "Rock", "score": 0.076909296 },
+		{ "genre": "Rock/Pop", "score": 0.013944757 },
+		{ "genre": "R&B", "score": 0.0130105475 },
+		{ "genre": "Alternative", "score": 0.012609627 },
+		{ "genre": "Dance", "score": 0.012076677 }
+	]
   },
   {
     "genre-name": "Country",
@@ -47,7 +75,14 @@
         "start-place": "Etats-Unis (sud)",
         "influences": "Folk, Blues, Gospel, Musique celtique"
       }
-    ]
+    ],
+	"top-cooccurrences": [
+		{ "genre": "Folk", "score": 0.045 },
+		{ "genre": "Bluegrass", "score": 0.032 },
+		{ "genre": "Americana", "score": 0.028 },
+		{ "genre": "Country Rock", "score": 0.021 },
+		{ "genre": "Blues", "score": 0.015 }
+	]
   },
   {
     "genre-name": "Rythm and blues",
@@ -57,7 +92,14 @@
         "start-place": "Etats-Unis",
         "influences": "Jazz, Blues, Swing"
       }
-    ]
+    ],
+	"top-cooccurrences": [
+		{ "genre": "Soul", "score": 0.054 },
+		{ "genre": "Hip-Hop", "score": 0.048 },
+		{ "genre": "Funk", "score": 0.039 },
+		{ "genre": "Pop", "score": 0.025 },
+		{ "genre": "Jazz", "score": 0.019 }
+	]
   },
   {
     "genre-name": "Blues",
@@ -67,7 +109,14 @@
         "start-place": "Etats-Unis (sud)",
         "influences": "Chant de travail, Negro spiritual, Gospel"
       }
-    ]
+    ],
+	"top-cooccurrences": [
+		{ "genre": "Rock", "score": 0.08851876 },
+		{ "genre": "Pop", "score": 0.041256793 },
+		{ "genre": "Jazz", "score": 0.025304846 },
+		{ "genre": "R&B", "score": 0.01985355 },
+		{ "genre": "Alternative", "score": 0.010586768 }
+	]
   },
   {
     "genre-name": "Jazz",
@@ -77,7 +126,14 @@
         "start-place": "Etats-Unis",
         "influences": "Blues, Negro Spiritual, Musique classique, Ragtime"
       }
-    ]
+    ],
+	"top-cooccurrences": [
+		{ "genre": "Pop", "score": 0.015930373 },
+		{ "genre": "Rock", "score": 0.012678415 },
+		{ "genre": "Easy Listening", "score": 0.0115580885 },
+		{ "genre": "Blues", "score": 0.009370609 },
+		{ "genre": "R&B", "score": 0.0073033236 }
+	]
   },
   {
     "genre-name": "Reggae",
@@ -87,7 +143,14 @@
         "start-place": "Jamaïque",
         "influences": "Soul, Gospel, Jazz, Rythm and blues, Rocksteady"
       }
-    ]
+    ],
+	"top-cooccurrences": [
+		{ "genre": "Dancehall", "score": 0.068 },
+		{ "genre": "Dub", "score": 0.034 },
+		{ "genre": "Roots Reggae", "score": 0.023 },
+		{ "genre": "Rasta", "score": 0.011 },
+		{ "genre": "World", "score": 0.008 }
+	]
   },
   {
     "genre-name": "Hip-hop",
@@ -97,7 +160,14 @@
         "start-place": "Bronx (New York)",
         "influences": "Funk, Soul, Rythm and blues, Reggea, Jazz, Spoken word"
       }
-    ]
+    ],
+	"top-cooccurrences": [
+		{ "genre": "Hip-Hop/Rap", "score": 0.115694396 },
+		{ "genre": "Rap", "score": 0.07590821 },
+		{ "genre": "R&B", "score": 0.019898875 },
+		{ "genre": "Pop", "score": 0.015125295 },
+		{ "genre": "Rock", "score": 0.008284092 }
+	]
   },
   {
     "genre-name": "Electro",
@@ -107,6 +177,13 @@
         "start-place": "Bronx (New York)",
         "influences": "Funk, Soul, Rythm and blues, Reggea, Jazz, Spoken word"
       }
+    ],
+	"top-cooccurrences": [
+		{ "genre": "Electronica", "score": 0.04794131 },
+		{ "genre": "Electronica/Dance", "score": 0.0453066 },
+		{ "genre": "Dance", "score": 0.030712876 },
+		{ "genre": "House", "score": 0.0271957 },
+		{ "genre": "Pop", "score": 0.027024249 }
     ]
   }
 ]
