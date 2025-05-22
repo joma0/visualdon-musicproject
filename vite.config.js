@@ -5,8 +5,8 @@ export default defineConfig({
     plugins: [
         dsv(),
 ],
-root: '.', // Spécifie le dossier racine
-    publicDir: 'public', // Dossier des assets publics
+root: '.', 
+    publicDir: 'public', 
     build: {
         outDir: 'dist'
     },

@@ -32,9 +32,7 @@ class MusicVisualizer {
       ])
       .onClick((genre) => this.handleGenreClick(genre));
     document.addEventListener("DOMContentLoaded", () => this.init());
-  }
-
-  init() {
+  }  init() {
     this.detailsPanel = setupDetailsPanel();
     setupControls(async (decade) => {
       this.data = await this.updateDataForDecade(decade);
@@ -45,9 +43,10 @@ class MusicVisualizer {
         .getElementById("visualization-container")
         .classList.remove("w-1/2");
       document.getElementById("details-panel").classList.remove("slide-in");
+      document.getElementById("app").classList.remove("details-open");
     });
     // déclenchement initial sur la valeur courante du slider
-    const initialDecade = setupControls((value) => value);
+    const initialDecade = setupControls((decade) => decade);
     // on veut lancer tout de suite l'affichage pour cette décennie
     this.updateDataForDecade(initialDecade).then((data) => {
       this.data = data;
@@ -93,11 +92,11 @@ class MusicVisualizer {
     if (!this.data) return;
     d3.select("#chart").datum(this.data).call(this.chart);
   }
-
   handleGenreClick(genre) {
     // Afficher le panneau latéral
     document.getElementById("visualization-container").classList.add("w-1/2");
     document.getElementById("details-panel").classList.add("slide-in");
+    document.getElementById("app").classList.add("details-open");
 
     const genreData = {
       "genre-name": "Metal",

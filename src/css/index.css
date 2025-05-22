@@ -27,6 +27,86 @@ body {
     overflow: hidden;
 }
 
+/* Styles pour le contenu des décennies */
+#decade-content {
+    overflow-y: auto;
+    padding: 2rem;
+    background-color: #0f172a;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#decade-content > div {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#decade-title {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+#decade-history {
+    transition: all 0.5s ease;
+    min-height: 300px; /* Hauteur minimale pour éviter les sauts trop brusques */
+}
+
+.text-xs p {
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+}
+
+.text-sm p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.text-base p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.event {
+    border-left: 3px solid #a855f7;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.event.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.event:before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #a855f7;
+}
+
+.event:not(:last-child):after {
+    content: '';
+    position: absolute;
+    left: -1.5px;
+    top: 12px;
+    width: 3px;
+    height: calc(100% - 12px);
+    background-color: #a855f7;
+}
+
 #visualization-container {
     display: flex;
     justify-content: center;
@@ -55,6 +135,8 @@ body {
     background: #4B5563;
     border-radius: 2px;
     outline: none;
+    /* Caché par défaut pour le scrollytelling */
+    display: none;
 }
 
 #slider::-webkit-slider-thumb {
@@ -71,19 +153,144 @@ body {
     transform: scale(1.2);
 }
 
-/* Animations panel */
-.slide-in {
-    transform: translateX(0) !important;
+/* Styles pour l'affichage de l'année courante */
+#decade-display {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease, opacity 0.3s ease;
+    z-index: 10;
+}
+
+#decade-history.text-xs .event {
+    padding-bottom: 1rem;
+}
+
+#decade-history.text-xs h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+#decade-history.text-sm .event {
+    padding-bottom: 1.25rem;
+}
+
+#decade-history.text-sm h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+}
+
+/* Styles pour les badges de genres */
+#decade-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#decade-genres span {
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 0.5s forwards;
+    animation-delay: calc(var(--index) * 0.1s);
+    cursor: pointer;
+}
+
+#decade-genres span:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
+
+@keyframes fadeInScale {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Styles pour la timeline de progression */
+.timeline-progress {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+}
+
+.timeline-dot {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease;
+}
+
+.timeline-dot:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.5);
+}
+
+.timeline-dot.active {
+    background-color: #a855f7;
+    transform: scale(1.5);
+    box-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
+}
+
+/* Animation de l'indicateur de scroll */
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+        transform: translateY(0) translateX(-50%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(10px) translateX(-50%);
+    }
+    100% {
+        opacity: 0.6;
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
+
+#scroll-indicator {
+    animation: pulse 2s infinite;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Animation du panneau latéral */
 #details-panel {
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(8px);
+    transition: transform 0.5s ease;
 }
 
 #details-panel.slide-in {
     transform: translateX(0) !important;
+}
+
+/* Ajustements pour le défilement dans le panneau de détails */
+.details-open {
+    overflow: hidden; /* Empêche le défilement du corps principal */
+}
+
+.details-open #details-panel {
+    overflow-y: auto; /* Assure que le panneau peut défiler */
+}
+
+/* Masquer les éléments quand le panneau de détails est ouvert */
+.details-open .timeline-progress,
+.details-open #decade-display,
+.details-open #scroll-indicator,
+.details-open #auto-play,
+.details-open .controls {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
 /* Styles pour les graphiques */
@@ -121,6 +328,8 @@ body {
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 20;
 }
 
 /* Animation pour le chargement des sections */
@@ -141,7 +350,7 @@ body {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    #visualization-container.w-1/2 {
+    #visualization-container.w-1\/2 {
         width: 100% !important;
     }
 
