@@ -16,18 +16,24 @@
       >
         <div id="visualization" class="relative">
           <div id="chart" class="flex items-center justify-center"></div>
+
           <!-- Contrôles repositionnés et redimensionnés -->
           <div
             class="controls fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800/80 backdrop-blur p-4 rounded-lg max-w-md w-full mx-auto"
           >
+            <!-- Slider de 1 à 11 -->
             <input
               type="range"
               id="slider"
               min="1"
-              max="10"
-              value="10"
+              max="11"
+              value="11"
               class="w-full mb-2"
             />
+            <!-- Affichage optionnel de la décennie actuelle -->
+            <div id="decade-label" class="text-center text-gray-300 mb-2">
+              <!-- Mis à jour par ton JS via l'événement 'input' -->
+            </div>
             <button
               id="auto-play"
               class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded w-full"
@@ -94,5 +100,19 @@
     </div>
 
     <script type="module" src="./src/index.js"></script>
+    <script>
+      // Mise à jour du label de la décennie en dessous du slider
+      const slider = document.getElementById('slider');
+      const label = document.getElementById('decade-label');
+      const decades = [1910,1920,1930,1940,1950,1960,1970,1980,1990,2000,2010];
+
+      function updateDecadeLabel() {
+        const idx = parseInt(slider.value, 10) - 1;
+        label.textContent = decades[idx] + 's';
+      }
+      slider.addEventListener('input', updateDecadeLabel);
+      // Initialisation
+      updateDecadeLabel();
+    </script>
   </body>
 </html>

@@ -2,7 +2,6 @@ import * as d3 from "d3";
 import radialBarChart from "./modules/radialBarChart.js";
 import { setupDetailsPanel } from "./modules/detailsPanel.js";
 import { setupControls } from "./modules/controls.js";
-import { fetchGenreData } from "./modules/dataManager.js";
 import "./css/index.css";
 
 class MusicVisualizer {
@@ -27,33 +26,43 @@ class MusicVisualizer {
 
   init() {
     this.detailsPanel = setupDetailsPanel();
-    setupControls(
-      async (decade) => {
-        this.data = await this.updateDataForDecade(decade);
-        this.updateVisualization();
-      }
-    );
+    setupControls(async (decade) => {
+      this.data = await this.updateDataForDecade(decade);
+      this.updateVisualization();
+    });
     document.getElementById("close-panel").addEventListener("click", () => {
       document.getElementById("visualization-container").classList.remove("w-1/2");
       document.getElementById("details-panel").classList.remove("slide-in");
     });
-    // démarrage initial
-    setupControls(value => value); // init slider without autoplay
+    // déclenchement initial sur la valeur courante du slider
+    const initialDecade = setupControls(value => value);
+    // on veut lancer tout de suite l'affichage pour cette décennie
+    this.updateDataForDecade(initialDecade).then(data => {
+      this.data = data;
+      this.updateVisualization();
+    });
   }
 
   async updateDataForDecade(decade) {
-    // remplace par fetchDecadeData si besoin
-    return [{ data: this.generateRandomData() }];
-  }
-
-  generateRandomData() {
-    const genres = [
-      "Rock","Electronic","Pop","Blues","Funk","Jazz",
-      "Metal","Hip-Hop","Reggae","Country","Punk","R&B"
+    // 1. Charger le JSON
+    const decades = await d3.json('/data-true/decades.json');
+    // 2. Trouver l'entrée correspondante
+    const entry = decades.find(d => d['start-year'] === decade);
+    const rated = Array.isArray(entry?.['genres-rating']) ? entry['genres-rating'] : [];
+    // 3. Liste fixe de tous les genres
+    const allGenres = [
+      'hip-hop','pop','electronic','rbn','rock','country',
+      'metal','reggae','punk','funk','jazz','blues'
     ];
-    const data = {};
-    genres.forEach(g => data[g] = Math.random()*12);
-    return data;
+    const maxVal = allGenres.length;
+    // 4. Construire le mapping nom → score (12 = plus populaire, 0 = absent)
+    const dataMap = {};
+    allGenres.forEach((g, idx) => {
+      const rank = rated.indexOf(g);
+      dataMap[g] = rank >= 0 ? (maxVal - rank) : 0;
+    });
+    // 5. Retourner au format attendu
+    return [{ data: dataMap }];
   }
 
   updateVisualization() {
