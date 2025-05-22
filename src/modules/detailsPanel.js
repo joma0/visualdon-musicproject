@@ -3,9 +3,9 @@ import { createBubbleChart } from "./artistsChart";
 import { createFusionChart } from "./fusionChart";
 
 export function setupDetailsPanel() {
-  function createFusionList(subgenres) {
+  function createFusionList(genreName, subgenres) {
     document.getElementById("fusion-chart").innerHTML = "";
-    createFusionChart(subgenres);
+    createFusionChart(genreName, subgenres);
   }
   function createInfluencesChart(influences) {
     const margin = { top: 20, right: 20, bottom: 30, left: 40 };
@@ -61,7 +61,7 @@ export function setupDetailsPanel() {
       document.getElementById("genre-title").textContent =
         genreData["genre-name"];
 
-      createFusionList(genreData.subgenres);
+      createFusionList(genreData["genre-name"], genreData.subgenres);
       createInfluencesChart(genreData.influences || []);
       createArtistsGrid(genreData.artists || []);
       updateSpotifyPlayer(genreData["genre-name"]);
