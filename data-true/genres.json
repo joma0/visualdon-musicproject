@@ -1,0 +1,112 @@
+[
+  {
+    "genre-name": "Metal",
+    "description": [
+      {
+        "start-date": "Fin des années 1960",
+        "start-place": "Etats-Unis, Royaume-Uni",
+        "influences": "Hard Rock, Blues, Musique classique"
+      }
+    ]
+  },
+  {
+    "genre-name": "Punk",
+    "description": [
+      {
+        "start-date": "Début des années 1970",
+        "start-place": "New York",
+        "influences": "Garage Rock, Glam Rock, Rockabilly, Rock'n'roll"
+      }
+    ]
+  },
+  {
+    "genre-name": "Rock",
+    "description": [
+      {
+        "start-date": "Entre 1950 et 1960",
+        "start-place": "Etats-Unis, Royaume-Uni",
+        "influences": "RnB, Jazz, Country, Folk"
+      }
+    ]
+  },
+  {
+    "genre-name": "Pop",
+    "description": [
+      {
+        "start-date": "Courant des années 1960",
+        "start-place": "Etats-Unis, Royaume-Uni",
+        "influences": "Rock"
+      }
+    ]
+  },
+  {
+    "genre-name": "Country",
+    "description": [
+      {
+        "start-date": "Début du XXe siècle, popularisé dans les années 1920",
+        "start-place": "Etats-Unis (sud)",
+        "influences": "Folk, Blues, Gospel, Musique celtique"
+      }
+    ]
+  },
+  {
+    "genre-name": "Rythm and blues",
+    "description": [
+      {
+        "start-date": "Début des années 1940",
+        "start-place": "Etats-Unis",
+        "influences": "Jazz, Blues, Swing"
+      }
+    ]
+  },
+  {
+    "genre-name": "Blues",
+    "description": [
+      {
+        "start-date": "Fin du XIXe siècle",
+        "start-place": "Etats-Unis (sud)",
+        "influences": "Chant de travail, Negro spiritual, Gospel"
+      }
+    ]
+  },
+  {
+    "genre-name": "Jazz",
+    "description": [
+      {
+        "start-date": "Fin des années 1910",
+        "start-place": "Etats-Unis",
+        "influences": "Blues, Negro Spiritual, Musique classique, Ragtime"
+      }
+    ]
+  },
+  {
+    "genre-name": "Reggae",
+    "description": [
+      {
+        "start-date": "Début des années 1960",
+        "start-place": "Jamaïque",
+        "influences": "Soul, Gospel, Jazz, Rythm and blues, Rocksteady"
+      }
+    ]
+  },
+  {
+    "genre-name": "Hip-hop",
+    "description": [
+      {
+        "start-date": "Courant des années 1970",
+        "start-place": "Bronx (New York)",
+        "influences": "Funk, Soul, Rythm and blues, Reggea, Jazz, Spoken word"
+      }
+    ]
+  },
+  {
+    "genre-name": "Electro",
+    "description": [
+      {
+        "start-date": "Courant des années 1970",
+        "start-place": "Bronx (New York)",
+        "influences": "Funk, Soul, Rythm and blues, Reggea, Jazz, Spoken word"
+      }
+    ]
+  }
+]
