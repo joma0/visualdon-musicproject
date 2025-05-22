@@ -27,7 +27,7 @@
     ],
 	"top-cooccurrences": [
 		{ "genre": "Rock", "score": 0.14506397 },
-		{ "genre": "Alternative & Punk", "score": 0.05591893 },
+		{ "genre": "Alternative/Punk", "score": 0.05591893 },
 		{ "genre": "Punk Rock", "score": 0.054914497 },
 		{ "genre": "Alternative", "score": 0.050446503 },
 		{ "genre": "Pop", "score": 0.015294913 }
@@ -46,7 +46,7 @@
 		{ "genre": "Pop", "score": 0.057277564 },
 		{ "genre": "Alternative", "score": 0.025733192 },
 		{ "genre": "Rock/Pop", "score": 0.016226359 },
-		{ "genre": "Alternative & Punk", "score": 0.012095583 },
+		{ "genre": "Alternative/Punk", "score": 0.012095583 },
 		{ "genre": "Metal", "score": 0.01004292 }
 	]
   },
@@ -62,7 +62,7 @@
 	"top-cooccurrences": [
 		{ "genre": "Rock", "score": 0.076909296 },
 		{ "genre": "Rock/Pop", "score": 0.013944757 },
-		{ "genre": "R&B", "score": 0.0130105475 },
+		{ "genre": "Rhythm and Blues", "score": 0.0130105475 },
 		{ "genre": "Alternative", "score": 0.012609627 },
 		{ "genre": "Dance", "score": 0.012076677 }
 	]
@@ -85,7 +85,7 @@
 	]
   },
   {
-    "genre-name": "Rythm and blues",
+    "genre-name": "Rhythm and Blues",
     "description": [
       {
         "start-date": "Début des années 1940",
@@ -114,7 +114,7 @@
 		{ "genre": "Rock", "score": 0.08851876 },
 		{ "genre": "Pop", "score": 0.041256793 },
 		{ "genre": "Jazz", "score": 0.025304846 },
-		{ "genre": "R&B", "score": 0.01985355 },
+		{ "genre": "Rhythm and Blues", "score": 0.01985355 },
 		{ "genre": "Alternative", "score": 0.010586768 }
 	]
   },
@@ -132,7 +132,7 @@
 		{ "genre": "Rock", "score": 0.012678415 },
 		{ "genre": "Easy Listening", "score": 0.0115580885 },
 		{ "genre": "Blues", "score": 0.009370609 },
-		{ "genre": "R&B", "score": 0.0073033236 }
+		{ "genre": "Rhythm and Blues", "score": 0.0073033236 }
 	]
   },
   {
@@ -141,7 +141,7 @@
       {
         "start-date": "Début des années 1960",
         "start-place": "Jamaïque",
-        "influences": "Soul, Gospel, Jazz, Rythm and blues, Rocksteady"
+        "influences": "Soul, Gospel, Jazz, Rhythm and Blues, Rocksteady"
       }
     ],
 	"top-cooccurrences": [
@@ -158,13 +158,13 @@
       {
         "start-date": "Courant des années 1970",
         "start-place": "Bronx (New York)",
-        "influences": "Funk, Soul, Rythm and blues, Reggea, Jazz, Spoken word"
+        "influences": "Funk, Soul, Rhythm and Blues, Reggae, Jazz, Spoken word"
       }
     ],
 	"top-cooccurrences": [
 		{ "genre": "Hip-Hop/Rap", "score": 0.115694396 },
 		{ "genre": "Rap", "score": 0.07590821 },
-		{ "genre": "R&B", "score": 0.019898875 },
+		{ "genre": "Rhythm and Blues", "score": 0.019898875 },
 		{ "genre": "Pop", "score": 0.015125295 },
 		{ "genre": "Rock", "score": 0.008284092 }
 	]
@@ -175,7 +175,7 @@
       {
         "start-date": "Courant des années 1970",
         "start-place": "Bronx (New York)",
-        "influences": "Funk, Soul, Rythm and blues, Reggea, Jazz, Spoken word"
+        "influences": "Funk, Soul, Rhythm and Blues, Reggae, Jazz, Spoken word"
       }
     ],
 	"top-cooccurrences": [
@@ -184,6 +184,6 @@
 		{ "genre": "Dance", "score": 0.030712876 },
 		{ "genre": "House", "score": 0.0271957 },
 		{ "genre": "Pop", "score": 0.027024249 }
-    ]
+	]
   }
 ]
