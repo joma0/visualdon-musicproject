@@ -1,4 +1,4 @@
-import * as d3 from "d3-selection";
+import { select } from "d3-selection";
 import { scaleLinear } from "d3-scale";
 import { max, min } from "d3-array";
 import {
@@ -185,6 +185,14 @@ function createBubbleChart(subgenres) {
       });
   }
 
+  // Créer le SVG
+  const svg = container
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+  // Définir les motifs pour les images d'artistes
   function createPatterns() {
     const defs = svg.append("defs");
 
@@ -196,12 +204,12 @@ function createBubbleChart(subgenres) {
         .attr("width", 1)
         .attr("height", 1)
         .append("image")
+
         .attr("href", artist.image)
-        .attr("width", rScale(artist.popularity) * 2)
-        .attr("height", rScale(artist.popularity) * 2)
-        .attr("x", 0)
-        .attr("y", 0)
-        .attr("preserveAspectRatio", "xMidYMid slice");
+        .attr("width", "100%")
+        .attr("height", "100%")
+        .attr("preserveAspectRatio", "xMidYMid slice")
+        .attr("clip-path", "circle(50% at center)");
     });
   }
 
