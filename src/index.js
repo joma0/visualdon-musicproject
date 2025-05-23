@@ -2,6 +2,7 @@ import * as d3 from "d3";
 import radialBarChart from "./modules/radialBarChart.js";
 import { setupDetailsPanel } from "./modules/detailsPanel.js";
 import { setupControls } from "./modules/controls.js";
+import { renderCooccurrenceChart } from './modules/cooccurrenceChart.js';
 import "./css/index.css";
 
 class MusicVisualizer {
@@ -301,11 +302,11 @@ class MusicVisualizer {
         },
       ],
     };
-
     // Mettre à jour le contenu
-    if (this.detailsPanel) {
+    /*if (this.detailsPanel) {
       this.detailsPanel.update(genreData);
-    }
+    }*/
+    renderCooccurrenceChart(genreData["top-cooccurrences"]);
   }
 }
 

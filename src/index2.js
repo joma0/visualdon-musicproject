@@ -63,7 +63,7 @@ y.domain([
 ]);
 
 // Création du SVG
-const svg = d3.select("#chart")
+const svg = d3.select("#influences-chart")
   .append("svg")
   .attr("width", width)
   .attr("height", height + 40) // +40 pour l'axe
