@@ -57,6 +57,7 @@ class MusicVisualizer {
         .getElementById("visualization-container")
         .classList.remove("w-1/2");
       document.getElementById("details-panel").classList.remove("slide-in");
+      document.getElementById("app").classList.remove("details-open");
     });
   }
 
@@ -65,6 +66,14 @@ class MusicVisualizer {
     const decades = [1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010];
     const index = sliderValue - 1; // Le slider va de 1 à 11
     return decades[index];
+    
+    // déclenchement initial sur la valeur courante du slider
+    const initialDecade = setupControls((decade) => decade);
+    // on veut lancer tout de suite l'affichage pour cette décennie
+    this.updateDataForDecade(initialDecade).then((data) => {
+      this.data = data;
+      this.updateVisualization();
+    });
   }
 
   async updateDataForDecade(decade) {
@@ -119,12 +128,11 @@ class MusicVisualizer {
     if (!this.data) return;
     d3.select("#chart").datum(this.data).call(this.chart);
   }
-
-  handleGenreClick(genre) {
+  async handleGenreClick(genre) {
     // Afficher le panneau latéral
     document.getElementById("visualization-container").classList.add("w-1/2");
     document.getElementById("details-panel").classList.add("slide-in");
-
+    document.getElementById("app").classList.add("details-open");
     const genreData = {
       "genre-name": "Metal",
       description: [
@@ -145,63 +153,151 @@ class MusicVisualizer {
         {
           "subgenre-name": "Classic Metal",
           description: "",
-          playlist:
-            "https://open.spotify.com/embed/playlist/6hwN2nguilymRKbsbFMEef?utm_source=generator",
           fusion: null,
+          artists: [
+            {
+              "artist-name": "Black Sabbath",
+              popularity: 20000,
+              playlist: "",
+            },
+            {
+              "artist-name": "Led Zeppelin",
+              popularity: 100000,
+              playlist: "",
+            },
+          ],
         },
         {
-          "subgenre-name": "Power Metal",
-          description: "",
+          "subgenre-name": "Speed Metal",
+          description:
+            "Caractérisé par une forte accélération du tempo. Le Power Metal et Thrash Metal en sont des dérivés.",
           playlist: "",
           fusion: null,
+          artists: [
+            {
+              "artist-name": "Metallica",
+              popularity: 28305806,
+              playlist:
+                "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1sJmec?utm_source=generator",
+            },
+            {
+              "artist-name": "Exciter",
+              popularity: 20981,
+              playlist:
+                "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0IGmUW?utm_source=generator",
+            },
+            {
+              "artist-name": "Blind Guardian",
+              popularity: 28305806,
+              playlist: "",
+            },
+          ],
         },
         {
           "subgenre-name": "Glam Metal",
-          description: "",
-          playlist: "",
+          description:
+            "Se distingue par un style très spécifique chez les artistes (longs cheveux blonds, maquillage, etc.). Aussi connu comme Hair Metal ou Pop Metal",
           fusion: null,
-        },
-        {
-          "subgenre-name": "NWOBHM",
-          description: "",
-          playlist: "",
-          fusion: null,
+          artists: [
+            {
+              "artist-name": "Twisted Sister",
+              popularity: 1000,
+              playlist: "",
+            },
+            {
+              "artist-name": "Quiet Riot",
+              popularity: 100000,
+              playlist: "",
+            },
+            {
+              "artist-name": "Ratt",
+              popularity: 28305806,
+              playlist: "",
+            },
+          ],
         },
         {
           "subgenre-name": "Crossover Thrash",
-          description: "",
+          description: "Fusion entre le Punk et le Metal",
           playlist: "",
           fusion: "Punk",
         },
         {
           "subgenre-name": "Doom Metal",
-          description: "",
-          playlist: "",
-          fusion: null,
+          description:
+            "Caractérisé par un tempo lent, une musique lourdet et mélancolique et des paroles évoquant le désespoir.",
+          fusion: "Punk",
+          artists: [
+            {
+              "artist-name": "Saint Vitus",
+              popularity: 2830545,
+              playlist: "",
+            },
+            {
+              "artist-name": "The Obsessed",
+              popularity: 1,
+              playlist: "",
+            },
+          ],
         },
         {
           "subgenre-name": "Death Metal",
-          description: "",
-          playlist: "",
+          description:
+            "Inspiré du Thrash Metal. Aborde des thématiques particlièrement violentes.",
           fusion: null,
+          artists: [
+            {
+              "artist-name": "Possessed",
+              popularity: 45785,
+              playlist: "",
+            },
+            {
+              "artist-name": "Obituary",
+              popularity: 1,
+              playlist: "",
+            },
+          ],
         },
         {
           "subgenre-name": "Grindcore",
-          description: "",
-          playlist: "",
+          description:
+            "Fusion entre le punk et le metal. Caractérisé par l'engagement politique (anti-consumérisme, végétarisme, droits des animaux).",
           fusion: "Punk",
+          artists: [
+            {
+              "artist-name": "Nasum",
+              popularity: 1,
+              playlist: "",
+            },
+            {
+              "artist-name": "Napalm Death",
+              popularity: 1,
+              playlist: "",
+            },
+            {
+              "artist-name": "Brutal Truth",
+              popularity: 1,
+              playlist: "",
+            },
+          ],
         },
         {
           "subgenre-name": "Symphonic Metal",
-          description: "",
-          playlist: "",
-          fusion: "Electronic",
-        },
-        {
-          "subgenre-name": "Nu Metal",
-          description: "",
-          playlist: "",
+          description:
+            "Melange entre le Heavy Metal et des éléments de musique classique.",
           fusion: null,
+          artists: [
+            {
+              "artist-name": "Nightwish",
+              popularity: 1,
+              playlist: "",
+            },
+            {
+              "artist-name": "Within Temptation",
+              popularity: 1,
+              playlist: "",
+            },
+          ],
         },
       ],
     };
