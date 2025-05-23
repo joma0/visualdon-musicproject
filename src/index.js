@@ -119,63 +119,151 @@ class MusicVisualizer {
         {
           "subgenre-name": "Classic Metal",
           description: "",
-          playlist:
-            "https://open.spotify.com/embed/playlist/6hwN2nguilymRKbsbFMEef?utm_source=generator",
           fusion: null,
+          artists: [
+            {
+              "artist-name": "Black Sabbath",
+              popularity: 20000,
+              playlist: "",
+            },
+            {
+              "artist-name": "Led Zeppelin",
+              popularity: 100000,
+              playlist: "",
+            },
+          ],
         },
         {
-          "subgenre-name": "Power Metal",
-          description: "",
+          "subgenre-name": "Speed Metal",
+          description:
+            "Caractérisé par une forte accélération du tempo. Le Power Metal et Thrash Metal en sont des dérivés.",
           playlist: "",
           fusion: null,
+          artists: [
+            {
+              "artist-name": "Metallica",
+              popularity: 28305806,
+              playlist:
+                "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1sJmec?utm_source=generator",
+            },
+            {
+              "artist-name": "Exciter",
+              popularity: 20981,
+              playlist:
+                "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0IGmUW?utm_source=generator",
+            },
+            {
+              "artist-name": "Blind Guardian",
+              popularity: 28305806,
+              playlist: "",
+            },
+          ],
         },
         {
           "subgenre-name": "Glam Metal",
-          description: "",
-          playlist: "",
+          description:
+            "Se distingue par un style très spécifique chez les artistes (longs cheveux blonds, maquillage, etc.). Aussi connu comme Hair Metal ou Pop Metal",
           fusion: null,
-        },
-        {
-          "subgenre-name": "NWOBHM",
-          description: "",
-          playlist: "",
-          fusion: null,
+          artists: [
+            {
+              "artist-name": "Twisted Sister",
+              popularity: 1000,
+              playlist: "",
+            },
+            {
+              "artist-name": "Quiet Riot",
+              popularity: 100000,
+              playlist: "",
+            },
+            {
+              "artist-name": "Ratt",
+              popularity: 28305806,
+              playlist: "",
+            },
+          ],
         },
         {
           "subgenre-name": "Crossover Thrash",
-          description: "",
+          description: "Fusion entre le Punk et le Metal",
           playlist: "",
           fusion: "Punk",
         },
         {
           "subgenre-name": "Doom Metal",
-          description: "",
-          playlist: "",
-          fusion: null,
+          description:
+            "Caractérisé par un tempo lent, une musique lourdet et mélancolique et des paroles évoquant le désespoir.",
+          fusion: "Punk",
+          artists: [
+            {
+              "artist-name": "Saint Vitus",
+              popularity: 2830545,
+              playlist: "",
+            },
+            {
+              "artist-name": "The Obsessed",
+              popularity: 1,
+              playlist: "",
+            },
+          ],
         },
         {
           "subgenre-name": "Death Metal",
-          description: "",
-          playlist: "",
+          description:
+            "Inspiré du Thrash Metal. Aborde des thématiques particlièrement violentes.",
           fusion: null,
+          artists: [
+            {
+              "artist-name": "Possessed",
+              popularity: 45785,
+              playlist: "",
+            },
+            {
+              "artist-name": "Obituary",
+              popularity: 1,
+              playlist: "",
+            },
+          ],
         },
         {
           "subgenre-name": "Grindcore",
-          description: "",
-          playlist: "",
+          description:
+            "Fusion entre le punk et le metal. Caractérisé par l'engagement politique (anti-consumérisme, végétarisme, droits des animaux).",
           fusion: "Punk",
+          artists: [
+            {
+              "artist-name": "Nasum",
+              popularity: 1,
+              playlist: "",
+            },
+            {
+              "artist-name": "Napalm Death",
+              popularity: 1,
+              playlist: "",
+            },
+            {
+              "artist-name": "Brutal Truth",
+              popularity: 1,
+              playlist: "",
+            },
+          ],
         },
         {
           "subgenre-name": "Symphonic Metal",
-          description: "",
-          playlist: "",
-          fusion: "Electronic",
-        },
-        {
-          "subgenre-name": "Nu Metal",
-          description: "",
-          playlist: "",
+          description:
+            "Melange entre le Heavy Metal et des éléments de musique classique.",
           fusion: null,
+          artists: [
+            {
+              "artist-name": "Nightwish",
+              popularity: 1,
+              playlist: "",
+            },
+            {
+              "artist-name": "Within Temptation",
+              popularity: 1,
+              playlist: "",
+            },
+          ],
         },
       ],
     };
