@@ -98,37 +98,6 @@ class MusicVisualizer {
     document.getElementById("details-panel").classList.add("slide-in");
     document.getElementById("app").classList.add("details-open");
 
-    try {
-      // Mapping des noms de genres du graphique vers les noms dans le JSON
-      const genreMapping = {
-        'hiphop': 'Hip-hop',
-        'r&b': 'Rhythm and Blues',
-        'electronic': 'Electro',
-        // les autres genres sont déjà corrects avec une simple capitalisation
-      };
-      
-      // Obtenir le nom du genre correct pour le JSON
-      const genreName = genreMapping[genre.name] || 
-                       (genre.name.charAt(0).toUpperCase() + genre.name.slice(1));
-      
-      // Charger les données du genre depuis le fichier genres.json
-      const response = await fetch('/data-true/genres.json');
-      if (!response.ok) throw new Error('Erreur lors du chargement des données des genres');
-      
-      const data = await response.json();
-      
-      // Nettoyer les noms pour la comparaison
-      const cleanName = str => str.toLowerCase()
-        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-        .replace(/[^a-z0-9]/g, '');
-      
-      // Rechercher le genre dans les données
-      const genreData = data.find(g => cleanName(g["genre-name"]) === cleanName(genreName));
-      
-      if (!genreData) {
-        throw new Error(`Genre ${genreName} non trouvé dans les données`);
-      }
-
       console.log("Chargement des données pour le genre:", genreName);
       
       // Mettre à jour le contenu
