@@ -38,33 +38,33 @@
         "subgenre-name": "Doom Metal",
         "fusion": null,
         "artists": [
-          { "artist-name": "Saint Vitus", "popularity": 17402948 },
-          { "artist-name": "The Obsessed", "popularity": 13280338 }
+          { "artist-name": "Saint Vitus", "popularity": 27043 },
+          { "artist-name": "The Obsessed", "popularity": 70745 }
         ]
       },
       {
         "subgenre-name": "Death Metal",
         "fusion": null,
         "artists": [
-          { "artist-name": "Possessed", "popularity": 15531297 },
-          { "artist-name": "Obituary", "popularity": 16394963 }
+          { "artist-name": "Possessed", "popularity": 63479 },
+          { "artist-name": "Obituary", "popularity": 338099 }
         ]
       },
       {
         "subgenre-name": "Grindcore",
         "fusion": "Punk",
         "artists": [
-          { "artist-name": "Nasum", "popularity": 12084270 },
-          { "artist-name": "Napalm Death", "popularity": 12207938 },
-          { "artist-name": "Brutal Truth", "popularity": 18496461 }
+          { "artist-name": "Nasum", "popularity": 16883 },
+          { "artist-name": "Napalm Death", "popularity": 190839 },
+          { "artist-name": "Brutal Truth", "popularity": 31309 }
         ]
       },
       {
         "subgenre-name": "Symphonic Metal",
         "fusion": null,
         "artists": [
-          { "artist-name": "Nightwish", "popularity": 16809941 },
-          { "artist-name": "Within Temptation", "popularity": 12211241 }
+          { "artist-name": "Nightwish", "popularity": 2762356 },
+          { "artist-name": "Within Temptation", "popularity": 2224039 }
         ]
       }
     ]
@@ -83,24 +83,24 @@
         "subgenre-name": "Anarcho-Punk",
         "fusion": null,
         "artists": [
-          { "artist-name": "Poison Girls", "popularity": 11680845 },
-          { "artist-name": "Antisect", "popularity": 10483516 }
+          { "artist-name": "Poison Girls", "popularity": 3534 },
+          { "artist-name": "Antisect", "popularity": 1181 }
         ]
       },
       {
         "subgenre-name": "Ska Punk",
         "fusion": "Jamaican",
         "artists": [
-          { "artist-name": "Reel Big Fish", "popularity": 15193641 },
-          { "artist-name": "Operation Ivy", "popularity": 18166313 }
+          { "artist-name": "Reel Big Fish", "popularity": 1050064 },
+          { "artist-name": "Operation Ivy", "popularity": 338923 }
         ]
       },
       {
         "subgenre-name": "Emo(core)",
         "fusion": "Jamaican",
         "artists": [
-          { "artist-name": "Dashboard Confessional", "popularity": 11023782 },
-          { "artist-name": "Sunny Day Real Estate", "popularity": 13989612 }
+          { "artist-name": "Dashboard Confessional", "popularity": 1767183 },
+          { "artist-name": "Sunny Day Real Estate", "popularity": 384333 }
         ]
       }
     ]
@@ -119,44 +119,44 @@
         "subgenre-name": "Garage Rock",
         "fusion": null,
         "artists": [
-          { "artist-name": "The Sonics", "popularity": 15570831 },
-          { "artist-name": "Count Five", "popularity": 16891941 }
+          { "artist-name": "The Sonics", "popularity": 254906 },
+          { "artist-name": "Count Five", "popularity": 196179 }
         ]
       },
       {
         "subgenre-name": "Rock'n'Roll",
         "fusion": null,
         "artists": [
-          { "artist-name": "Elvis Presley", "popularity": 18711337 },
-          { "artist-name": "Little Richard", "popularity": 12277936 },
-          { "artist-name": "Rolling Stones", "popularity": 11789541 }
+          { "artist-name": "Elvis Presley", "popularity": 19777548 },
+          { "artist-name": "Little Richard", "popularity": 1835605 },
+          { "artist-name": "Rolling Stones", "popularity": 26927517 }
         ]
       },
       {
         "subgenre-name": "Blues Rock",
         "fusion": "Blues",
         "artists": [
-          { "artist-name": "Eric Clapton", "popularity": 17031561 },
-          { "artist-name": "Yardbirds", "popularity": 11631337 },
-          { "artist-name": "Jimi Hendrix", "popularity": 15327538 }
+          { "artist-name": "Eric Clapton", "popularity": 13729736 },
+          { "artist-name": "Yardbirds", "popularity": 547454 },
+          { "artist-name": "Jimi Hendrix", "popularity": 7627288 }
         ]
       },
       {
         "subgenre-name": "Hard Rock",
         "fusion": null,
         "artists": [
-          { "artist-name": "Kiss", "popularity": 16821513 },
-          { "artist-name": "AC/DC", "popularity": 16828246 },
-          { "artist-name": "Scorpions", "popularity": 18423454 }
+          { "artist-name": "Kiss", "popularity": 15827212 },
+          { "artist-name": "AC/DC", "popularity": 32836647 },
+          { "artist-name": "Scorpions", "popularity": 15364124 }
         ]
       },
       {
         "subgenre-name": "Rap Rock",
         "fusion": "Hip-Hop",
         "artists": [
-          { "artist-name": "Senser", "popularity": 18656338 },
-          { "artist-name": "Urban Dance Squad", "popularity": 12807094 },
-          { "artist-name": "Hollywood Undead ", "popularity": 16189981 }
+          { "artist-name": "Senser", "popularity": 30256 },
+          { "artist-name": "Urban Dance Squad", "popularity": 69757 },
+          { "artist-name": "Hollywood Undead ", "popularity": 4121972 }
         ]
       }
     ]
@@ -175,54 +175,53 @@
         "subgenre-name": "Synthpop",
         "fusion": "Electro",
         "artists": [
-          { "artist-name": "Depeche Mode", "popularity": 17009113 },
-          { "artist-name": "Pet Shop Boys", "popularity": 18189323 },
-          { "artist-name": "La Roux", "popularity": 12939641 }
+          { "artist-name": "Depeche Mode", "popularity": 13871314 },
+          { "artist-name": "Pet Shop Boys", "popularity": 7720141 },
+          { "artist-name": "La Roux", "popularity": 6247813 }
         ]
       },
       {
         "subgenre-name": "Teen Pop",
         "fusion": null,
         "artists": [
-          { "artist-name": "Britney Spears", "popularity": 18129413 },
-          { "artist-name": "NSYNC", "popularity": 17189341 },
-          { "artist-name": "Sabrina Carpenter", "popularity": 18189341 }
+          { "artist-name": "Britney Spears", "popularity": 41432047 },
+          { "artist-name": "NSYNC", "popularity": 14584898 },
+          { "artist-name": "Sabrina Carpenter", "popularity": 64910737 }
         ]
       },
       {
         "subgenre-name": "Pop Rock",
         "fusion": "Rock",
         "artists": [
-          { "artist-name": "Avril Lavigne", "popularity": 18189341 },
-          { "artist-name": "Maroon 5", "popularity": 18189341 },
-          { "artist-name": "Kelly Clarkson", "popularity": 18189341 }
+          { "artist-name": "Avril Lavigne", "popularity": 24936245 },
+          { "artist-name": "Maroon 5", "popularity": 74175940 },
+          { "artist-name": "Kelly Clarkson", "popularity": 19803969 }
         ]
       },
       {
         "subgenre-name": "Electropop",
         "fusion": "Electro",
         "artists": [
-          { "artist-name": "Robyn", "popularity": 18189341 },
-          { "artist-name": "Owl City", "popularity": 18189341 },
-          { "artist-name": "CHVRCHES", "popularity": 18189341 }
+          { "artist-name": "Robyn", "popularity": 4486732 },
+          { "artist-name": "Owl City", "popularity": 10442412 }
         ]
       },
       {
         "subgenre-name": "Dance-pop",
         "fusion": "Electro",
         "artists": [
-          { "artist-name": "Madonna", "popularity": 18189341 },
-          { "artist-name": "Lady Gaga", "popularity": 18189341 },
-          { "artist-name": "Dua Lipa", "popularity": 18189341 }
+          { "artist-name": "Madonna", "popularity": 39296037 },
+          { "artist-name": "Lady Gaga", "popularity": 115743329 },
+          { "artist-name": "Dua Lipa", "popularity": 69129210 }
         ]
       },
       {
         "subgenre-name": "Pop Punk",
         "fusion": "Punk",
         "artists": [
-          { "artist-name": "Blink-182", "popularity": 18189341 },
-          { "artist-name": "Paramore", "popularity": 18189341 },
-          { "artist-name": "Green Day", "popularity": 18189341 }
+          { "artist-name": "Blink-182", "popularity": 18551251 },
+          { "artist-name": "Paramore", "popularity": 27553468 },
+          { "artist-name": "Green Day", "popularity": 35287127 }
         ]
       }
     ]
@@ -241,54 +240,54 @@
         "subgenre-name": "Country néo-traditionnelle",
         "fusion": null,
         "artists": [
-          { "artist-name": "George Strait", "popularity": 18189341 },
-          { "artist-name": "Alan Jackson", "popularity": 18189341 },
-          { "artist-name": "Randy Travis", "popularity": 18189341 }
+          { "artist-name": "George Strait", "popularity": 8562567 },
+          { "artist-name": "Alan Jackson", "popularity": 9613494 },
+          { "artist-name": "Randy Travis", "popularity": 6817387 }
         ]
       },
       {
         "subgenre-name": "Sertanejo",
         "fusion": "Jamaican",
         "artists": [
-          { "artist-name": "Zezé Di Camargo & Luciano", "popularity": 18189341 },
-          { "artist-name": "Jorge & Mateus", "popularity": 18189341 },
-          { "artist-name": "Marília Mendonça", "popularity": 18189341 }
+          {
+            "artist-name": "Zezé Di Camargo & Luciano",
+            "popularity": 4754857
+          },
+          { "artist-name": "Jorge & Mateus", "popularity": 13865363 },
+          { "artist-name": "Marília Mendonça", "popularity": 10838784 }
         ]
       },
       {
         "subgenre-name": "Country pop",
         "fusion": "Pop",
         "artists": [
-          { "artist-name": "Taylor Swift", "popularity": 18189341 },
-          { "artist-name": "Shania Twain", "popularity": 18189341 },
-          { "artist-name": "Keith Urban", "popularity": 18189341 }
+          { "artist-name": "Taylor Swift", "popularity": 82258501 },
+          { "artist-name": "Shania Twain", "popularity": 15915000 }
         ]
       },
       {
         "subgenre-name": "Outlaw Country",
         "fusion": null,
         "artists": [
-          { "artist-name": "Willie Nelson", "popularity": 18189341 },
-          { "artist-name": "Waylon Jennings", "popularity": 18189341 },
-          { "artist-name": "Johnny Cash", "popularity": 18189341 }
+          { "artist-name": "Willie Nelson", "popularity": 8328227 },
+          { "artist-name": "Waylon Jennings", "popularity": 4923704 },
+          { "artist-name": "Johnny Cash", "popularity": 12635912 }
         ]
       },
       {
         "subgenre-name": "Bluegrass",
         "fusion": null,
         "artists": [
-          { "artist-name": "Bill Monroe", "popularity": 18189341 },
-          { "artist-name": "Alison Krauss", "popularity": 18189341 },
-          { "artist-name": "Earl Scruggs", "popularity": 18189341 }
+          { "artist-name": "Bill Monroe", "popularity": 67895 },
+          { "artist-name": "Earl Scruggs", "popularity": 259135 }
         ]
       },
       {
         "subgenre-name": "Country rock",
         "fusion": "Rock",
         "artists": [
-          { "artist-name": "The Eagles", "popularity": 18189341 },
-          { "artist-name": "Lynyrd Skynyrd", "popularity": 18189341 },
-          { "artist-name": "Zac Brown Band", "popularity": 18189341 }
+          { "artist-name": "The Eagles", "popularity": 22432783 },
+          { "artist-name": "Lynyrd Skynyrd", "popularity": 18082500 }
         ]
       }
     ]
@@ -307,54 +306,45 @@
         "subgenre-name": "Soul",
         "fusion": null,
         "artists": [
-          { "artist-name": "Aretha Franklin", "popularity": 18189341 },
-          { "artist-name": "Otis Redding", "popularity": 18189341 },
-          { "artist-name": "Marvin Gaye", "popularity": 18189341 }
+          { "artist-name": "Aretha Franklin", "popularity": 10488877 }
         ]
       },
       {
         "subgenre-name": "Neo Soul",
         "fusion": "Rhythm and Blues",
         "artists": [
-          { "artist-name": "Erykah Badu", "popularity": 18189341 },
-          { "artist-name": "D'Angelo", "popularity": 18189341 },
-          { "artist-name": "Jill Scott", "popularity": 18189341 }
+          { "artist-name": "Erykah Badu", "popularity": 4572655 },
+          { "artist-name": "D'Angelo", "popularity": 2023704 },
+          { "artist-name": "Jill Scott", "popularity": 1347156 }
         ]
       },
       {
         "subgenre-name": "Contemporary R&B",
         "fusion": null,
         "artists": [
-          { "artist-name": "Beyoncé", "popularity": 18189341 },
-          { "artist-name": "Usher", "popularity": 18189341 },
-          { "artist-name": "Alicia Keys", "popularity": 18189341 }
+          { "artist-name": "Beyoncé", "popularity": 58844666 },
+          { "artist-name": "Usher", "popularity": 43472339 }
         ]
       },
       {
         "subgenre-name": "Quiet Storm",
         "fusion": null,
         "artists": [
-          { "artist-name": "Sade", "popularity": 18189341 },
-          { "artist-name": "Luther Vandross", "popularity": 18189341 },
-          { "artist-name": "Anita Baker", "popularity": 18189341 }
+          { "artist-name": "Sade", "popularity": 17965848 },
+          { "artist-name": "Luther Vandross", "popularity": 5523278 }
         ]
       },
       {
         "subgenre-name": "Hip-Hop Soul",
         "fusion": "Hip-Hop",
-        "artists": [
-          { "artist-name": "Mary J. Blige", "popularity": 18189341 },
-          { "artist-name": "R. Kelly", "popularity": 18189341 },
-          { "artist-name": "Lauryn Hill", "popularity": 18189341 }
-        ]
+        "artists": [{ "artist-name": "Lauryn Hill", "popularity": 14269793 }]
       },
       {
         "subgenre-name": "New Jack Swing",
         "fusion": "Hip-Hop",
         "artists": [
-          { "artist-name": "Bobby Brown", "popularity": 18189341 },
-          { "artist-name": "Bell Biv DeVoe", "popularity": 18189341 },
-          { "artist-name": "Teddy Riley", "popularity": 18189341 }
+          { "artist-name": "Bell Biv DeVoe", "popularity": 3372611 },
+          { "artist-name": "Teddy Riley", "popularity": 71827 }
         ]
       }
     ]
@@ -373,18 +363,16 @@
         "subgenre-name": "P-Funk",
         "fusion": null,
         "artists": [
-          { "artist-name": "Parliament-Funkadelic", "popularity": 18189341 },
-          { "artist-name": "Bootsy Collins", "popularity": 18189341 },
-          { "artist-name": "George Clinton", "popularity": 18189341 }
+          { "artist-name": "Parliament-Funkadelic", "popularity": 10691 },
+          { "artist-name": "George Clinton", "popularity": 659996 }
         ]
       },
       {
         "subgenre-name": "Jazz-Funk",
         "fusion": "Jazz",
         "artists": [
-          { "artist-name": "Herbie Hancock", "popularity": 18189341 },
-          { "artist-name": "Roy Ayers", "popularity": 18189341 },
-          { "artist-name": "The Crusaders", "popularity": 18189341 }
+          { "artist-name": "Roy Ayers", "popularity": 318517 },
+          { "artist-name": "The Crusaders", "popularity": 293758 }
         ]
       },
       {
