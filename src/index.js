@@ -129,7 +129,10 @@ class MusicVisualizer {
     if (!this.data) return;
     d3.select("#chart").datum(this.data).call(this.chart);
   }
+
   async handleGenreClick(genre) {
+    console.log("AAAAAAAAAAAAAAAAAAAAAAAA")
+    console.log(genre)
     // Afficher le panneau latéral
     document.getElementById("visualization-container").classList.add("w-1/2");
     document.getElementById("details-panel").classList.add("slide-in");
@@ -306,7 +309,20 @@ class MusicVisualizer {
     if (this.detailsPanel) {
       this.detailsPanel.update(genreData);
     }
-    renderCooccurrenceChart(genreData["top-cooccurrences"]);
+
+    // Charger les données depuis le JSON
+    const response = await fetch("data-true/genres.json");
+    const genresData = await response.json();
+    const selectedGenre = genresData.find(
+      (g) => g["genre-name"].toLowerCase() === genre.name.toLowerCase()
+    );
+    if (!selectedGenre) {
+      console.error("Genre non trouvé :", genre.name);
+      return;
+    }
+    // Prendre seulement les 5 premières cooccurrences
+    const topCooccurrences = selectedGenre["top-cooccurrences"].slice(0, 5);
+    renderCooccurrenceChart(topCooccurrences);
   }
 }
 
