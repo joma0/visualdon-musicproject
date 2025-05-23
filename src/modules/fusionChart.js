@@ -49,7 +49,7 @@ function createFusionChart(genreName, subgenres = []) {
   //Cercle invisible
   const centerX = width / 2;
   const centerY = height / 2;
-  const radius = Math.min(width, height) / 3;
+  const radius = Math.min(width, height) / 2.5;
   const angleStep = (2 * Math.PI) / otherGenres.length;
 
   function createSVG() {
@@ -94,7 +94,7 @@ function createFusionChart(genreName, subgenres = []) {
     // Ajouter les cercles dans les groupes
     const circles = genresGroup
       .append("circle")
-      .attr("r", 50)
+      .attr("r", 30)
       .attr("cx", (d, i) => centerX + radius * Math.cos(i * angleStep))
       .attr("cy", (d, i) => centerY + radius * Math.sin(i * angleStep))
       .attr("fill", "red");
@@ -150,11 +150,20 @@ function createFusionChart(genreName, subgenres = []) {
           .on("end", () => {
             // Si on était sur le cercle central, afficher les fusions
             if (isOverCenter(x, y)) {
-              const fusions = fusionSubgenres.filter(
-                (fusionSubgenre) =>
-                  fusionSubgenre.fusion.toLowerCase() === d.toLowerCase()
+              console.log("Genre sélectionné:", d);
+              console.log(
+                "Sous-genres de fusion disponibles:",
+                fusionSubgenres
               );
-              showFusionSubgenres(fusions);
+
+              const fusions = fusionSubgenres.filter((fusionSubgenre) => {
+                // Vérifier que fusionSubgenre et fusion existent
+                if (!fusionSubgenre || !fusionSubgenre.fusion) {
+                  return false;
+                }
+                return fusionSubgenre.fusion.toLowerCase() === d.toLowerCase();
+              });
+              showFusionSubgenres(fusions, d); // Passer aussi le genre sélectionné
             }
           });
       });
@@ -164,10 +173,6 @@ function createFusionChart(genreName, subgenres = []) {
   }
 
   function showFusionSubgenres(fusionSubgenres, selectedGenre) {
-    console.log("Subgenres reçus:", fusionSubgenres);
-    console.log("Rayon utilisé:", radius);
-    console.log("Position radius:", radius * 0.5);
-
     // Supprimer les anciens cercles de fusion
     svg.selectAll(".fusion-group").remove();
 
@@ -177,15 +182,10 @@ function createFusionChart(genreName, subgenres = []) {
       return;
     }
 
-    // Angle fixe pour la répartition des cercles (en radians)
-    const fixedAngle = Math.PI / 4; // 10 degrés
-
-    // Calculer l'angle de départ pour centrer les cercles
+    const fixedAngle = Math.PI / 4; // Répartition des cercles
     const startAngle = (-fixedAngle * (fusionSubgenres.length - 1)) / 2;
-
-    // Le reste du code reste identique
-    const positionRadius = radius * 0.5;
-    const subgenreAngleStep = (2 * Math.PI) / fusionSubgenres.length;
+    const positionRadius = radius * 0.1;
+    const spacing = 100;
 
     // Trouver l'index du genre sélectionné pour calculer sa position
     const selectedIndex = otherGenres.indexOf(selectedGenre);
@@ -215,33 +215,52 @@ function createFusionChart(genreName, subgenres = []) {
     // Ajouter les cercles
     fusionGroups
       .append("circle")
-      .attr("r", 50)
+      .attr("r", 40)
       .attr("cx", (d, i) => {
-        const offset = (i - (fusionSubgenres.length - 1) / 2) * 120;
+        const offset = (i - (fusionSubgenres.length - 1) / 2) * spacing;
         return midX + offset * Math.cos(angle + Math.PI / 2);
       })
       .attr("cy", (d, i) => {
-        const offset = (i - (fusionSubgenres.length - 1) / 2) * 120;
+        const offset = (i - (fusionSubgenres.length - 1) / 2) * spacing;
         return midY + offset * Math.sin(angle + Math.PI / 2);
       })
       .attr("fill", "purple");
 
-    // Ajouter les labels
+    // Ajuster aussi la position des labels
     fusionGroups
       .append("text")
       .attr("x", (d, i) => {
-        const offset = (i - (fusionSubgenres.length - 1) / 2) * 120;
+        const offset = (i - (fusionSubgenres.length - 1) / 2) * spacing;
         return midX + offset * Math.cos(angle + Math.PI / 2);
       })
       .attr("y", (d, i) => {
-        const offset = (i - (fusionSubgenres.length - 1) / 2) * 120;
+        const offset = (i - (fusionSubgenres.length - 1) / 2) * spacing;
         return midY + offset * Math.sin(angle + Math.PI / 2);
       })
       .attr("text-anchor", "middle")
       .attr("dominant-baseline", "middle")
       .attr("fill", "white")
       .attr("font-size", "12px")
-      .text((d) => d["subgenre-name"]);
+      .each(function (d) {
+        const text = d["subgenre-name"];
+        const words = text.split(" ");
+        if (words.length > 1) {
+          const firstLine = words
+            .slice(0, Math.ceil(words.length / 2))
+            .join(" ");
+          const secondLine = words.slice(Math.ceil(words.length / 2)).join(" ");
+          d3.select(this)
+            .selectAll("tspan")
+            .data([firstLine, secondLine])
+            .enter()
+            .append("tspan")
+            .attr("x", this.getAttribute("x"))
+            .attr("dy", (_, i) => (i === 0 ? "-0.5em" : "1em"))
+            .text((d) => d);
+        } else {
+          d3.select(this).text(text);
+        }
+      });
 
     // Animation d'apparition
     fusionGroups.transition().duration(500).style("opacity", 1);

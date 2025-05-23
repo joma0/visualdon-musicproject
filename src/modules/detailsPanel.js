@@ -47,9 +47,9 @@ export function setupDetailsPanel() {
       .attr("height", (d) => height - y(d.percent))
       .attr("fill", "#9F7AEA");
   }
-  function createArtistsGrid(artists) {
+  function createArtistsGrid(subgenres) {
     document.getElementById("artists-chart").innerHTML = "";
-    createBubbleChart(artists);
+    createBubbleChart(subgenres);
   }
   function updateSpotifyPlayer(genre, src) {
     const container = document.getElementById("spotify-player");
@@ -63,7 +63,7 @@ export function setupDetailsPanel() {
 
       createFusionList(genreData["genre-name"], genreData.subgenres);
       createInfluencesChart(genreData.influences || []);
-      createArtistsGrid(genreData.artists || []);
+      createArtistsGrid(genreData.subgenres || []);
       updateSpotifyPlayer(genreData["genre-name"]);
     },
   };
