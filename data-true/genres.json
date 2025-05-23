@@ -514,27 +514,25 @@
         "subgenre-name": "Jazz Fusion",
         "fusion": "Rock",
         "artists": [
-          { "artist-name": "Weather Report", "popularity": 18189341 },
-          { "artist-name": "Mahavishnu Orchestra", "popularity": 18189341 },
-          { "artist-name": "Herbie Hancock", "popularity": 18189341 }
+          { "artist-name": "Weather Report", "popularity": 185170 },
+          { "artist-name": "Mahavishnu Orchestra", "popularity": 81971 }
         ]
       },
       {
         "subgenre-name": "Soul Jazz",
         "fusion": "Rhythm and Blues",
         "artists": [
-          { "artist-name": "Jimmy Smith", "popularity": 18189341 },
-          { "artist-name": "Stanley Turrentine", "popularity": 18189341 },
-          { "artist-name": "Lou Donaldson", "popularity": 18189341 }
+          { "artist-name": "Jimmy Smith", "popularity": 233403 },
+          { "artist-name": "Stanley Turrentine", "popularity": 285063 },
+          { "artist-name": "Lou Donaldson", "popularity": 399274 }
         ]
       },
       {
         "subgenre-name": "Jazz-Funk",
         "fusion": "Funk",
         "artists": [
-          { "artist-name": "Herbie Hancock", "popularity": 18189341 },
-          { "artist-name": "Roy Ayers", "popularity": 18189341 },
-          { "artist-name": "The Crusaders", "popularity": 18189341 }
+          { "artist-name": "Herbie Hancock", "popularity": 1802844 },
+          { "artist-name": "Roy Ayers", "popularity": 318517 }
         ]
       }
     ]
@@ -551,51 +549,30 @@
     "subgenres": [
       {
         "subgenre-name": "Reggae",
-        "artists": [
-          { "artist-name": "Bob Marley", "popularity": 18189341 },
-          { "artist-name": "Peter Tosh", "popularity": 18189341 },
-          { "artist-name": "Burning Spear", "popularity": 18189341 }
-        ]
+        "artists": [{ "artist-name": "Bob Marley", "popularity": 543903 }]
       },
       {
         "subgenre-name": "Dancehall",
-        "artists": [
-          { "artist-name": "Shabba Ranks", "popularity": 18189341 },
-          { "artist-name": "Beenie Man", "popularity": 18189341 },
-          { "artist-name": "Vybz Kartel", "popularity": 18189341 }
-        ]
+        "artists": [{ "artist-name": "Beenie Man", "popularity": 3849044 }]
       },
       {
         "subgenre-name": "Dub",
-        "artists": [
-          { "artist-name": "King Tubby", "popularity": 18189341 },
-          { "artist-name": "Lee \"Scratch\" Perry", "popularity": 18189341 },
-          { "artist-name": "Augustus Pablo", "popularity": 18189341 }
-        ]
+        "artists": [{ "artist-name": "King Tubby", "popularity": 277659 }]
       },
       {
         "subgenre-name": "Ska",
-        "artists": [
-          { "artist-name": "The Skatalites", "popularity": 18189341 },
-          { "artist-name": "Prince Buster", "popularity": 18189341 },
-          { "artist-name": "Toots and the Maytals", "popularity": 18189341 }
-        ]
+        "artists": [{ "artist-name": "The Skatalites", "popularity": 368575 }]
       },
       {
         "subgenre-name": "Rocksteady",
-        "artists": [
-          { "artist-name": "Alton Ellis", "popularity": 18189341 },
-          { "artist-name": "The Paragons", "popularity": 18189341 },
-          { "artist-name": "Desmond Dekker", "popularity": 18189341 }
-        ]
+        "artists": [{ "artist-name": "The Paragons", "popularity": 288916 }]
       },
       {
         "subgenre-name": "Reggaeton",
         "fusion": "Hip-Hop",
         "artists": [
-          { "artist-name": "Daddy Yankee", "popularity": 18189341 },
-          { "artist-name": "Don Omar", "popularity": 18189341 },
-          { "artist-name": "Bad Bunny", "popularity": 18189341 }
+          { "artist-name": "Daddy Yankee", "popularity": 55381489 },
+          { "artist-name": "Bad Bunny", "popularity": 83769977 }
         ]
       }
     ]
@@ -614,54 +591,48 @@
         "subgenre-name": "Boom Bap",
         "fusion": null,
         "artists": [
-          { "artist-name": "Nas", "popularity": 18189341 },
-          { "artist-name": "KRS-One", "popularity": 18189341 },
-          { "artist-name": "Gang Starr", "popularity": 18189341 }
+          { "artist-name": "Nas", "popularity": 9215370 },
+          { "artist-name": "Gang Starr", "popularity": 3219386 }
         ]
       },
       {
         "subgenre-name": "Trap",
         "fusion": null,
         "artists": [
-          { "artist-name": "Gucci Mane", "popularity": 18189341 },
-          { "artist-name": "Future", "popularity": 18189341 },
-          { "artist-name": "Migos", "popularity": 18189341 }
+          { "artist-name": "Future", "popularity": 55818676 },
+          { "artist-name": "Migos", "popularity": 19069049 }
         ]
       },
       {
         "subgenre-name": "Jazz Rap",
         "fusion": "Jazz",
         "artists": [
-          { "artist-name": "A Tribe Called Quest", "popularity": 18189341 },
-          { "artist-name": "De La Soul", "popularity": 18189341 },
-          { "artist-name": "Guru", "popularity": 18189341 }
+          { "artist-name": "A Tribe Called Quest", "popularity": 5166339 },
+          { "artist-name": "De La Soul", "popularity": 18817852 }
         ]
       },
       {
         "subgenre-name": "G-Funk",
         "fusion": "Funk",
         "artists": [
-          { "artist-name": "Dr. Dre", "popularity": 18189341 },
-          { "artist-name": "Snoop Dogg", "popularity": 18189341 },
-          { "artist-name": "Warren G", "popularity": 18189341 }
+          { "artist-name": "Dr. Dre", "popularity": 24252366 },
+          { "artist-name": "Snoop Dogg", "popularity": 30916037 }
         ]
       },
       {
         "subgenre-name": "Hyphy",
         "fusion": null,
         "artists": [
-          { "artist-name": "E-40", "popularity": 18189341 },
-          { "artist-name": "Mac Dre", "popularity": 18189341 },
-          { "artist-name": "Keak Da Sneak", "popularity": 18189341 }
+          { "artist-name": "E-40", "popularity": 3115193 },
+          { "artist-name": "Mac Dre", "popularity": 485464 }
         ]
       },
       {
         "subgenre-name": "Horrorcore",
         "fusion": null,
         "artists": [
-          { "artist-name": "Gravediggaz", "popularity": 18189341 },
-          { "artist-name": "Three 6 Mafia", "popularity": 18189341 },
-          { "artist-name": "Insane Clown Posse", "popularity": 18189341 }
+          { "artist-name": "Gravediggaz", "popularity": 140020 },
+          { "artist-name": "Three 6 Mafia", "popularity": 4171714 }
         ]
       }
     ]
@@ -680,15 +651,14 @@
         "subgenre-name": "House",
         "fusion": null,
         "artists": [
-          { "artist-name": "Frankie Knuckles", "popularity": 18189341 },
-          { "artist-name": "Larry Heard", "popularity": 18189341 },
-          { "artist-name": "Marshall Jefferson", "popularity": 18189341 }
+          { "artist-name": "Larry Heard", "popularity": 122276 },
+          { "artist-name": "Marshall Jefferson", "popularity": 3755070 }
         ]
       },
       {
         "subgenre-name": "Techno",
         "fusion": null,
-        "artists": [{ "artist-name": "Juan Atkins", "popularity": 18189341 }]
+        "artists": [{ "artist-name": "Juan Atkins", "popularity": 32634 }]
       }
     ]
   }
