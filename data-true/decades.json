@@ -64,6 +64,10 @@
         "body": "La naissance du Swing marque le début de l'Age d'Or du Jazz."
       },
       {
+        "title": "Régimes totalitaires",
+        "body": "En 1932, aidé par les difficultés économiques auxquelles le pays fait face, le parti nazi devient la première force politique en Allemagne. L'année suivante, Hitler devient chancelier. En Russie, c'est le début des purges staliniennes."
+      },
+      {
         "title": "Disney",
         "body": "En 1937, Disney produit Blanche-Neige et les Sept Nains, le premier long-métrage d'animation."
       },
@@ -75,7 +79,7 @@
   },
   {
     "start-year": 1940,
-    "genres-rating": ["jazz", "rnb", "country", "blues"],
+    "genres-rating": ["jazz", "r&b", "country", "blues"],
     "history": [
       {
         "title": "Armes atomiques",
@@ -93,7 +97,7 @@
   },
   {
     "start-year": 1950,
-    "genres-rating": ["rock", "rnb", "pop", "country", "jazz", "blues"],
+    "genres-rating": ["rock", "r&b", "pop", "country", "jazz", "blues"],
     "history": [
       {
         "title": "USA contre URSS",
@@ -118,29 +122,25 @@
     "genres-rating": [
       "rock",
       "pop",
-      "rnb",
+      "r&b",
       "country",
       "jazz",
       "blues",
-      "runk",
+      "funk",
       "reggae"
     ],
     "history": [
       {
-        "title": "USA contre URSS",
-        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "Mai 68 & Printemps de Prague",
+        "body": "Des mouvements sociaux majeurs éclatent en France et en Tchécoslovaquie, symbolisant la contestation et la volonté de changement dans la société."
       },
       {
-        "title": "Trente Glorieuses",
-        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Culture hippie",
+        "body": "La culture hippie se développe, prônant la paix, l'amour libre et la contestation de l'ordre établi, notamment à travers la musique et les festivals."
       },
       {
-        "title": "Rock'n'roll",
-        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
-      },
-      {
-        "title": "Culture américian",
-        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Télévision",
+        "body": "La télévision devient plus accessible et s'installe de plus en plus dans les maisons. Vers la fin de la décennie, la couleur fait ses premières apparitions."
       }
     ]
   },
@@ -151,7 +151,7 @@
       "funk",
       "pop",
       "reggae",
-      "rnb",
+      "r&b",
       "blues",
       "metal",
       "punk",
@@ -162,20 +162,20 @@
     ],
     "history": [
       {
-        "title": "USA contre URSS",
-        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "Premier choc pétrolier",
+        "body": "La crise pétrolière de 1973 provoque une hausse brutale des prix du pétrole et marque la fin des Trente Glorieuses."
       },
       {
-        "title": "Trente Glorieuses",
-        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Jeux vidéo",
+        "body": "L'industrie du jeu vidéo naît avec l'apparition des premières consoles et jeux d'arcade comme Pong."
       },
       {
-        "title": "Rock'n'roll",
-        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
+        "title": "Rubik's Cube",
+        "body": "Le Rubik's Cube, inventé en 1974, devient un phénomène mondial et un symbole de la culture populaire."
       },
       {
-        "title": "Culture américian",
-        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Culture punk",
+        "body": "Le mouvement punk émerge, prônant l'anticonformisme, la rébellion et une musique énergique et brute."
       }
     ]
   },
@@ -187,7 +187,7 @@
       "hip-hop",
       "electronic",
       "metal",
-      "rnb",
+      "r&b",
       "country",
       "funk",
       "reggae",
@@ -197,20 +197,20 @@
     ],
     "history": [
       {
-        "title": "USA contre URSS",
-        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "Assasinat de John Lennon",
+        "body": "John Lennon, membre des Beatles, est assassiné à New York en 1980, provoquant une onde de choc mondiale."
       },
       {
-        "title": "Trente Glorieuses",
-        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Le personnage Mario",
+        "body": "Le personnage de Mario apparaît dans les jeux vidéo Nintendo et devient une icône du jeu vidéo."
       },
       {
-        "title": "Rock'n'roll",
-        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
+        "title": "Le CD",
+        "body": "Le disque compact (CD) est lancé, révolutionnant la manière d'écouter et de distribuer la musique."
       },
       {
-        "title": "Culture américian",
-        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Les clips vidéo",
+        "body": "en 1982, Michael Jackson publie sont album Thriller, qui devient l'album le plus vendu au monde en un an. Le clip d'une des chansons de l'album participe à la démocratisation des clips vidéos."
       }
     ]
   },
@@ -221,7 +221,7 @@
       "hip-hop",
       "pop",
       "electronic",
-      "rbn",
+      "r&b",
       "metal",
       "country",
       "reggae",
@@ -232,20 +232,20 @@
     ],
     "history": [
       {
-        "title": "USA contre URSS",
-        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "Chute de l'URSS",
+        "body": "La dissolution de l'Union soviétique en 1991 marque la fin de la guerre froide et un bouleversement géopolitique mondial."
       },
       {
-        "title": "Trente Glorieuses",
-        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Abolition de l'apartheid",
+        "body": "L'apartheid prend fin en Afrique du Sud, ouvrant la voie à la démocratie et à l'élection de Nelson Mandela."
       },
       {
-        "title": "Rock'n'roll",
-        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
+        "title": "Internet",
+        "body": "Internet se démocratise, notamment au travers de l'email et du World Wide Web."
       },
       {
-        "title": "Culture américian",
-        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Tunnel sous la Manche",
+        "body": "L'ouverture du tunnel sous la Manche en 1994 relie la France et le Royaume-Uni par voie ferroviaire."
       }
     ]
   },
@@ -256,7 +256,7 @@
       "hip-hop",
       "rock",
       "electronic",
-      "rbn",
+      "r&b",
       "country",
       "metal",
       "reggae",
@@ -267,20 +267,20 @@
     ],
     "history": [
       {
-        "title": "USA contre URSS",
-        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "iPod",
+        "body": "Apple lance l'iPod en 2001, révolutionnant la manière d'écouter de la musique en mobilité."
       },
       {
-        "title": "Trente Glorieuses",
-        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
+        "title": "Explosion du Reggaeton",
+        "body": "Le reggaeton devient un genre musical mondialement populaire, notamment grâce à des artistes comme Daddy Yankee."
       },
       {
-        "title": "Rock'n'roll",
-        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
+        "title": "YouTube",
+        "body": "La création de YouTube en 2005 permet à chacun de partager et de découvrir facilement des vidéos en ligne."
       },
       {
-        "title": "Culture américian",
-        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "Streaming",
+        "body": "L'essor du streaming transforme la consommation de musique et de vidéos, rendant l'accès instantané et illimité."
       }
     ]
   },
@@ -290,7 +290,7 @@
       "hip-hop",
       "pop",
       "electronic",
-      "rbn",
+      "r&b",
       "rock",
       "country",
       "metal",
@@ -302,20 +302,12 @@
     ],
     "history": [
       {
-        "title": "USA contre URSS",
-        "body": "La Guerre de Corée entre 1950 et 1953 amplifie les tensions entre les Etats-Unis et la Russie, et de manière plus générale entre les idéologies capitalistes et communistes. "
+        "title": "Musiques virales sur TikTok",
+        "body": "TikTok devient une plateforme incontournable pour la découverte de nouveaux artistes et la viralité de morceaux musicaux."
       },
       {
-        "title": "Trente Glorieuses",
-        "body": "La décennie marque le début des Trente Glorieuses, une période de croissance et de reconstruction de l'Europe occidentale.En 1957, la Communauté économique européenne est créée. Elle sera considérée plus tard comme les prémices de l'Union européenne."
-      },
-      {
-        "title": "Rock'n'roll",
-        "body": "En 1954, Elvis Presley enregistre son premier titre. Le Rock'n'roll explose partout aux Etats-Unis et particulièrement parmi les adolescents. Au Royaume-Uni, les Teddy Boys désignent des jeunes qui sont adeptes de Rock. "
-      },
-      {
-        "title": "Culture américian",
-        "body": "Après la première guerre déjà, mais encore plus depuis la seconde, l'Europe absorbe massivement la culture amérciane. La musique, les jeans, le Coca-Cola et Hollywood font désormais partie du quotidien des européens. C'est également le début de la consommation de masse et du marketing ciblé vers les jeunes."
+        "title": "K-pop",
+        "body": "La K-pop conquiert le monde avec des groupes comme BTS et Blackpink, rassemblant des millions de fans internationaux."
       }
     ]
   }

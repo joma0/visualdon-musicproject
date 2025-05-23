@@ -51,11 +51,7 @@ export function setupDetailsPanel() {
     document.getElementById("artists-chart").innerHTML = "";
     createBubbleChart(subgenres);
   }
-  function updateSpotifyPlayer(genre, src) {
-    const container = document.getElementById("spotify-player");
-    const playlist = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4fHgXcOxZjO97e3EuWL4P2?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
-    container.innerHTML = `<div class="bg-gray-700 rounded-lg p-4 text-center text-gray-300">Playlist ${genre} à venir...${playlist}</div>`;
-  }
+
   return {
     update(genreData) {
       document.getElementById("genre-title").textContent =
@@ -64,7 +60,6 @@ export function setupDetailsPanel() {
       createFusionList(genreData["genre-name"], genreData.subgenres);
       createInfluencesChart(genreData.influences || []);
       createArtistsGrid(genreData.subgenres || []);
-      updateSpotifyPlayer(genreData["genre-name"]);
     },
   };
 }

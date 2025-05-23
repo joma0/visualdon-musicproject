@@ -1,13 +1,6 @@
 [
   {
     "genre-name": "Metal",
-    "description": [
-      {
-        "start-date": "Fin des années 1960",
-        "start-place": "Etats-Unis, Royaume-Uni",
-        "influences": "Hard Rock, Blues, Musique classique"
-      }
-    ],
     "top-cooccurrences": [
       { "genre": "Rock", "score": 0.15228632 },
       { "genre": "Heavy metal", "score": 0.041959934 },
@@ -18,149 +11,66 @@
     "subgenres": [
       {
         "subgenre-name": "Classic Metal",
-        "description": "",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Black Sabbath",
-            "popularity": 15119613,
-            "playlist": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3oYXfO?utm_source=generator"
-          },
-          {
-            "artist-name": "Led Zeppelin",
-            "popularity": 20241228,
-            "playlist": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1NyWWI?utm_source=generator"
-          }
+          { "artist-name": "Black Sabbath", "popularity": 15119613 },
+          { "artist-name": "Led Zeppelin", "popularity": 20241228 }
         ]
       },
       {
         "subgenre-name": "Speed Metal",
-        "description": "Caractérisé par une forte accélération du tempo. Le Power Metal et Thrash Metal en sont des dérivés.",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Metallica",
-            "popularity": 28305806,
-            "playlist": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1sJmec?utm_source=generator"
-          },
-          {
-            "artist-name": "Exciter",
-            "popularity": 20981,
-            "playlist": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0IGmUW?utm_source=generator"
-          },
-          {
-            "artist-name": "Blind Guardian",
-            "popularity": 666712,
-            "playlist": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO4kqg4q?utm_source=generator"
-          }
+          { "artist-name": "Metallica", "popularity": 28305806 },
+          { "artist-name": "Exciter", "popularity": 20981 },
+          { "artist-name": "Blind Guardian", "popularity": 666712 }
         ]
       },
       {
         "subgenre-name": "Glam Metal",
-        "description": "Se distingue par un style très spécifique chez les artistes (longs cheveux blonds, maquillage, etc.). Aussi connu comme Hair Metal ou Pop Metal",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Twisted Sister",
-            "popularity": 3937584,
-            "playlist": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO4fmuQM?utm_source=generator"
-          },
-          {
-            "artist-name": "Quiet Riot",
-            "popularity": 2668582,
-            "playlist": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0F78HA?utm_source=generator"
-          }
+          { "artist-name": "Twisted Sister", "popularity": 3937584 },
+          { "artist-name": "Quiet Riot", "popularity": 2668582 }
         ]
       },
       {
-        "subgenre-name": "Crossover Thrash",
-        "description": "",
-        "playlist": ""
-      },
-      {
         "subgenre-name": "Doom Metal",
-        "description": "Caractérisé par un tempo lent, une musique lourdet et mélancolique et des paroles évoquant le désespoir.",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Saint Vitus",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "The Obsessed",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Saint Vitus", "popularity": 17402948 },
+          { "artist-name": "The Obsessed", "popularity": 13280338 }
         ]
       },
       {
         "subgenre-name": "Death Metal",
-        "description": "Inspiré du Thrash Metal. Aborde des thématiques particlièrement violentes.",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Possessed",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Obituary",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Possessed", "popularity": 15531297 },
+          { "artist-name": "Obituary", "popularity": 16394963 }
         ]
       },
       {
         "subgenre-name": "Grindcore",
-        "description": "Fusion entre le punk et le metal. Caractérisé par l'engagement politique (anti-consumérisme, végétarisme, droits des animaux).",
         "fusion": "Punk",
         "artists": [
-          {
-            "artist-name": "Nasum",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Napalm Death",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Brutal Truth",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Nasum", "popularity": 12084270 },
+          { "artist-name": "Napalm Death", "popularity": 12207938 },
+          { "artist-name": "Brutal Truth", "popularity": 18496461 }
         ]
       },
       {
         "subgenre-name": "Symphonic Metal",
-        "description": "Melange entre le Heavy Metal et des éléments de musique classique.",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Nightwish",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Within Temptation",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Nightwish", "popularity": 16809941 },
+          { "artist-name": "Within Temptation", "popularity": 12211241 }
         ]
       }
     ]
   },
   {
     "genre-name": "Punk",
-    "description": [
-      {
-        "start-date": "Début des années 1970",
-        "start-place": "New York",
-        "influences": "Garage Rock, Glam Rock, Rockabilly, Rock'n'roll"
-      }
-    ],
     "top-cooccurrences": [
       { "genre": "Rock", "score": 0.14506397 },
       { "genre": "Alternative/Punk", "score": 0.05591893 },
@@ -171,97 +81,32 @@
     "subgenres": [
       {
         "subgenre-name": "Anarcho-Punk",
-        "description": "Caractérisé par une démarche politique. Influencé par le mouvement anarchiste.",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Poison Girls",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Antisect",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Poison Girls", "popularity": 11680845 },
+          { "artist-name": "Antisect", "popularity": 10483516 }
         ]
       },
       {
         "subgenre-name": "Ska Punk",
-        "description": "",
-        "description": "Fusion entre le ska et le punk.",
         "fusion": "Jamaican",
         "artists": [
-          {
-            "artist-name": "Reel Big Fish",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Operation Ivy",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Reel Big Fish", "popularity": 15193641 },
+          { "artist-name": "Operation Ivy", "popularity": 18166313 }
         ]
-      },
-      {
-        "subgenre-name": "Psychobilly",
-        "description": "",
-        "playlist": ""
-      },
-      {
-        "subgenre-name": "Synthpop",
-        "description": "",
-        "playlist": ""
-      },
-      {
-        "subgenre-name": "Skate Punk",
-        "description": "",
-        "playlist": ""
-      },
-      {
-        "subgenre-name": "Original Hardcore",
-        "description": "",
-        "playlist": ""
       },
       {
         "subgenre-name": "Emo(core)",
-        "description": "Tendances expérimentale, compositions moins structurées. Emphase sur l'émotion, l'introspection.",
         "fusion": "Jamaican",
         "artists": [
-          {
-            "artist-name": "Dashboard Confessional",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Sunny Day Real Estate",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Dashboard Confessional", "popularity": 11023782 },
+          { "artist-name": "Sunny Day Real Estate", "popularity": 13989612 }
         ]
-      },
-      {
-        "subgenre-name": "Mathcore/Math Rock",
-        "description": "",
-        "playlist": ""
-      },
-      {
-        "subgenre-name": "Synthcore",
-        "description": "",
-        "playlist": ""
       }
     ]
   },
   {
     "genre-name": "Rock",
-    "description": [
-      {
-        "start-date": "Entre 1950 et 1960",
-        "start-place": "Etats-Unis, Royaume-Uni",
-        "influences": "RnB, Jazz, Country, Folk"
-      }
-    ],
     "top-cooccurrences": [
       { "genre": "Pop", "score": 0.057277564 },
       { "genre": "Alternative", "score": 0.025733192 },
@@ -272,120 +117,52 @@
     "subgenres": [
       {
         "subgenre-name": "Garage Rock",
-        "description": "",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "The Sonics",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Count Five",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "The Sonics", "popularity": 15570831 },
+          { "artist-name": "Count Five", "popularity": 16891941 }
         ]
       },
       {
         "subgenre-name": "Rock'n'Roll",
-        "description": "Débuts du Rock. Fortement inspiré du Rythm and blues, du Jazz, du Blues, du Gospel et de la Country. A l'origine le mot désigne le Rythm and blues des blancs.",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Elvis Presley",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Little Richard",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Rolling Stones",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Elvis Presley", "popularity": 18711337 },
+          { "artist-name": "Little Richard", "popularity": 12277936 },
+          { "artist-name": "Rolling Stones", "popularity": 11789541 }
         ]
       },
       {
         "subgenre-name": "Blues Rock",
-        "description": "Fusion entre le Blues et le Rock'n'Roll.",
         "fusion": "Blues",
         "artists": [
-          {
-            "artist-name": "Eric Clapton",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Yardbirds",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Jimi Hendrix",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Eric Clapton", "popularity": 17031561 },
+          { "artist-name": "Yardbirds", "popularity": 11631337 },
+          { "artist-name": "Jimi Hendrix", "popularity": 15327538 }
         ]
       },
       {
         "subgenre-name": "Hard Rock",
-        "description": "",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Kiss",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "AC/DC",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Scorpions",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Kiss", "popularity": 16821513 },
+          { "artist-name": "AC/DC", "popularity": 16828246 },
+          { "artist-name": "Scorpions", "popularity": 18423454 }
         ]
       },
       {
         "subgenre-name": "Rap Rock",
-        "description": "",
-        "fusion": "Rap",
+        "fusion": "Hip-Hop",
         "artists": [
-          {
-            "artist-name": "Senser",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Urban Dance Squad",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Hollywood Undead ",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Senser", "popularity": 18656338 },
+          { "artist-name": "Urban Dance Squad", "popularity": 12807094 },
+          { "artist-name": "Hollywood Undead ", "popularity": 16189981 }
         ]
       }
     ]
   },
   {
     "genre-name": "Pop",
-    "description": [
-      {
-        "start-date": "Courant des années 1960",
-        "start-place": "Etats-Unis, Royaume-Uni",
-        "influences": "Rock"
-      }
-    ],
     "top-cooccurrences": [
       { "genre": "Rock", "score": 0.076909296 },
       { "genre": "Rock/Pop", "score": 0.013944757 },
@@ -395,121 +172,63 @@
     ],
     "subgenres": [
       {
-        "subgenre-name": "Garage Rock",
-        "description": "",
+        "subgenre-name": "Synthpop",
+        "fusion": "Electro",
+        "artists": [
+          { "artist-name": "Depeche Mode", "popularity": 17009113 },
+          { "artist-name": "Pet Shop Boys", "popularity": 18189323 },
+          { "artist-name": "La Roux", "popularity": 12939641 }
+        ]
+      },
+      {
+        "subgenre-name": "Teen Pop",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "The Sonics",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Count Five",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Britney Spears", "popularity": 18129413 },
+          { "artist-name": "NSYNC", "popularity": 17189341 },
+          { "artist-name": "Sabrina Carpenter", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rock'n'Roll",
-        "description": "Débuts du Rock. Fortement inspiré du Rythm and blues, du Jazz, du Blues, du Gospel et de la Country. A l'origine le mot désigne le Rythm and blues des blancs.",
-        "fusion": null,
+        "subgenre-name": "Pop Rock",
+        "fusion": "Rock",
         "artists": [
-          {
-            "artist-name": "Elvis Presley",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Little Richard",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Rolling Stones",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Avril Lavigne", "popularity": 18189341 },
+          { "artist-name": "Maroon 5", "popularity": 18189341 },
+          { "artist-name": "Kelly Clarkson", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Blues Rock",
-        "description": "Fusion entre le Blues et le Rock'n'Roll.",
-        "fusion": "Blues",
+        "subgenre-name": "Electropop",
+        "fusion": "Electro",
         "artists": [
-          {
-            "artist-name": "Eric Clapton",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Yardbirds",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Jimi Hendrix",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Robyn", "popularity": 18189341 },
+          { "artist-name": "Owl City", "popularity": 18189341 },
+          { "artist-name": "CHVRCHES", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Hard Rock",
-        "description": "",
-        "fusion": null,
+        "subgenre-name": "Dance-pop",
+        "fusion": "Electro",
         "artists": [
-          {
-            "artist-name": "Kiss",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "AC/DC",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Scorpions",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Madonna", "popularity": 18189341 },
+          { "artist-name": "Lady Gaga", "popularity": 18189341 },
+          { "artist-name": "Dua Lipa", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rap Rock",
-        "description": "",
-        "fusion": "Rap",
+        "subgenre-name": "Pop Punk",
+        "fusion": "Punk",
         "artists": [
-          {
-            "artist-name": "Senser",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Urban Dance Squad",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Hollywood Undead ",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Blink-182", "popularity": 18189341 },
+          { "artist-name": "Paramore", "popularity": 18189341 },
+          { "artist-name": "Green Day", "popularity": 18189341 }
         ]
       }
     ]
   },
   {
     "genre-name": "Country",
-    "description": [
-      {
-        "start-date": "Début du XXe siècle, popularisé dans les années 1920",
-        "start-place": "Etats-Unis (sud)",
-        "influences": "Folk, Blues, Gospel, Musique celtique"
-      }
-    ],
     "top-cooccurrences": [
       { "genre": "Folk", "score": 0.045 },
       { "genre": "Bluegrass", "score": 0.032 },
@@ -519,121 +238,63 @@
     ],
     "subgenres": [
       {
-        "subgenre-name": "Garage Rock",
-        "description": "",
+        "subgenre-name": "Country néo-traditionnelle",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "The Sonics",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Count Five",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "George Strait", "popularity": 18189341 },
+          { "artist-name": "Alan Jackson", "popularity": 18189341 },
+          { "artist-name": "Randy Travis", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rock'n'Roll",
-        "description": "Débuts du Rock. Fortement inspiré du Rythm and blues, du Jazz, du Blues, du Gospel et de la Country. A l'origine le mot désigne le Rythm and blues des blancs.",
+        "subgenre-name": "Sertanejo",
+        "fusion": "Jamaican",
+        "artists": [
+          { "artist-name": "Zezé Di Camargo & Luciano", "popularity": 18189341 },
+          { "artist-name": "Jorge & Mateus", "popularity": 18189341 },
+          { "artist-name": "Marília Mendonça", "popularity": 18189341 }
+        ]
+      },
+      {
+        "subgenre-name": "Country pop",
+        "fusion": "Pop",
+        "artists": [
+          { "artist-name": "Taylor Swift", "popularity": 18189341 },
+          { "artist-name": "Shania Twain", "popularity": 18189341 },
+          { "artist-name": "Keith Urban", "popularity": 18189341 }
+        ]
+      },
+      {
+        "subgenre-name": "Outlaw Country",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Elvis Presley",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Little Richard",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Rolling Stones",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Willie Nelson", "popularity": 18189341 },
+          { "artist-name": "Waylon Jennings", "popularity": 18189341 },
+          { "artist-name": "Johnny Cash", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Blues Rock",
-        "description": "Fusion entre le Blues et le Rock'n'Roll.",
-        "fusion": "Blues",
-        "artists": [
-          {
-            "artist-name": "Eric Clapton",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Yardbirds",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Jimi Hendrix",
-            "popularity": 1,
-            "playlist": ""
-          }
-        ]
-      },
-      {
-        "subgenre-name": "Hard Rock",
-        "description": "",
+        "subgenre-name": "Bluegrass",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Kiss",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "AC/DC",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Scorpions",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Bill Monroe", "popularity": 18189341 },
+          { "artist-name": "Alison Krauss", "popularity": 18189341 },
+          { "artist-name": "Earl Scruggs", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rap Rock",
-        "description": "",
-        "fusion": "Rap",
+        "subgenre-name": "Country rock",
+        "fusion": "Rock",
         "artists": [
-          {
-            "artist-name": "Senser",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Urban Dance Squad",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Hollywood Undead ",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "The Eagles", "popularity": 18189341 },
+          { "artist-name": "Lynyrd Skynyrd", "popularity": 18189341 },
+          { "artist-name": "Zac Brown Band", "popularity": 18189341 }
         ]
       }
     ]
   },
   {
-    "genre-name": "Rhythm and Blues",
-    "description": [
-      {
-        "start-date": "Début des années 1940",
-        "start-place": "Etats-Unis",
-        "influences": "Jazz, Blues, Swing"
-      }
-    ],
+    "genre-name": "R&B",
     "top-cooccurrences": [
       { "genre": "Soul", "score": 0.054 },
       { "genre": "Hip-Hop", "score": 0.048 },
@@ -643,121 +304,63 @@
     ],
     "subgenres": [
       {
-        "subgenre-name": "Garage Rock",
-        "description": "",
+        "subgenre-name": "Soul",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "The Sonics",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Count Five",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Aretha Franklin", "popularity": 18189341 },
+          { "artist-name": "Otis Redding", "popularity": 18189341 },
+          { "artist-name": "Marvin Gaye", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rock'n'Roll",
-        "description": "Débuts du Rock. Fortement inspiré du Rythm and blues, du Jazz, du Blues, du Gospel et de la Country. A l'origine le mot désigne le Rythm and blues des blancs.",
+        "subgenre-name": "Neo Soul",
+        "fusion": "Rhythm and Blues",
+        "artists": [
+          { "artist-name": "Erykah Badu", "popularity": 18189341 },
+          { "artist-name": "D'Angelo", "popularity": 18189341 },
+          { "artist-name": "Jill Scott", "popularity": 18189341 }
+        ]
+      },
+      {
+        "subgenre-name": "Contemporary R&B",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Elvis Presley",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Little Richard",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Rolling Stones",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Beyoncé", "popularity": 18189341 },
+          { "artist-name": "Usher", "popularity": 18189341 },
+          { "artist-name": "Alicia Keys", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Blues Rock",
-        "description": "Fusion entre le Blues et le Rock'n'Roll.",
-        "fusion": "Blues",
-        "artists": [
-          {
-            "artist-name": "Eric Clapton",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Yardbirds",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Jimi Hendrix",
-            "popularity": 1,
-            "playlist": ""
-          }
-        ]
-      },
-      {
-        "subgenre-name": "Hard Rock",
-        "description": "",
+        "subgenre-name": "Quiet Storm",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Kiss",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "AC/DC",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Scorpions",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Sade", "popularity": 18189341 },
+          { "artist-name": "Luther Vandross", "popularity": 18189341 },
+          { "artist-name": "Anita Baker", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rap Rock",
-        "description": "",
-        "fusion": "Rap",
+        "subgenre-name": "Hip-Hop Soul",
+        "fusion": "Hip-Hop",
         "artists": [
-          {
-            "artist-name": "Senser",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Urban Dance Squad",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Hollywood Undead ",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Mary J. Blige", "popularity": 18189341 },
+          { "artist-name": "R. Kelly", "popularity": 18189341 },
+          { "artist-name": "Lauryn Hill", "popularity": 18189341 }
+        ]
+      },
+      {
+        "subgenre-name": "New Jack Swing",
+        "fusion": "Hip-Hop",
+        "artists": [
+          { "artist-name": "Bobby Brown", "popularity": 18189341 },
+          { "artist-name": "Bell Biv DeVoe", "popularity": 18189341 },
+          { "artist-name": "Teddy Riley", "popularity": 18189341 }
         ]
       }
     ]
   },
   {
     "genre-name": "Funk",
-    "description": [
-      {
-        "start-date": "Fin du XIXe siècle",
-        "start-place": "Etats-Unis (sud)",
-        "influences": "Chant de travail, Negro spiritual, Gospel"
-      }
-    ],
     "top-cooccurrences": [
       { "genre": "Rock", "score": 0.08851876 },
       { "genre": "Pop", "score": 0.041256793 },
@@ -767,121 +370,63 @@
     ],
     "subgenres": [
       {
-        "subgenre-name": "Garage Rock",
-        "description": "",
+        "subgenre-name": "P-Funk",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "The Sonics",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Count Five",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Parliament-Funkadelic", "popularity": 18189341 },
+          { "artist-name": "Bootsy Collins", "popularity": 18189341 },
+          { "artist-name": "George Clinton", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rock'n'Roll",
-        "description": "Débuts du Rock. Fortement inspiré du Rythm and blues, du Jazz, du Blues, du Gospel et de la Country. A l'origine le mot désigne le Rythm and blues des blancs.",
-        "fusion": null,
+        "subgenre-name": "Jazz-Funk",
+        "fusion": "Jazz",
         "artists": [
-          {
-            "artist-name": "Elvis Presley",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Little Richard",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Rolling Stones",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Herbie Hancock", "popularity": 18189341 },
+          { "artist-name": "Roy Ayers", "popularity": 18189341 },
+          { "artist-name": "The Crusaders", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Blues Rock",
-        "description": "Fusion entre le Blues et le Rock'n'Roll.",
-        "fusion": "Blues",
+        "subgenre-name": "Electro-Funk",
+        "fusion": "Electro",
         "artists": [
-          {
-            "artist-name": "Eric Clapton",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Yardbirds",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Jimi Hendrix",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Zapp & Roger", "popularity": 18189341 },
+          { "artist-name": "Midnight Star", "popularity": 18189341 },
+          { "artist-name": "Afrika Bambaataa", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Hard Rock",
-        "description": "",
-        "fusion": null,
+        "subgenre-name": "Funk Rock",
+        "fusion": "Rock",
         "artists": [
-          {
-            "artist-name": "Kiss",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "AC/DC",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Scorpions",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Red Hot Chili Peppers", "popularity": 18189341 },
+          { "artist-name": "Prince", "popularity": 18189341 },
+          { "artist-name": "Living Colour", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rap Rock",
-        "description": "",
-        "fusion": "Rap",
+        "subgenre-name": "G-Funk",
+        "fusion": "Hip-Hop",
         "artists": [
-          {
-            "artist-name": "Senser",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Urban Dance Squad",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Hollywood Undead ",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Dr. Dre", "popularity": 18189341 },
+          { "artist-name": "Snoop Dogg", "popularity": 18189341 },
+          { "artist-name": "Warren G", "popularity": 18189341 }
+        ]
+      },
+      {
+        "subgenre-name": "Disco Funk",
+        "fusion": "Electro",
+        "artists": [
+          { "artist-name": "Earth, Wind & Fire", "popularity": 18189341 },
+          { "artist-name": "KC and the Sunshine Band", "popularity": 18189341 },
+          { "artist-name": "Chic", "popularity": 18189341 }
         ]
       }
     ]
   },
   {
     "genre-name": "Blues",
-    "description": [
-      {
-        "start-date": "Fin du XIXe siècle",
-        "start-place": "Etats-Unis (sud)",
-        "influences": "Chant de travail, Negro spiritual, Gospel"
-      }
-    ],
     "top-cooccurrences": [
       { "genre": "Rock", "score": 0.08851876 },
       { "genre": "Pop", "score": 0.041256793 },
@@ -891,121 +436,60 @@
     ],
     "subgenres": [
       {
-        "subgenre-name": "Garage Rock",
-        "description": "",
-        "fusion": null,
+        "subgenre-name": "Delta Blues",
         "artists": [
-          {
-            "artist-name": "The Sonics",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Count Five",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Robert Johnson", "popularity": 18189341 },
+          { "artist-name": "Son House", "popularity": 18189341 },
+          { "artist-name": "Charley Patton", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rock'n'Roll",
-        "description": "Débuts du Rock. Fortement inspiré du Rythm and blues, du Jazz, du Blues, du Gospel et de la Country. A l'origine le mot désigne le Rythm and blues des blancs.",
-        "fusion": null,
+        "subgenre-name": "Chicago Blues",
         "artists": [
-          {
-            "artist-name": "Elvis Presley",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Little Richard",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Rolling Stones",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Muddy Waters", "popularity": 18189341 },
+          { "artist-name": "Howlin' Wolf", "popularity": 18189341 },
+          { "artist-name": "Buddy Guy", "popularity": 18189341 }
+        ]
+      },
+      {
+        "subgenre-name": "Texas Blues",
+        "artists": [
+          { "artist-name": "T-Bone Walker", "popularity": 18189341 },
+          { "artist-name": "Stevie Ray Vaughan", "popularity": 18189341 },
+          { "artist-name": "Freddie King", "popularity": 18189341 }
+        ]
+      },
+      {
+        "subgenre-name": "Jump Blues",
+        "fusion": "Jazz",
+        "artists": [
+          { "artist-name": "Louis Jordan", "popularity": 18189341 },
+          { "artist-name": "Big Joe Turner", "popularity": 18189341 },
+          { "artist-name": "Wynonie Harris", "popularity": 18189341 }
+        ]
+      },
+      {
+        "subgenre-name": "Soul Blues",
+        "fusion": "Rhythm and Blues",
+        "artists": [
+          { "artist-name": "Bobby \"Blue\" Bland", "popularity": 18189341 },
+          { "artist-name": "Otis Redding", "popularity": 18189341 },
+          { "artist-name": "Little Milton", "popularity": 18189341 }
         ]
       },
       {
         "subgenre-name": "Blues Rock",
-        "description": "Fusion entre le Blues et le Rock'n'Roll.",
-        "fusion": "Blues",
+        "fusion": "Rock",
         "artists": [
-          {
-            "artist-name": "Eric Clapton",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Yardbirds",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Jimi Hendrix",
-            "popularity": 1,
-            "playlist": ""
-          }
-        ]
-      },
-      {
-        "subgenre-name": "Hard Rock",
-        "description": "",
-        "fusion": null,
-        "artists": [
-          {
-            "artist-name": "Kiss",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "AC/DC",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Scorpions",
-            "popularity": 1,
-            "playlist": ""
-          }
-        ]
-      },
-      {
-        "subgenre-name": "Rap Rock",
-        "description": "",
-        "fusion": "Rap",
-        "artists": [
-          {
-            "artist-name": "Senser",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Urban Dance Squad",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Hollywood Undead ",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Eric Clapton", "popularity": 18189341 },
+          { "artist-name": "The Rolling Stones", "popularity": 18189341 },
+          { "artist-name": "Stevie Ray Vaughan", "popularity": 18189341 }
         ]
       }
     ]
   },
   {
     "genre-name": "Jazz",
-    "description": [
-      {
-        "start-date": "Fin des années 1910",
-        "start-place": "Etats-Unis",
-        "influences": "Blues, Negro Spiritual, Musique classique, Ragtime"
-      }
-    ],
     "top-cooccurrences": [
       { "genre": "Pop", "score": 0.015930373 },
       { "genre": "Rock", "score": 0.012678415 },
@@ -1015,121 +499,60 @@
     ],
     "subgenres": [
       {
-        "subgenre-name": "Garage Rock",
-        "description": "",
-        "fusion": null,
+        "subgenre-name": "Bebop",
         "artists": [
-          {
-            "artist-name": "The Sonics",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Count Five",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Charlie Parker", "popularity": 18189341 },
+          { "artist-name": "Dizzy Gillespie", "popularity": 18189341 },
+          { "artist-name": "Thelonious Monk", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rock'n'Roll",
-        "description": "Débuts du Rock. Fortement inspiré du Rythm and blues, du Jazz, du Blues, du Gospel et de la Country. A l'origine le mot désigne le Rythm and blues des blancs.",
-        "fusion": null,
+        "subgenre-name": "Cool Jazz",
         "artists": [
-          {
-            "artist-name": "Elvis Presley",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Little Richard",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Rolling Stones",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Miles Davis", "popularity": 18189341 },
+          { "artist-name": "Chet Baker", "popularity": 18189341 },
+          { "artist-name": "Dave Brubeck", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Blues Rock",
-        "description": "Fusion entre le Blues et le Rock'n'Roll.",
-        "fusion": "Blues",
+        "subgenre-name": "Free Jazz",
         "artists": [
-          {
-            "artist-name": "Eric Clapton",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Yardbirds",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Jimi Hendrix",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Ornette Coleman", "popularity": 18189341 },
+          { "artist-name": "Cecil Taylor", "popularity": 18189341 },
+          { "artist-name": "Sun Ra", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Hard Rock",
-        "description": "",
-        "fusion": null,
+        "subgenre-name": "Jazz Fusion",
+        "fusion": "Rock",
         "artists": [
-          {
-            "artist-name": "Kiss",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "AC/DC",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Scorpions",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Weather Report", "popularity": 18189341 },
+          { "artist-name": "Mahavishnu Orchestra", "popularity": 18189341 },
+          { "artist-name": "Herbie Hancock", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rap Rock",
-        "description": "",
-        "fusion": "Rap",
+        "subgenre-name": "Soul Jazz",
+        "fusion": "Rhythm and Blues",
         "artists": [
-          {
-            "artist-name": "Senser",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Urban Dance Squad",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Hollywood Undead ",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Jimmy Smith", "popularity": 18189341 },
+          { "artist-name": "Stanley Turrentine", "popularity": 18189341 },
+          { "artist-name": "Lou Donaldson", "popularity": 18189341 }
+        ]
+      },
+      {
+        "subgenre-name": "Jazz-Funk",
+        "fusion": "Funk",
+        "artists": [
+          { "artist-name": "Herbie Hancock", "popularity": 18189341 },
+          { "artist-name": "Roy Ayers", "popularity": 18189341 },
+          { "artist-name": "The Crusaders", "popularity": 18189341 }
         ]
       }
     ]
   },
   {
     "genre-name": "Jamaican",
-    "description": [
-      {
-        "start-date": "Fin du XIXe siècle",
-        "start-place": "Etats-Unis (sud)",
-        "influences": "Chant de travail, Negro spiritual, Gospel"
-      }
-    ],
     "top-cooccurrences": [
       { "genre": "Rock", "score": 0.08851876 },
       { "genre": "Pop", "score": 0.041256793 },
@@ -1139,121 +562,58 @@
     ],
     "subgenres": [
       {
-        "subgenre-name": "Garage Rock",
-        "description": "",
-        "fusion": null,
+        "subgenre-name": "Reggae",
         "artists": [
-          {
-            "artist-name": "The Sonics",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Count Five",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Bob Marley", "popularity": 18189341 },
+          { "artist-name": "Peter Tosh", "popularity": 18189341 },
+          { "artist-name": "Burning Spear", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rock'n'Roll",
-        "description": "Débuts du Rock. Fortement inspiré du Rythm and blues, du Jazz, du Blues, du Gospel et de la Country. A l'origine le mot désigne le Rythm and blues des blancs.",
-        "fusion": null,
+        "subgenre-name": "Dancehall",
         "artists": [
-          {
-            "artist-name": "Elvis Presley",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Little Richard",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Rolling Stones",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Shabba Ranks", "popularity": 18189341 },
+          { "artist-name": "Beenie Man", "popularity": 18189341 },
+          { "artist-name": "Vybz Kartel", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Blues Rock",
-        "description": "Fusion entre le Blues et le Rock'n'Roll.",
-        "fusion": "Blues",
+        "subgenre-name": "Dub",
         "artists": [
-          {
-            "artist-name": "Eric Clapton",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Yardbirds",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Jimi Hendrix",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "King Tubby", "popularity": 18189341 },
+          { "artist-name": "Lee \"Scratch\" Perry", "popularity": 18189341 },
+          { "artist-name": "Augustus Pablo", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Hard Rock",
-        "description": "",
-        "fusion": null,
+        "subgenre-name": "Ska",
         "artists": [
-          {
-            "artist-name": "Kiss",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "AC/DC",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Scorpions",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "The Skatalites", "popularity": 18189341 },
+          { "artist-name": "Prince Buster", "popularity": 18189341 },
+          { "artist-name": "Toots and the Maytals", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rap Rock",
-        "description": "",
-        "fusion": "Rap",
+        "subgenre-name": "Rocksteady",
         "artists": [
-          {
-            "artist-name": "Senser",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Urban Dance Squad",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Hollywood Undead ",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Alton Ellis", "popularity": 18189341 },
+          { "artist-name": "The Paragons", "popularity": 18189341 },
+          { "artist-name": "Desmond Dekker", "popularity": 18189341 }
+        ]
+      },
+      {
+        "subgenre-name": "Reggaeton",
+        "fusion": "Hip-Hop",
+        "artists": [
+          { "artist-name": "Daddy Yankee", "popularity": 18189341 },
+          { "artist-name": "Don Omar", "popularity": 18189341 },
+          { "artist-name": "Bad Bunny", "popularity": 18189341 }
         ]
       }
     ]
   },
   {
     "genre-name": "Hip-hop",
-    "description": [
-      {
-        "start-date": "Courant des années 1970",
-        "start-place": "Bronx (New York)",
-        "influences": "Funk, Soul, Rhythm and Blues, Reggae, Jazz, Spoken word"
-      }
-    ],
     "top-cooccurrences": [
       { "genre": "Hip-Hop/Rap", "score": 0.115694396 },
       { "genre": "Rap", "score": 0.07590821 },
@@ -1263,121 +623,63 @@
     ],
     "subgenres": [
       {
-        "subgenre-name": "Garage Rock",
-        "description": "",
+        "subgenre-name": "Boom Bap",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "The Sonics",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Count Five",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Nas", "popularity": 18189341 },
+          { "artist-name": "KRS-One", "popularity": 18189341 },
+          { "artist-name": "Gang Starr", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rock'n'Roll",
-        "description": "Débuts du Rock. Fortement inspiré du Rythm and blues, du Jazz, du Blues, du Gospel et de la Country. A l'origine le mot désigne le Rythm and blues des blancs.",
+        "subgenre-name": "Trap",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Elvis Presley",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Little Richard",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Rolling Stones",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Gucci Mane", "popularity": 18189341 },
+          { "artist-name": "Future", "popularity": 18189341 },
+          { "artist-name": "Migos", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Blues Rock",
-        "description": "Fusion entre le Blues et le Rock'n'Roll.",
-        "fusion": "Blues",
+        "subgenre-name": "Jazz Rap",
+        "fusion": "Jazz",
         "artists": [
-          {
-            "artist-name": "Eric Clapton",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Yardbirds",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Jimi Hendrix",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "A Tribe Called Quest", "popularity": 18189341 },
+          { "artist-name": "De La Soul", "popularity": 18189341 },
+          { "artist-name": "Guru", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Hard Rock",
-        "description": "",
+        "subgenre-name": "G-Funk",
+        "fusion": "Funk",
+        "artists": [
+          { "artist-name": "Dr. Dre", "popularity": 18189341 },
+          { "artist-name": "Snoop Dogg", "popularity": 18189341 },
+          { "artist-name": "Warren G", "popularity": 18189341 }
+        ]
+      },
+      {
+        "subgenre-name": "Hyphy",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "Kiss",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "AC/DC",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Scorpions",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "E-40", "popularity": 18189341 },
+          { "artist-name": "Mac Dre", "popularity": 18189341 },
+          { "artist-name": "Keak Da Sneak", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rap Rock",
-        "description": "",
-        "fusion": "Rap",
+        "subgenre-name": "Horrorcore",
+        "fusion": null,
         "artists": [
-          {
-            "artist-name": "Senser",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Urban Dance Squad",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Hollywood Undead ",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Gravediggaz", "popularity": 18189341 },
+          { "artist-name": "Three 6 Mafia", "popularity": 18189341 },
+          { "artist-name": "Insane Clown Posse", "popularity": 18189341 }
         ]
       }
     ]
   },
   {
-    "genre-name": "Electro",
-    "description": [
-      {
-        "start-date": "Courant des années 1970",
-        "start-place": "Bronx (New York)",
-        "influences": "Funk, Soul, Rhythm and Blues, Reggae, Jazz, Spoken word"
-      }
-    ],
+    "genre-name": "Electronic",
     "top-cooccurrences": [
       { "genre": "Electronica", "score": 0.04794131 },
       { "genre": "Electronica/Dance", "score": 0.0453066 },
@@ -1387,109 +689,18 @@
     ],
     "subgenres": [
       {
-        "subgenre-name": "Garage Rock",
-        "description": "",
+        "subgenre-name": "House",
         "fusion": null,
         "artists": [
-          {
-            "artist-name": "The Sonics",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Count Five",
-            "popularity": 1,
-            "playlist": ""
-          }
+          { "artist-name": "Frankie Knuckles", "popularity": 18189341 },
+          { "artist-name": "Larry Heard", "popularity": 18189341 },
+          { "artist-name": "Marshall Jefferson", "popularity": 18189341 }
         ]
       },
       {
-        "subgenre-name": "Rock'n'Roll",
-        "description": "Débuts du Rock. Fortement inspiré du Rythm and blues, du Jazz, du Blues, du Gospel et de la Country. A l'origine le mot désigne le Rythm and blues des blancs.",
+        "subgenre-name": "Techno",
         "fusion": null,
-        "artists": [
-          {
-            "artist-name": "Elvis Presley",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Little Richard",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Rolling Stones",
-            "popularity": 1,
-            "playlist": ""
-          }
-        ]
-      },
-      {
-        "subgenre-name": "Blues Rock",
-        "description": "Fusion entre le Blues et le Rock'n'Roll.",
-        "fusion": "Blues",
-        "artists": [
-          {
-            "artist-name": "Eric Clapton",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Yardbirds",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Jimi Hendrix",
-            "popularity": 1,
-            "playlist": ""
-          }
-        ]
-      },
-      {
-        "subgenre-name": "Hard Rock",
-        "description": "",
-        "fusion": null,
-        "artists": [
-          {
-            "artist-name": "Kiss",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "AC/DC",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Scorpions",
-            "popularity": 1,
-            "playlist": ""
-          }
-        ]
-      },
-      {
-        "subgenre-name": "Rap Rock",
-        "description": "",
-        "fusion": "Rap",
-        "artists": [
-          {
-            "artist-name": "Senser",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Urban Dance Squad",
-            "popularity": 1,
-            "playlist": ""
-          },
-          {
-            "artist-name": "Hollywood Undead ",
-            "popularity": 1,
-            "playlist": ""
-          }
-        ]
+        "artists": [{ "artist-name": "Juan Atkins", "popularity": 18189341 }]
       }
     ]
   }

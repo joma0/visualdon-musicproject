@@ -11,23 +11,35 @@ function createFusionChart(genreName, subgenres = []) {
     (subgenre) => subgenre.fusion !== null
   );
   const allGenres = [
-    "hip-hop",
-    "pop",
-    "electronic",
-    "r&b",
-    "rock",
-    "country",
-    "metal",
-    "reggae",
-    "punk",
-    "funk",
-    "jazz",
-    "blues",
+    "Hip-hop",
+    "Pop",
+    "Electronic",
+    "R&B",
+    "Rock",
+    "Country",
+    "Metal",
+    "Reggae",
+    "Punk",
+    "Funk",
+    "Jazz",
+    "Blues",
   ];
-  const currentGenre = genreName.toLowerCase();
-  const otherGenres = allGenres.filter(
-    (genre) => genre.toLowerCase() != currentGenre
-  );
+  const genresColors = {
+    "Hip-hop": "#F40342",
+    Pop: "#FD4102",
+    Electronic: "#FD7B03",
+    "R&B": "#FDBE00",
+    Rock: "#E8FF0A",
+    Country: "#02FF64",
+    Metal: "#00FFF7",
+    Reggae: "#00C3FF",
+    Punk: "#008CFF",
+    Funk: "#7A00FF",
+    Jazz: "#C900FF",
+    Blues: "#FF00DC",
+  };
+  const currentGenre = genreName;
+  const otherGenres = allGenres.filter((genre) => genre != currentGenre);
   console.log(currentGenre);
   console.log(otherGenres);
   console.log(fusionSubgenres);
@@ -70,14 +82,15 @@ function createFusionChart(genreName, subgenres = []) {
       .attr("r", 100)
       .attr("cx", centerX)
       .attr("cy", centerY)
-      .attr("fill", "blue");
+      .attr("fill", genresColors[currentGenre]); // Utilisation de la couleur du genre actuel
+
     svg
       .append("text")
       .attr("x", centerX)
       .attr("y", centerY)
       .attr("dominant-baseline", "middle")
       .attr("text-anchor", "middle")
-      .attr("font-size", "16px") // Taille plus grande pour le genre principal
+      .attr("font-size", "16px")
       .attr("font-weight", "bold")
       .attr("fill", "white")
       .attr("pointer-events", "none")
@@ -97,7 +110,7 @@ function createFusionChart(genreName, subgenres = []) {
       .attr("r", 30)
       .attr("cx", (d, i) => centerX + radius * Math.cos(i * angleStep))
       .attr("cy", (d, i) => centerY + radius * Math.sin(i * angleStep))
-      .attr("fill", "red");
+      .attr("fill", (d) => genresColors[d]); // Utilisation des couleurs pour chaque genre
 
     // Ajouter les labels dans les groupes
     const labels = genresGroup
@@ -224,7 +237,9 @@ function createFusionChart(genreName, subgenres = []) {
         const offset = (i - (fusionSubgenres.length - 1) / 2) * spacing;
         return midY + offset * Math.sin(angle + Math.PI / 2);
       })
-      .attr("fill", "purple");
+      .attr("fill", () =>
+        blendColors(genresColors[currentGenre], genresColors[selectedGenre])
+      );
 
     // Ajuster aussi la position des labels
     fusionGroups
@@ -264,6 +279,35 @@ function createFusionChart(genreName, subgenres = []) {
 
     // Animation d'apparition
     fusionGroups.transition().duration(500).style("opacity", 1);
+  }
+
+  function blendColors(color1, color2) {
+    // Convertir les codes hex en RGB
+    const c1 = {
+      r: parseInt(color1.slice(1, 3), 16),
+      g: parseInt(color1.slice(3, 5), 16),
+      b: parseInt(color1.slice(5, 7), 16),
+    };
+    const c2 = {
+      r: parseInt(color2.slice(1, 3), 16),
+      g: parseInt(color2.slice(3, 5), 16),
+      b: parseInt(color2.slice(5, 7), 16),
+    };
+
+    // Mélanger les couleurs (moyenne)
+    const blend = {
+      r: Math.round((c1.r + c2.r) / 2),
+      g: Math.round((c1.g + c2.g) / 2),
+      b: Math.round((c1.b + c2.b) / 2),
+    };
+
+    // Convertir en hex
+    return (
+      "#" +
+      [blend.r, blend.g, blend.b]
+        .map((n) => n.toString(16).padStart(2, "0"))
+        .join("")
+    );
   }
 
   createBubbles();
