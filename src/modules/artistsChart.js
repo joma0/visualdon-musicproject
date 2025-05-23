@@ -1,4 +1,4 @@
-import * as d3 from 'd3';
+import * as d3 from "d3";
 import { select } from "d3-selection";
 import { scaleLinear } from "d3-scale";
 import { max, min } from "d3-array";
@@ -185,16 +185,7 @@ function createBubbleChart(subgenres) {
         }
       });
   }
-  
-  const margin = { top: 20, right: 20, bottom: 20, left: 20 };
 
-  // Créer le SVG
-  const svg = container
-    .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`);
   // Définir les motifs pour les images d'artistes
   function createPatterns() {
     const defs = svg.append("defs");
@@ -216,31 +207,11 @@ function createBubbleChart(subgenres) {
     });
   }
 
-  function displayPlaylist(playlistUrl) {
-    const url = playlistUrl;
-    console.log("Playlist de l'artiste:", url);
-
-    const existingPlaylist = document.getElementById("playlist");
-    if (existingPlaylist) {
-      existingPlaylist.remove();
-    }
-
-    container
-      .append("div")
-      .attr("id", "playlist")
-      .style("width", "100%")
-      .style("margin-top", "20px").html(`
-            <iframe 
-                style="border-radius:12px" 
-                src=${playlistUrl} 
-                width="50%" 
-                height="352" 
-                frameBorder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy">
-            </iframe>
-        `);
+  function displayPlaylist(artistName) {
+    const url = `https://open.spotify.com/search/${encodeURIComponent(
+      artistName
+    )}`;
+    window.open(url, "_blank");
   }
 
   function createBubbles() {
@@ -267,6 +238,21 @@ function createBubbleChart(subgenres) {
       };
     });
 
+    // Calcul de la surface totale nécessaire
+    const totalArea = nodes.reduce(
+      (sum, node) => sum + Math.PI * Math.pow(node.r, 2),
+      0
+    );
+    const aspectRatio = width / height;
+    const optimalHeight = Math.sqrt(totalArea / aspectRatio) * 2;
+    const optimalWidth = optimalHeight * aspectRatio;
+
+    // Mise à jour des dimensions du SVG
+    const finalHeight = Math.max(height, optimalHeight);
+    const finalWidth = Math.max(width, optimalWidth);
+
+    bubblesSVG.attr("width", finalWidth).attr("height", finalHeight);
+
     const simulation = forceSimulation(nodes)
       .force("charge", forceManyBody().strength(10))
       .force(
@@ -275,7 +261,7 @@ function createBubbleChart(subgenres) {
           .radius((d) => Math.max(d.width, d.height) / 2)
           .strength(0.2)
       )
-      .force("center", forceCenter(width / 2, height / 2))
+      .force("center", forceCenter(finalWidth / 2, finalHeight / 2)) // Centrage avec les nouvelles dimensions
       .stop();
 
     // Exécuter la simulation
@@ -317,7 +303,7 @@ function createBubbleChart(subgenres) {
       const isActive = group.style("opacity") !== "0.2";
 
       if (isActive) {
-        displayPlaylist(d.playlist);
+        displayPlaylist(d["artist-name"]);
       }
     });
   }
