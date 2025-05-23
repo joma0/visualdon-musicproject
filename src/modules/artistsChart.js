@@ -1,3 +1,4 @@
+import * as d3 from 'd3';
 import { select } from "d3-selection";
 import { scaleLinear } from "d3-scale";
 import { max, min } from "d3-array";
@@ -184,6 +185,8 @@ function createBubbleChart(subgenres) {
         }
       });
   }
+  
+  const margin = { top: 20, right: 20, bottom: 20, left: 20 };
 
   // Créer le SVG
   const svg = container

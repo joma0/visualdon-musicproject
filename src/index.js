@@ -303,9 +303,9 @@ class MusicVisualizer {
       ],
     };
     // Mettre à jour le contenu
-    /*if (this.detailsPanel) {
+    if (this.detailsPanel) {
       this.detailsPanel.update(genreData);
-    }*/
+    }
     renderCooccurrenceChart(genreData["top-cooccurrences"]);
   }
 }
