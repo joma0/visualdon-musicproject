@@ -296,8 +296,8 @@ export function setupControls(onDecadeChange) {
       autoPlayInterval = null;
       autoPlayButton.textContent = 'Auto Play';
       return;
-    }    // On commence à l'index 1 (1920s)
-    currentDecadeIndex = 1;
+    }        // On commence à l'index DEFAULT_AUTOPLAY_START_INDEX (1920s)
+    currentDecadeIndex = DEFAULT_AUTOPLAY_START_INDEX;
     // Mettre à jour le slider + label
     slider.value = currentDecadeIndex + 1;
     updateDecadeDisplay();
