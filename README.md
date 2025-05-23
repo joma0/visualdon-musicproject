@@ -23,58 +23,67 @@ Nous avons choisi de construire nous-même un jeu de données, à partir de diff
      => Cartographie les genres et sous-genres musicaux, en mettant en avant leurs liens de parenté ainsi que leur apparition chronologique
 
 Utilisation de l'IA :
-Pour des questions d’optimisation, nous prévoyons utiliser l’IA pour nous aider à construire notre jeu de données. Afin de nous assurer de la fiabilité de ce dernier, nous transmettrons à l’IA des données issues de sources vérifiées, ainsi que la structure du JSON souhaitée. L'IA nous permettra seulement de compléter les différentes propriétés plus rapidement.
+Pour des questions d’optimisation, nous avons utilisé l’IA pour nous aider à construire notre jeu de données. Afin de nous assurer de la fiabilité de ce dernier, nous transmettons à l’IA des données issues de sources vérifiées, ainsi que la structure du JSON souhaitée. L'IA nous permet seulement de compléter les différentes propriétés plus rapidement.
 
 **Description**
 Notre jeu de données sera au format JSON et aurait la structure suivante :
 
+decades.json
+
 ```json
-{
-  "supergenre-name": "",
-  "description": "",
-  "genres": [
-    {
-      "genre-name": "",
-      "description": "",
-      "subgenres": [
-        {
-          "subgenre-name": "",
-          "description": "",
-          "origin": {
-            "start-decade": "",
-            "region": ""
-          },
-          "artists": [
-            {
-              "artist-name": "",
-              "songs": []
-            }
-          ],
-          "influences": [
-            {
-              "subgenre-name": "",
-              "percent": 100
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "start-year": 0,
+    "genres-rating": [""],
+    "history": [
+      {
+        "title": "",
+        "body": ""
+      }
+    ]
+  }
+]
 ```
+
+Explication des propriétés :
+
+- start-year : année de début (p.ex. 1910 pour la décennie 1910-1919)
+- genres-rating : classement des genres en fonction de leur popularité
+- history : liste de faits historiques marquants
+  - title : titre du fait historique
+  - body : paragraphe descriptif
+
+genres.json
+
+```json
+[
+  {
+    "genre-name": "",
+    "top-cooccurrences": [{ "genre": "", "score": 0 }],
+    "subgenres": [
+      {
+        "subgenre-name": "",
+        "fusion": null,
+        "artists": [{ "artist-name": "", "popularity": 0 }]
+      }
+    ]
+  }
+]
+```
+
+Explication des propriétés :
+
+- genres-name : nom du genre principal
+- top-cooccurences : 5 autres genres apparaissant le plus souvent avec le genre dans un même morceau
+- subgenres : liste de sous-genres
+  - subgenre-name : nom du sous-genre
+  - fusion : nom du genre fusionné ou null
+  - artists : liste d’artistes
+    - artist-name : nom de l’artiste
+    - popularity : nombre d’auditeurs sur Spotify
 
 Types de données :
 La majorité de nos données seront des données qualitatives nominales, à l'exception des influences (pourcentages) qui seront des données quantitatives continues.
-
-Elément optionnel :
-Nous envisageons aussi d'ajouter une propriété "popularité" qui serait constituée d'une note (en pourcent) par décennie. Cette note serait calculée d'après la popularité des chansons et des artistes d'un certain sous-genre pendant une décennie en particulier. Il s'agirait là également de données quantitatives continues. L'ajout de cette propriété dépendra des données qu'il sera possible de récolter.
-
-```json
-{
-  "decade": "",
-  "percent": 100
-}
-```
 
 **But**
 Nous souhaitons aborder les questions suivantes :
@@ -83,6 +92,11 @@ Nous souhaitons aborder les questions suivantes :
 2. Leur apparition et leur évolution (popularité) dans le temps
 3. Les artistes et chansons phares de ces genres et sous-genres
 4. Les correspondances (influences, fusions, origines, ...) entre les différents genres et sous-genres
+
+Notre visualisation présente une partie explicative et une partie exploratoire :
+
+1. La partie "scrollytelling" qui permet de naviguer parmi les décennies et de visualiser l'évolution des genres est explicative.
+2. La partie qui permet de naviguer parmi les genres sur le graphique principal est plutôt exploratoire.
 
 **Références**
 Voici quelques références qui exploitent des données sur la même thématique :
