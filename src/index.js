@@ -14,8 +14,8 @@ class MusicVisualizer {
       .reverseLayerOrder(true)
       .capitalizeLabels(true)
       .domain([0, 12])
-      .tickValues([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
-      .tickCircleValues([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
+      .tickValues([2, 4, 6, 8, 10, 12])
+      .tickCircleValues([2, 4, 6, 8, 10, 12])
       .barColors([
         "#F40342",
         "#FD4102",
@@ -34,59 +34,85 @@ class MusicVisualizer {
     document.addEventListener("DOMContentLoaded", () => this.init());
   }
 
-  init() {
+  async init() {
     this.detailsPanel = setupDetailsPanel();
+    
+    // Récupérer la valeur initiale du slider
+    const slider = document.getElementById("slider");
+    const initialDecade = this.getDecadeFromSliderValue(parseInt(slider.value, 10));
+    
+    // Charger et afficher les données initiales
+    this.data = await this.updateDataForDecade(initialDecade);
+    this.updateVisualization();
+    
+    // Configurer les contrôles avec le callback
     setupControls(async (decade) => {
       this.data = await this.updateDataForDecade(decade);
       this.updateVisualization();
     });
+    
+    // Configurer le bouton de fermeture du panneau
     document.getElementById("close-panel").addEventListener("click", () => {
       document
         .getElementById("visualization-container")
         .classList.remove("w-1/2");
       document.getElementById("details-panel").classList.remove("slide-in");
     });
-    // déclenchement initial sur la valeur courante du slider
-    const initialDecade = setupControls((value) => value);
-    // on veut lancer tout de suite l'affichage pour cette décennie
-    this.updateDataForDecade(initialDecade).then((data) => {
-      this.data = data;
-      this.updateVisualization();
-    });
+  }
+
+  // Fonction helper pour convertir la valeur du slider en décennie
+  getDecadeFromSliderValue(sliderValue) {
+    const decades = [1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010];
+    const index = sliderValue - 1; // Le slider va de 1 à 11
+    return decades[index];
   }
 
   async updateDataForDecade(decade) {
-    // 1. Charger le JSON
-    const decades = await d3.json("/data-true/decades.json");
-    // 2. Trouver l'entrée correspondante
-    const entry = decades.find((d) => d["start-year"] === decade);
-    const rated = Array.isArray(entry?.["genres-rating"])
-      ? entry["genres-rating"]
-      : [];
-    // 3. Liste fixe de tous les genres
-    const allGenres = [
-      "hip-hop",
-      "pop",
-      "electronic",
-      "r&b",
-      "rock",
-      "country",
-      "metal",
-      "reggae",
-      "punk",
-      "funk",
-      "jazz",
-      "blues",
-    ];
-    const maxVal = allGenres.length;
-    // 4. Construire le mapping nom → score (12 = plus populaire, 0 = absent)
-    const dataMap = {};
-    allGenres.forEach((g, idx) => {
-      const rank = rated.indexOf(g);
-      dataMap[g] = rank >= 0 ? maxVal - rank : 0;
-    });
-    // 5. Retourner au format attendu
-    return [{ data: dataMap }];
+    try {
+      // 1. Charger le JSON
+      const decades = await d3.json("/data-true/decades.json");
+      // 2. Trouver l'entrée correspondante
+      const entry = decades.find((d) => d["start-year"] === decade);
+      const rated = Array.isArray(entry?.["genres-rating"])
+        ? entry["genres-rating"]
+        : [];
+      // 3. Liste fixe de tous les genres
+      const allGenres = [
+        "hip-hop",
+        "pop",
+        "electronic",
+        "r&b",
+        "rock",
+        "country",
+        "metal",
+        "reggae",
+        "punk",
+        "funk",
+        "jazz",
+        "blues",
+      ];
+      const maxVal = allGenres.length;
+      // 4. Construire le mapping nom → score (12 = plus populaire, 0 = absent)
+      const dataMap = {};
+      allGenres.forEach((g, idx) => {
+        const rank = rated.indexOf(g);
+        dataMap[g] = rank >= 0 ? maxVal - rank : 0;
+      });
+      // 5. Retourner au format attendu
+      return [{ data: dataMap }];
+    } catch (error) {
+      console.error("Erreur lors du chargement des données:", error);
+      // Retourner des données par défaut en cas d'erreur
+      const defaultData = {};
+      const allGenres = [
+        "hip-hop", "pop", "electronic", "r&b", "rock", "country",
+        "metal", "reggae", "punk", "funk", "jazz", "blues",
+      ];
+      allGenres.forEach(genre => {
+        defaultData[genre] = Math.floor(Math.random() * 12);
+      });
+      return [{ data: defaultData }];
+    }
   }
 
   updateVisualization() {

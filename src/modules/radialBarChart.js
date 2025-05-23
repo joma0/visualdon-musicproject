@@ -1,3 +1,4 @@
+/* src/modules/radialBarChart.js */
 import * as d3 from 'd3';
 
 export default function radialBarChart() {
@@ -5,7 +6,7 @@ export default function radialBarChart() {
   let capitalizeLabels = true;
   let barColors = ['#B66199','#9392CB','#76D9FA','#BCE3AD','#FFD28C','#F2918B'];
   let domain = [0,12];
-  let tickCircleValues = [1,2,3,4,5,6,7,8,9,10,11];
+  let tickCircleValues = [2, 4, 6, 8, 10, 12]; // Cercles de séparation aux paliers pairs
   let colorLabels = false;
   let transitionDuration = 800;
   let clickCallback = null;
@@ -39,15 +40,7 @@ export default function radialBarChart() {
       // Scales
       const barScale = d3.scaleLinear().domain(domain).range([0, barHeight]);
 
-      // Tick Circles (only on first render)
-      if (isNew) {
-        const tickCircles = svg.append('g').classed('tick-circles', true);
-        tickCircleValues.forEach(d => {
-          tickCircles.append('circle')
-            .attr('r', barScale(d))
-            .style('fill', 'none');
-        });
-      }
+      // On supprime les cercles d'ici pour les mettre après les barres
 
       // Layers
       let layers = svg.selectAll('g.layer')
@@ -75,12 +68,9 @@ export default function radialBarChart() {
         .attrTween('d', function(d, i) {
             const start = (i * 2 * Math.PI) / numBars;
             const end = ((i + 1) * 2 * Math.PI) / numBars;
-
-            // 🔧 Smooth transition from previous value
             const previous = this.__prevValue__ ?? 0;
             const interp = d3.interpolate(previous, d.value);
             this.__prevValue__ = d.value;
-
             return t => {
                 const r = barScale(interp(t));
                 return d3.arc()({ innerRadius: 0, outerRadius: r, startAngle: start, endAngle: end });
@@ -89,26 +79,48 @@ export default function radialBarChart() {
 
       arcs.exit().remove();
 
+      // Tick Circles - Cercles de séparation par-dessus les barres
+      let tickCirclesGroup = svg.select('g.tick-circles');
+      if (tickCirclesGroup.empty()) {
+        tickCirclesGroup = svg.append('g').classed('tick-circles', true);
+      }
+      
+      const tickCircles = tickCirclesGroup.selectAll('circle')
+        .data(tickCircleValues);
+      
+      tickCircles.enter()
+        .append('circle')
+        .merge(tickCircles)
+        .attr('r', d => barScale(d))
+        .style('fill', 'none')
+        .style('stroke', 'rgba(255,255,255,0.6)') // Plus visible
+        .style('stroke-width', '2px')
+        .style('stroke-dasharray', '4,4') // Ligne pointillée plus marquée
+        .style('pointer-events', 'none'); // Les cercles ne bloquent pas les clics
+
       // Overlays (only on first render)
       if (isNew) {
         const overlays = svg.append('g').classed('overlays', true);
-        // spokes
+        
+        // Spokes - lignes de séparation radiales
         overlays.append('g').classed('spokes', true)
           .selectAll('line')
           .data(data)
           .enter().append('line')
           .attr('y2', -barHeight)
           .attr('transform', (_,i) => `rotate(${(360/numBars)*i})`)
-          .style('stroke', 'rgba(255,255,255,0.2)');
-        // axis
-        const axisScale = d3.scaleLinear().domain(domain).range([0, -barHeight]);
-        overlays.append('g').classed('axis', true)
-          .call(d3.axisRight(axisScale).ticks(5));
-        // outer circle
+          .style('stroke', 'rgba(255,255,255,0.2)')
+          .style('stroke-width', '1px');
+        
+        // Axe retiré - on garde seulement les cercles de séparation et les lignes radiales
+
+        // Outer circle - cercle extérieur
         overlays.append('circle')
           .attr('r', barHeight)
           .classed('outer', true)
-          .style('fill', 'none');
+          .style('fill', 'none')
+          .style('stroke', 'rgba(255,255,255,0.4)')
+          .style('stroke-width', '2px');
       }
 
       // Labels (only on first render)
@@ -124,11 +136,14 @@ export default function radialBarChart() {
           .enter().append('text')
           .style('text-anchor', 'middle')
           .style('fill', (_,i) => colorLabels ? barColors[i % barColors.length] : '#fff')
+          .style('font-size', '12px')
+          .style('font-weight', 'bold')
           .append('textPath')
           .attr('xlink:href', '#label-path')
           .attr('startOffset', (_,i) => `${i * 100 / numBars + 50/numBars}%`)
           .text(d => capitalizeLabels ? d.name.toUpperCase() : d.name);
       }
+
     });
   }
 
